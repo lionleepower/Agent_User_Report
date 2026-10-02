@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <title>向量空间示意：意思相近的句子离得近</title>
+  <rect width="720" height="400" fill="#ffffff"/>
+  <text x="24" y="34" font-size="18" font-weight="bold" fill="#1f2328">向量空间：意思相近的文字，坐标也相近</text>
+  <text x="24" y="58" font-size="12" fill="#57606a">真实向量有 512–1024 维，这里压成 2 维示意；距离通常用余弦相似度衡量</text>
+  <line x1="60" y1="360" x2="690" y2="360" stroke="#8c959f" stroke-width="1.5"/>
+  <line x1="60" y1="360" x2="60" y2="80" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="600" y="382" font-size="11" fill="#8c959f">维度 1（示意）</text>
+  <text x="66" y="92" font-size="11" fill="#8c959f">维度 2（示意）</text>
+  <ellipse cx="230" cy="175" rx="150" ry="70" fill="#0072B2" fill-opacity="0.08" stroke="#0072B2" stroke-dasharray="4 3"/>
+  <text x="104" y="118" font-size="12" fill="#0072B2">网络协议一簇</text>
+  <circle cx="190" cy="165" r="7" fill="#0072B2"/>
+  <text x="202" y="160" font-size="13" fill="#1f2328">“TCP 三次握手”</text>
+  <circle cx="250" cy="200" r="7" fill="#0072B2"/>
+  <text x="262" y="205" font-size="13" fill="#1f2328">“建立连接的过程”</text>
+  <circle cx="160" cy="215" r="7" fill="#D55E00"/>
+  <text x="44" y="245" font-size="13" fill="#D55E00">“踢西批 握手”（语音识别错字）</text>
+  <ellipse cx="530" cy="270" rx="140" ry="60" fill="#009E73" fill-opacity="0.08" stroke="#009E73" stroke-dasharray="4 3"/>
+  <text x="560" y="222" font-size="12" fill="#009E73">垃圾回收一簇</text>
+  <circle cx="500" cy="265" r="7" fill="#009E73"/>
+  <text x="512" y="260" font-size="13" fill="#1f2328">“Full GC 的触发条件”</text>
+  <circle cx="530" cy="300" r="7" fill="#009E73"/>
+  <text x="542" y="305" font-size="13" fill="#1f2328">“永久代满了会怎样”</text>
+  <line x1="190" y1="165" x2="160" y2="215" stroke="#D55E00" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="420" y="130" font-size="12" fill="#57606a">关键词检索（BM25）只看字面：</text>
+  <text x="420" y="148" font-size="12" fill="#57606a">“踢西批”和“TCP”一个字都不重合。</text>
+  <text x="420" y="172" font-size="12" fill="#57606a">向量检索看位置：错字句仍落在</text>
+  <text x="420" y="190" font-size="12" fill="#57606a">“网络协议”这一簇附近，所以能找回来。</text>
+</svg>

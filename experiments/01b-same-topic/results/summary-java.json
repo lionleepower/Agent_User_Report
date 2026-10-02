@@ -1,0 +1,256 @@
+{
+  "date": "2026-09-28T13:00:01.307Z",
+  "model": "deepseek-chat",
+  "topic": "CS-Notes Java 基础/并发/容器/虚拟机/IO (5 docs)",
+  "needles": 54,
+  "retrieval": {
+    "k": 5,
+    "perDoc": 3
+  },
+  "rows": [
+    {
+      "docs": 1,
+      "chars": 34745,
+      "method": "full",
+      "n": 54,
+      "fullCorrect": 74.1,
+      "fullCorrectCI95": [
+        61.1,
+        85.2
+      ],
+      "wrongOrEmpty": 0,
+      "goldRetrieved": null,
+      "ttftP50": 865,
+      "cnyPerAnswer": 0.00378
+    },
+    {
+      "docs": 1,
+      "chars": 34745,
+      "method": "bm25",
+      "n": 54,
+      "fullCorrect": 66.7,
+      "fullCorrectCI95": [
+        53.7,
+        79.6
+      ],
+      "wrongOrEmpty": 25.9,
+      "goldRetrieved": 74.1,
+      "ttftP50": 635,
+      "cnyPerAnswer": 0.00085
+    },
+    {
+      "docs": 1,
+      "chars": 34745,
+      "method": "hybrid",
+      "n": 54,
+      "fullCorrect": 72.2,
+      "fullCorrectCI95": [
+        59.3,
+        83.3
+      ],
+      "wrongOrEmpty": 7.4,
+      "goldRetrieved": 92.6,
+      "ttftP50": 640,
+      "cnyPerAnswer": 0.00101
+    },
+    {
+      "docs": 1,
+      "chars": 34745,
+      "method": "dense",
+      "n": 54,
+      "fullCorrect": 75.9,
+      "fullCorrectCI95": [
+        64.8,
+        87
+      ],
+      "wrongOrEmpty": 0,
+      "goldRetrieved": 96.3,
+      "ttftP50": 632,
+      "cnyPerAnswer": 0.00094
+    },
+    {
+      "docs": 2,
+      "chars": 79237,
+      "method": "full",
+      "n": 54,
+      "fullCorrect": 74.1,
+      "fullCorrectCI95": [
+        61.1,
+        85.2
+      ],
+      "wrongOrEmpty": 0,
+      "goldRetrieved": null,
+      "ttftP50": 1021,
+      "cnyPerAnswer": 0.00742
+    },
+    {
+      "docs": 2,
+      "chars": 79237,
+      "method": "bm25",
+      "n": 54,
+      "fullCorrect": 61.1,
+      "fullCorrectCI95": [
+        48.1,
+        74.1
+      ],
+      "wrongOrEmpty": 25.9,
+      "goldRetrieved": 72.2,
+      "ttftP50": 604,
+      "cnyPerAnswer": 0.00072
+    },
+    {
+      "docs": 2,
+      "chars": 79237,
+      "method": "hybrid",
+      "n": 54,
+      "fullCorrect": 72.2,
+      "fullCorrectCI95": [
+        59.3,
+        83.3
+      ],
+      "wrongOrEmpty": 5.6,
+      "goldRetrieved": 92.6,
+      "ttftP50": 632,
+      "cnyPerAnswer": 0.00115
+    },
+    {
+      "docs": 2,
+      "chars": 79237,
+      "method": "dense",
+      "n": 54,
+      "fullCorrect": 74.1,
+      "fullCorrectCI95": [
+        61.1,
+        85.2
+      ],
+      "wrongOrEmpty": 1.9,
+      "goldRetrieved": 96.3,
+      "ttftP50": 682,
+      "cnyPerAnswer": 0.00105
+    },
+    {
+      "docs": 3,
+      "chars": 107813,
+      "method": "full",
+      "n": 54,
+      "fullCorrect": 74.1,
+      "fullCorrectCI95": [
+        63,
+        85.2
+      ],
+      "wrongOrEmpty": 0,
+      "goldRetrieved": null,
+      "ttftP50": 1014,
+      "cnyPerAnswer": 0.01044
+    },
+    {
+      "docs": 3,
+      "chars": 107813,
+      "method": "bm25",
+      "n": 54,
+      "fullCorrect": 57.4,
+      "fullCorrectCI95": [
+        44.4,
+        70.4
+      ],
+      "wrongOrEmpty": 27.8,
+      "goldRetrieved": 70.4,
+      "ttftP50": 568,
+      "cnyPerAnswer": 0.00062
+    },
+    {
+      "docs": 3,
+      "chars": 107813,
+      "method": "hybrid",
+      "n": 54,
+      "fullCorrect": 64.8,
+      "fullCorrectCI95": [
+        51.9,
+        77.8
+      ],
+      "wrongOrEmpty": 9.3,
+      "goldRetrieved": 88.9,
+      "ttftP50": 589,
+      "cnyPerAnswer": 0.00104
+    },
+    {
+      "docs": 3,
+      "chars": 107813,
+      "method": "dense",
+      "n": 54,
+      "fullCorrect": 77.8,
+      "fullCorrectCI95": [
+        66.7,
+        88.9
+      ],
+      "wrongOrEmpty": 0,
+      "goldRetrieved": 96.3,
+      "ttftP50": 618,
+      "cnyPerAnswer": 0.00075
+    },
+    {
+      "docs": 4,
+      "chars": 123990,
+      "method": "full",
+      "n": 54,
+      "fullCorrect": 70.4,
+      "fullCorrectCI95": [
+        59.3,
+        83.3
+      ],
+      "wrongOrEmpty": 0,
+      "goldRetrieved": null,
+      "ttftP50": 1093,
+      "cnyPerAnswer": 0.01192
+    },
+    {
+      "docs": 4,
+      "chars": 123990,
+      "method": "bm25",
+      "n": 54,
+      "fullCorrect": 59.3,
+      "fullCorrectCI95": [
+        46.3,
+        72.2
+      ],
+      "wrongOrEmpty": 27.8,
+      "goldRetrieved": 70.4,
+      "ttftP50": 575,
+      "cnyPerAnswer": 0.00063
+    },
+    {
+      "docs": 4,
+      "chars": 123990,
+      "method": "hybrid",
+      "n": 54,
+      "fullCorrect": 63,
+      "fullCorrectCI95": [
+        50,
+        75.9
+      ],
+      "wrongOrEmpty": 11.1,
+      "goldRetrieved": 88.9,
+      "ttftP50": 607,
+      "cnyPerAnswer": 0.0009
+    },
+    {
+      "docs": 4,
+      "chars": 123990,
+      "method": "dense",
+      "n": 54,
+      "fullCorrect": 77.8,
+      "fullCorrectCI95": [
+        66.7,
+        88.9
+      ],
+      "wrongOrEmpty": 1.9,
+      "goldRetrieved": 96.3,
+      "ttftP50": 626,
+      "cnyPerAnswer": 0.00076
+    }
+  ],
+  "spend": {
+    "calls": 1782,
+    "cny": 2.803
+  }
+}

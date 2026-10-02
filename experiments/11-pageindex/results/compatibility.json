@@ -1,0 +1,47 @@
+{
+  "runId": "compatibility-2026-09-30T13-16-00-563Z",
+  "status": "complete",
+  "date": "2026-09-30T13:16:08.318Z",
+  "model": "deepseek-flash",
+  "checks": {
+    "streamFinalAnswer": true,
+    "thinkingDisabled": true,
+    "cacheFieldsObservable": true,
+    "nonStreamAnswer": true,
+    "sdkThroughGateway": true,
+    "dashscopeEmbedding": true,
+    "ledgerAccountsEveryCall": true,
+    "noTruncation": true
+  },
+  "streams": [
+    {
+      "firstTokenMs": 657,
+      "firstAnswerMs": 657,
+      "totalMs": 729,
+      "promptTokens": 402,
+      "cachedTokens": 256,
+      "completionTokens": 4
+    },
+    {
+      "firstTokenMs": 350,
+      "firstAnswerMs": 350,
+      "totalMs": 452,
+      "promptTokens": 402,
+      "cachedTokens": 256,
+      "completionTokens": 4
+    }
+  ],
+  "sdk": {
+    "finish": "finished",
+    "totalMs": 4142.3858999987715
+  },
+  "usage": {
+    "requests": 5,
+    "cnyByUsageAtPublishedRate": 0.00080448,
+    "unknownReservedCny": 0,
+    "inputTokens": 838,
+    "cachedTokens": 512,
+    "outputTokens": 18
+  },
+  "costBasis": "usage x verified peak list price; not a provider bill"
+}

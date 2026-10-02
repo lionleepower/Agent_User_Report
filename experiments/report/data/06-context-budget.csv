@@ -1,0 +1,10 @@
+method,k,fullCorrect,contextCharsP50,ttftP50
+bm25,3,43.8,640,649
+bm25,5,56.3,813,630
+bm25,8,54.2,813,640
+hybrid-bge,3,58.3,921,580
+hybrid-bge,5,64.6,1558,634
+hybrid-bge,8,68.8,2498,744
+dense-dashscope,3,64.6,875,596
+dense-dashscope,5,72.9,1390,615
+dense-dashscope,8,70.8,2237,655

@@ -1,0 +1,191 @@
+{
+  "date": "2026-09-28T10:07:10.966Z",
+  "corpus": "CS-Notes M tier: 37 documents, 200347 chars",
+  "questions": 48,
+  "dashscope": {
+    "tokens": 243257,
+    "requests": 174
+  },
+  "rows": [
+    {
+      "chunker": "heading-200",
+      "retriever": "bm25",
+      "chunks": 1143,
+      "avgChunkChars": 166,
+      "goldTop3": 56.3,
+      "goldTop3CI95": [
+        41.7,
+        70.8
+      ],
+      "goldWithin1200": 58.3
+    },
+    {
+      "chunker": "heading-200",
+      "retriever": "bge-small-zh",
+      "chunks": 1143,
+      "avgChunkChars": 166,
+      "goldTop3": 66.7,
+      "goldTop3CI95": [
+        54.2,
+        79.2
+      ],
+      "goldWithin1200": 70.8
+    },
+    {
+      "chunker": "heading-200",
+      "retriever": "dashscope-v4",
+      "chunks": 1143,
+      "avgChunkChars": 166,
+      "goldTop3": 66.7,
+      "goldTop3CI95": [
+        52.1,
+        79.2
+      ],
+      "goldWithin1200": 68.8
+    },
+    {
+      "chunker": "heading-400 (product)",
+      "retriever": "bm25",
+      "chunks": 637,
+      "avgChunkChars": 297,
+      "goldTop3": 64.6,
+      "goldTop3CI95": [
+        50,
+        77.1
+      ],
+      "goldWithin1200": 66.7
+    },
+    {
+      "chunker": "heading-400 (product)",
+      "retriever": "bge-small-zh",
+      "chunks": 637,
+      "avgChunkChars": 297,
+      "goldTop3": 77.1,
+      "goldTop3CI95": [
+        64.6,
+        87.5
+      ],
+      "goldWithin1200": 81.3
+    },
+    {
+      "chunker": "heading-400 (product)",
+      "retriever": "dashscope-v4",
+      "chunks": 637,
+      "avgChunkChars": 297,
+      "goldTop3": 85.4,
+      "goldTop3CI95": [
+        75,
+        95.8
+      ],
+      "goldWithin1200": 87.5
+    },
+    {
+      "chunker": "heading-800",
+      "retriever": "bm25",
+      "chunks": 448,
+      "avgChunkChars": 416,
+      "goldTop3": 68.8,
+      "goldTop3CI95": [
+        54.2,
+        81.3
+      ],
+      "goldWithin1200": 68.8
+    },
+    {
+      "chunker": "heading-800",
+      "retriever": "bge-small-zh",
+      "chunks": 448,
+      "avgChunkChars": 416,
+      "goldTop3": 77.1,
+      "goldTop3CI95": [
+        64.6,
+        87.5
+      ],
+      "goldWithin1200": 79.2
+    },
+    {
+      "chunker": "heading-800",
+      "retriever": "dashscope-v4",
+      "chunks": 448,
+      "avgChunkChars": 416,
+      "goldTop3": 91.7,
+      "goldTop3CI95": [
+        83.3,
+        97.9
+      ],
+      "goldWithin1200": 89.6
+    },
+    {
+      "chunker": "heading-1200",
+      "retriever": "bm25",
+      "chunks": 408,
+      "avgChunkChars": 455,
+      "goldTop3": 66.7,
+      "goldTop3CI95": [
+        52.1,
+        79.2
+      ],
+      "goldWithin1200": 66.7
+    },
+    {
+      "chunker": "heading-1200",
+      "retriever": "bge-small-zh",
+      "chunks": 408,
+      "avgChunkChars": 455,
+      "goldTop3": 79.2,
+      "goldTop3CI95": [
+        68.8,
+        89.6
+      ],
+      "goldWithin1200": 81.3
+    },
+    {
+      "chunker": "heading-1200",
+      "retriever": "dashscope-v4",
+      "chunks": 408,
+      "avgChunkChars": 455,
+      "goldTop3": 95.8,
+      "goldTop3CI95": [
+        89.6,
+        100
+      ],
+      "goldWithin1200": 93.8
+    },
+    {
+      "chunker": "fixed-400",
+      "retriever": "bm25",
+      "chunks": 603,
+      "avgChunkChars": 389,
+      "goldTop3": 62.5,
+      "goldTop3CI95": [
+        47.9,
+        77.1
+      ],
+      "goldWithin1200": 62.5
+    },
+    {
+      "chunker": "fixed-400",
+      "retriever": "bge-small-zh",
+      "chunks": 603,
+      "avgChunkChars": 389,
+      "goldTop3": 64.6,
+      "goldTop3CI95": [
+        52.1,
+        77.1
+      ],
+      "goldWithin1200": 64.6
+    },
+    {
+      "chunker": "fixed-400",
+      "retriever": "dashscope-v4",
+      "chunks": 603,
+      "avgChunkChars": 389,
+      "goldTop3": 79.2,
+      "goldTop3CI95": [
+        68.8,
+        89.6
+      ],
+      "goldWithin1200": 79.2
+    }
+  ]
+}

@@ -1,0 +1,749 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-09-30",
+  "status": "complete_with_failures_or_partial",
+  "model": "deepseek-flash (DeepSeek-V4.1-Flash, non-thinking) for tree search, answers and judging; text-embedding-v4 1024-d for dense",
+  "corpusCommit": "b70121d377cb6005eb65f12b098cd5decd905669",
+  "corpus": {
+    "verifiedPublicDocuments": 170,
+    "Mdocuments": 37,
+    "Mchars": 200347,
+    "chunks": 637,
+    "pdfPages": 136
+  },
+  "questions": {
+    "clean": 48,
+    "pairedNoise": 48,
+    "exploratoryCrossSection": 12,
+    "review": "assistant reviewed pinned public excerpts; not independent human annotation"
+  },
+  "pageindexVersion": "0.2.10",
+  "index": {
+    "status": "complete",
+    "mode": "flash",
+    "indexMs": 18327.833199997258,
+    "cny": 0.058618
+  },
+  "vectorIndex": {
+    "status": "complete",
+    "chunks": 637,
+    "indexMs": 23543.8592,
+    "cny": 0.038975499999999996,
+    "requests": 64
+  },
+  "compatibility": {
+    "runId": "compatibility-2026-09-30T13-16-00-563Z",
+    "status": "complete",
+    "checks": {
+      "streamFinalAnswer": true,
+      "thinkingDisabled": true,
+      "cacheFieldsObservable": true,
+      "nonStreamAnswer": true,
+      "sdkThroughGateway": true,
+      "dashscopeEmbedding": true,
+      "ledgerAccountsEveryCall": true,
+      "noTruncation": true
+    }
+  },
+  "pilot": {
+    "runIds": [
+      "preflight-2026-09-30T13-20-00-591Z",
+      "preflight-2026-09-30T13-25-31-481Z"
+    ],
+    "status": "complete",
+    "planned": 48,
+    "actual": 48,
+    "ok": 48,
+    "repetitions": 1,
+    "droppedFailures": [
+      {
+        "runId": "preflight-2026-09-30T13-20-00-591Z",
+        "id": "csnotes-S-02",
+        "task": "noise",
+        "repeat": 0,
+        "method": "whole",
+        "reason": "budget_stop"
+      }
+    ],
+    "usage": {
+      "requests": 144,
+      "cnyByUsageAtPublishedRate": 0.7139624200000001,
+      "unknownReservedCny": 0,
+      "inputTokens": 1462664,
+      "cachedTokens": 1149948,
+      "outputTokens": 5388
+    },
+    "note": "pilot 4 clean + 4 noise + 4 multi x 1; not pooled into formal results"
+  },
+  "runs": {
+    "main": {
+      "runIds": [
+        "main-2026-09-30T13-27-18-653Z"
+      ],
+      "status": "complete",
+      "planned": 768,
+      "actual": 768,
+      "ok": 768,
+      "repetitions": 2,
+      "droppedFailures": [],
+      "usage": {
+        "requests": 2319,
+        "cnyByUsageAtPublishedRate": 6.859769839999989,
+        "unknownReservedCny": 0,
+        "inputTokens": 23489293,
+        "cachedTokens": 20768846,
+        "outputTokens": 74464
+      }
+    },
+    "multi": {
+      "runIds": [
+        "multi-2026-09-30T14-07-16-171Z"
+      ],
+      "status": "complete",
+      "planned": 96,
+      "actual": 96,
+      "ok": 96,
+      "repetitions": 2,
+      "droppedFailures": [],
+      "usage": {
+        "requests": 291,
+        "cnyByUsageAtPublishedRate": 0.7667361600000001,
+        "unknownReservedCny": 0,
+        "inputTokens": 3004773,
+        "cachedTokens": 2722029,
+        "outputTokens": 11715
+      }
+    },
+    "native": {
+      "runIds": [
+        "native-2026-09-30T14-12-24-614Z"
+      ],
+      "status": "complete_with_failures",
+      "planned": 24,
+      "actual": 24,
+      "ok": 23,
+      "repetitions": 2,
+      "droppedFailures": [],
+      "usage": {
+        "requests": 93,
+        "cnyByUsageAtPublishedRate": 0.5772857600000001,
+        "unknownReservedCny": 0,
+        "inputTokens": 728404,
+        "cachedTokens": 473344,
+        "outputTokens": 6029
+      }
+    }
+  },
+  "controlled": {
+    "conditions": "evidence <= 5 units, <= 3 per document, <= 2000 chars; same answer prompt; whole sends all 37 documents (200347 chars); PageIndex = official local tools in a controlled adapter, <= 6 tree-search model calls and 120 s per question",
+    "groups": [
+      {
+        "task": "clean",
+        "method": "whole",
+        "questionsObserved": 48,
+        "responses": 96,
+        "failures": 0,
+        "fullyCorrect": 0.7604166666666666,
+        "fullyCorrectCI95": [
+          0.6354166666666666,
+          0.875
+        ],
+        "zeroOrFailed": 0.0625,
+        "evidenceCoverage": 1,
+        "meanEvidenceChars": 200347,
+        "successfulLatency": {
+          "firstAnswerMsP50": 788.0346000000136,
+          "firstAnswerMsP95": 1054.0346999999601,
+          "totalMsP50": 1075.5017999999982,
+          "totalMsP95": 1464.304300000018,
+          "n": 96
+        },
+        "meanSearchCalls": null,
+        "perQuery": {
+          "requests": 1,
+          "inputTokens": 88351.16666666667,
+          "cachedTokens": 88192,
+          "outputTokens": 46.5,
+          "cnyByUsage": 0.004218013333333334,
+          "unknownReservedCny": 0
+        }
+      },
+      {
+        "task": "clean",
+        "method": "bm25",
+        "questionsObserved": 48,
+        "responses": 96,
+        "failures": 0,
+        "fullyCorrect": 0.5833333333333334,
+        "fullyCorrectCI95": [
+          0.4479166666666667,
+          0.71875
+        ],
+        "zeroOrFailed": 0.2916666666666667,
+        "evidenceCoverage": 0.7083333333333334,
+        "meanEvidenceChars": 863.4166666666666,
+        "successfulLatency": {
+          "firstAnswerMsP50": 493.16379999998026,
+          "firstAnswerMsP95": 718.4680000000226,
+          "totalMsP50": 709.9318000000203,
+          "totalMsP95": 930.5366000000067,
+          "n": 96
+        },
+        "meanSearchCalls": null,
+        "perQuery": {
+          "requests": 1,
+          "inputTokens": 542.7083333333334,
+          "cachedTokens": 365.0625,
+          "outputTokens": 32.333333333333336,
+          "cnyByUsage": 0.0006285608333333334,
+          "unknownReservedCny": 0
+        }
+      },
+      {
+        "task": "clean",
+        "method": "dense",
+        "questionsObserved": 48,
+        "responses": 96,
+        "failures": 0,
+        "fullyCorrect": 0.625,
+        "fullyCorrectCI95": [
+          0.4895833333333333,
+          0.75
+        ],
+        "zeroOrFailed": 0.16666666666666666,
+        "evidenceCoverage": 0.8125,
+        "meanEvidenceChars": 1334.3541666666667,
+        "successfulLatency": {
+          "firstAnswerMsP50": 878.9328000000096,
+          "firstAnswerMsP95": 1532.5530000000726,
+          "totalMsP50": 1143.4841000000015,
+          "totalMsP95": 1784.8821000000025,
+          "n": 96
+        },
+        "meanSearchCalls": null,
+        "perQuery": {
+          "requests": 2,
+          "inputTokens": 804.25,
+          "cachedTokens": 403.90625,
+          "outputTokens": 37.479166666666664,
+          "cnyByUsage": 0.0010871458333333338,
+          "unknownReservedCny": 0
+        }
+      },
+      {
+        "task": "clean",
+        "method": "pageindex",
+        "questionsObserved": 48,
+        "responses": 96,
+        "failures": 0,
+        "fullyCorrect": 0.7916666666666666,
+        "fullyCorrectCI95": [
+          0.6770833333333334,
+          0.8958333333333334
+        ],
+        "zeroOrFailed": 0.03125,
+        "evidenceCoverage": 0.9791666666666666,
+        "meanEvidenceChars": 705.7604166666666,
+        "successfulLatency": {
+          "firstAnswerMsP50": 6089.018799999962,
+          "firstAnswerMsP95": 7321.360899999971,
+          "totalMsP50": 6349.796700000064,
+          "totalMsP95": 7576.566400000011,
+          "n": 96
+        },
+        "meanSearchCalls": 3.0625,
+        "perQuery": {
+          "requests": 4.0625,
+          "inputTokens": 31456.59375,
+          "cachedTokens": 19725.333333333332,
+          "outputTokens": 248.51041666666666,
+          "cnyByUsage": 0.02623961749999999,
+          "unknownReservedCny": 0
+        }
+      },
+      {
+        "task": "noise",
+        "method": "whole",
+        "questionsObserved": 48,
+        "responses": 96,
+        "failures": 0,
+        "fullyCorrect": 0.6979166666666666,
+        "fullyCorrectCI95": [
+          0.5729166666666666,
+          0.8125
+        ],
+        "zeroOrFailed": 0.21875,
+        "evidenceCoverage": 1,
+        "meanEvidenceChars": 200347,
+        "successfulLatency": {
+          "firstAnswerMsP50": 747.0331999999471,
+          "firstAnswerMsP95": 1086.1384000000544,
+          "totalMsP50": 1033.2948000000324,
+          "totalMsP95": 1417.6010000000242,
+          "n": 96
+        },
+        "meanSearchCalls": null,
+        "perQuery": {
+          "requests": 1,
+          "inputTokens": 88360.85416666667,
+          "cachedTokens": 88192,
+          "outputTokens": 41.84375,
+          "cnyByUsage": 0.004200138333333335,
+          "unknownReservedCny": 0
+        }
+      },
+      {
+        "task": "noise",
+        "method": "bm25",
+        "questionsObserved": 48,
+        "responses": 96,
+        "failures": 0,
+        "fullyCorrect": 0.4479166666666667,
+        "fullyCorrectCI95": [
+          0.3125,
+          0.5833333333333334
+        ],
+        "zeroOrFailed": 0.4583333333333333,
+        "evidenceCoverage": 0.5416666666666666,
+        "meanEvidenceChars": 586.5416666666666,
+        "successfulLatency": {
+          "firstAnswerMsP50": 477.24439999996684,
+          "firstAnswerMsP95": 821.2697000000626,
+          "totalMsP50": 679.8509999997914,
+          "totalMsP95": 1053.624099999899,
+          "n": 96
+        },
+        "meanSearchCalls": null,
+        "perQuery": {
+          "requests": 1,
+          "inputTokens": 403.1458333333333,
+          "cachedTokens": 206.625,
+          "outputTokens": 25.625,
+          "cnyByUsage": 0.0006063066666666668,
+          "unknownReservedCny": 0
+        }
+      },
+      {
+        "task": "noise",
+        "method": "dense",
+        "questionsObserved": 48,
+        "responses": 96,
+        "failures": 0,
+        "fullyCorrect": 0.5833333333333334,
+        "fullyCorrectCI95": [
+          0.4479166666666667,
+          0.71875
+        ],
+        "zeroOrFailed": 0.2708333333333333,
+        "evidenceCoverage": 0.75,
+        "meanEvidenceChars": 1171.9375,
+        "successfulLatency": {
+          "firstAnswerMsP50": 930.7335000000894,
+          "firstAnswerMsP95": 1469.5167000000365,
+          "totalMsP50": 1180.9536000001244,
+          "totalMsP95": 1733.594299999997,
+          "n": 96
+        },
+        "meanSearchCalls": null,
+        "perQuery": {
+          "requests": 2,
+          "inputTokens": 765.9375,
+          "cachedTokens": 411.9270833333333,
+          "outputTokens": 34.479166666666664,
+          "cnyByUsage": 0.0009507999999999999,
+          "unknownReservedCny": 0
+        }
+      },
+      {
+        "task": "noise",
+        "method": "pageindex",
+        "questionsObserved": 48,
+        "responses": 96,
+        "failures": 0,
+        "fullyCorrect": 0.78125,
+        "fullyCorrectCI95": [
+          0.6666666666666666,
+          0.8854166666666666
+        ],
+        "zeroOrFailed": 0.0625,
+        "evidenceCoverage": 0.96875,
+        "meanEvidenceChars": 768.84375,
+        "successfulLatency": {
+          "firstAnswerMsP50": 6422.412799999933,
+          "firstAnswerMsP95": 8303.850500000175,
+          "totalMsP50": 6707.296300000045,
+          "totalMsP95": 8718.177699999884,
+          "n": 96
+        },
+        "meanSearchCalls": 3.09375,
+        "perQuery": {
+          "requests": 4.09375,
+          "inputTokens": 32562.375,
+          "cachedTokens": 18841.291666666668,
+          "outputTokens": 268.8958333333333,
+          "cnyByUsage": 0.030346985000000007,
+          "unknownReservedCny": 0
+        }
+      },
+      {
+        "task": "multi",
+        "method": "whole",
+        "questionsObserved": 12,
+        "responses": 24,
+        "failures": 0,
+        "fullyCorrect": 0.8333333333333334,
+        "fullyCorrectCI95": [
+          0.7083333333333334,
+          0.9583333333333334
+        ],
+        "zeroOrFailed": 0.041666666666666664,
+        "evidenceCoverage": 1,
+        "meanEvidenceChars": 200347,
+        "successfulLatency": {
+          "firstAnswerMsP50": 862.0087000000058,
+          "firstAnswerMsP95": 1100.1309999999999,
+          "totalMsP50": 1227.0052000000142,
+          "totalMsP95": 1572.3766000000032,
+          "n": 24
+        },
+        "meanSearchCalls": null,
+        "perQuery": {
+          "requests": 1,
+          "inputTokens": 88368.41666666667,
+          "cachedTokens": 88192,
+          "outputTokens": 62,
+          "cnyByUsage": 0.004376513333333334,
+          "unknownReservedCny": 0
+        }
+      },
+      {
+        "task": "multi",
+        "method": "bm25",
+        "questionsObserved": 12,
+        "responses": 24,
+        "failures": 0,
+        "fullyCorrect": 0.5,
+        "fullyCorrectCI95": [
+          0.25,
+          0.75
+        ],
+        "zeroOrFailed": 0.3333333333333333,
+        "evidenceCoverage": 0.6666666666666666,
+        "meanEvidenceChars": 767.3333333333334,
+        "successfulLatency": {
+          "firstAnswerMsP50": 528.1471999999994,
+          "firstAnswerMsP95": 757.1322999999975,
+          "totalMsP50": 709.1521000000066,
+          "totalMsP95": 1044.4890000000014,
+          "n": 24
+        },
+        "meanSearchCalls": null,
+        "perQuery": {
+          "requests": 1,
+          "inputTokens": 534.8333333333334,
+          "cachedTokens": 298.6666666666667,
+          "outputTokens": 46.916666666666664,
+          "cnyByUsage": 0.0008596133333333332,
+          "unknownReservedCny": 0
+        }
+      },
+      {
+        "task": "multi",
+        "method": "dense",
+        "questionsObserved": 12,
+        "responses": 24,
+        "failures": 0,
+        "fullyCorrect": 0.8333333333333334,
+        "fullyCorrectCI95": [
+          0.625,
+          1
+        ],
+        "zeroOrFailed": 0.041666666666666664,
+        "evidenceCoverage": 0.7916666666666666,
+        "meanEvidenceChars": 1462.0833333333333,
+        "successfulLatency": {
+          "firstAnswerMsP50": 891.9493999999831,
+          "firstAnswerMsP95": 1361.0892999999924,
+          "totalMsP50": 1248.824900000007,
+          "totalMsP95": 1769.5378000000492,
+          "n": 24
+        },
+        "meanSearchCalls": null,
+        "perQuery": {
+          "requests": 2,
+          "inputTokens": 913.5833333333334,
+          "cachedTokens": 501.125,
+          "outputTokens": 62.625,
+          "cnyByUsage": 0.0012895866666666667,
+          "unknownReservedCny": 0
+        }
+      },
+      {
+        "task": "multi",
+        "method": "pageindex",
+        "questionsObserved": 12,
+        "responses": 24,
+        "failures": 0,
+        "fullyCorrect": 1,
+        "fullyCorrectCI95": [
+          1,
+          1
+        ],
+        "zeroOrFailed": 0,
+        "evidenceCoverage": 0.9166666666666666,
+        "meanEvidenceChars": 904.625,
+        "successfulLatency": {
+          "firstAnswerMsP50": 6239.347999999998,
+          "firstAnswerMsP95": 7695.7837,
+          "totalMsP50": 6593.034899999999,
+          "totalMsP95": 8018.763699999996,
+          "n": 24
+        },
+        "meanSearchCalls": 3.125,
+        "perQuery": {
+          "requests": 4.125,
+          "inputTokens": 34467.458333333336,
+          "cachedTokens": 24394.083333333332,
+          "outputTokens": 296.5833333333333,
+          "cnyByUsage": 0.02349518,
+          "unknownReservedCny": 0
+        }
+      }
+    ],
+    "pairedDifferences": [
+      {
+        "task": "clean",
+        "a": "pageindex",
+        "b": "whole",
+        "pairedQuestions": 48,
+        "diff": 0.03125,
+        "diffCI95": [
+          -0.0625,
+          0.13541666666666666
+        ],
+        "aBetter": 4,
+        "bBetter": 4
+      },
+      {
+        "task": "clean",
+        "a": "pageindex",
+        "b": "bm25",
+        "pairedQuestions": 48,
+        "diff": 0.20833333333333334,
+        "diffCI95": [
+          0.07291666666666667,
+          0.3541666666666667
+        ],
+        "aBetter": 13,
+        "bBetter": 2
+      },
+      {
+        "task": "clean",
+        "a": "pageindex",
+        "b": "dense",
+        "pairedQuestions": 48,
+        "diff": 0.16666666666666666,
+        "diffCI95": [
+          0.0625,
+          0.28125
+        ],
+        "aBetter": 11,
+        "bBetter": 2
+      },
+      {
+        "task": "noise",
+        "a": "pageindex",
+        "b": "whole",
+        "pairedQuestions": 48,
+        "diff": 0.08333333333333333,
+        "diffCI95": [
+          -0.03125,
+          0.19791666666666666
+        ],
+        "aBetter": 9,
+        "bBetter": 4
+      },
+      {
+        "task": "noise",
+        "a": "pageindex",
+        "b": "bm25",
+        "pairedQuestions": 48,
+        "diff": 0.3333333333333333,
+        "diffCI95": [
+          0.17708333333333334,
+          0.4895833333333333
+        ],
+        "aBetter": 20,
+        "bBetter": 5
+      },
+      {
+        "task": "noise",
+        "a": "pageindex",
+        "b": "dense",
+        "pairedQuestions": 48,
+        "diff": 0.19791666666666666,
+        "diffCI95": [
+          0.0625,
+          0.3333333333333333
+        ],
+        "aBetter": 14,
+        "bBetter": 5
+      },
+      {
+        "task": "multi",
+        "a": "pageindex",
+        "b": "whole",
+        "pairedQuestions": 12,
+        "diff": 0.16666666666666666,
+        "diffCI95": [
+          0.041666666666666664,
+          0.2916666666666667
+        ],
+        "aBetter": 4,
+        "bBetter": 0
+      },
+      {
+        "task": "multi",
+        "a": "pageindex",
+        "b": "bm25",
+        "pairedQuestions": 12,
+        "diff": 0.5,
+        "diffCI95": [
+          0.25,
+          0.75
+        ],
+        "aBetter": 7,
+        "bBetter": 0
+      },
+      {
+        "task": "multi",
+        "a": "pageindex",
+        "b": "dense",
+        "pairedQuestions": 12,
+        "diff": 0.16666666666666666,
+        "diffCI95": [
+          0,
+          0.375
+        ],
+        "aBetter": 3,
+        "bBetter": 0
+      }
+    ]
+  },
+  "native": {
+    "conditions": "official PageIndex chat_completions, non-stream final_output, max_turns 6; separate from controlled; final-answer TTFT unobservable (null)",
+    "groups": [
+      {
+        "task": "multi",
+        "method": "native",
+        "questionsObserved": 12,
+        "responses": 24,
+        "failures": 1,
+        "fullyCorrect": 0.9166666666666666,
+        "fullyCorrectCI95": [
+          0.7916666666666666,
+          1
+        ],
+        "zeroOrFailed": 0.041666666666666664,
+        "evidenceCoverage": null,
+        "meanEvidenceChars": 5207.652173913043,
+        "successfulLatency": {
+          "firstAnswerMsP50": null,
+          "firstAnswerMsP95": null,
+          "totalMsP50": 8184.051800000001,
+          "totalMsP95": 9265.307,
+          "n": 23
+        },
+        "meanSearchCalls": null,
+        "perQuery": {
+          "requests": 2.9166666666666665,
+          "inputTokens": 30077.666666666668,
+          "cachedTokens": 19701.333333333332,
+          "outputTokens": 246.41666666666666,
+          "cnyByUsage": 0.023512053333333338,
+          "unknownReservedCny": 0
+        }
+      }
+    ]
+  },
+  "amortization": {
+    "whole": {
+      "indexCny": 0,
+      "perQueryCny": 0.004209075833333334,
+      "totalPerQueryAt": {
+        "1": 0.004209075833333334,
+        "10": 0.004209075833333334,
+        "100": 0.004209075833333334
+      }
+    },
+    "bm25": {
+      "indexCny": 0,
+      "perQueryCny": 0.0006174337500000001,
+      "totalPerQueryAt": {
+        "1": 0.0006174337500000001,
+        "10": 0.0006174337500000001,
+        "100": 0.0006174337500000001
+      }
+    },
+    "dense": {
+      "indexCny": 0.038975499999999996,
+      "perQueryCny": 0.0010189729166666666,
+      "totalPerQueryAt": {
+        "1": 0.03999447291666666,
+        "10": 0.004916522916666666,
+        "100": 0.0014087279166666664
+      }
+    },
+    "pageindex": {
+      "indexCny": 0.058618,
+      "perQueryCny": 0.02829330125,
+      "totalPerQueryAt": {
+        "1": 0.08691130125,
+        "10": 0.03415510125,
+        "100": 0.02887948125
+      }
+    }
+  },
+  "costByStage": {
+    "preflight": {
+      "requests": 152,
+      "cnyByUsageAtPublishedRate": 0.7160031399999995,
+      "unknownReservedCny": 0,
+      "truncated": 0
+    },
+    "index": {
+      "requests": 91,
+      "cnyByUsageAtPublishedRate": 0.09759350000000004,
+      "unknownReservedCny": 0,
+      "truncated": 0
+    },
+    "main": {
+      "requests": 2319,
+      "cnyByUsageAtPublishedRate": 6.859769839999989,
+      "unknownReservedCny": 0,
+      "truncated": 0
+    },
+    "multi": {
+      "requests": 384,
+      "cnyByUsageAtPublishedRate": 1.3440219200000003,
+      "unknownReservedCny": 0,
+      "truncated": 0
+    },
+    "cloud": {
+      "requests": 97,
+      "cnyByUsageAtPublishedRate": 0.37603319999999996,
+      "unknownReservedCny": 0,
+      "truncated": 33
+    }
+  },
+  "costBasis": "usage x verified peak list price (DeepSeek peak; DashScope Beijing); unknown reservations listed separately; no provider bill was read",
+  "statistics": "question is the unit: repeats averaged within a question; failures count as not fully correct; percentile bootstrap 2000x seed 7 over questions; paired differences only on questions both methods attempted; latency from successful responses only",
+  "limitations": [
+    "questions were generated from and checked against pinned public excerpts by the assistant, not independently human-annotated; 12 multi-hop questions are exploratory",
+    "the judge is the same deepseek-flash model as the answerer",
+    "evidence coverage is exact inclusion of the gold chunk in the evidence sent; it does not prove the answer used it",
+    "PageIndex latency includes Python SDK start-up per question",
+    "deepseek-flash results are not pooled with historical deepseek-chat results",
+    "results hold for this corpus, question types, model and hardware only"
+  ]
+}

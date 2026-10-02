@@ -1,0 +1,127 @@
+{
+  "date": "2026-09-28T10:24:02.671Z",
+  "model": "deepseek-chat",
+  "corpus": "CS-Notes M tier (200k chars)",
+  "noise": "simulated by the model (see NOISE_PROMPT), not real ASR",
+  "retrieval": [
+    {
+      "method": "bm25",
+      "variant": "clean",
+      "n": 48,
+      "sec3": 64.6,
+      "sec3CI95": [
+        50,
+        77.1
+      ]
+    },
+    {
+      "method": "bm25",
+      "variant": "asr",
+      "n": 48,
+      "sec3": 52.1,
+      "sec3CI95": [
+        37.5,
+        66.7
+      ]
+    },
+    {
+      "method": "hybrid-bge",
+      "variant": "clean",
+      "n": 48,
+      "sec3": 87.5,
+      "sec3CI95": [
+        77.1,
+        95.8
+      ]
+    },
+    {
+      "method": "hybrid-bge",
+      "variant": "asr",
+      "n": 48,
+      "sec3": 79.2,
+      "sec3CI95": [
+        66.7,
+        89.6
+      ]
+    },
+    {
+      "method": "dense-dashscope",
+      "variant": "clean",
+      "n": 48,
+      "sec3": 93.8,
+      "sec3CI95": [
+        85.4,
+        100
+      ]
+    },
+    {
+      "method": "dense-dashscope",
+      "variant": "asr",
+      "n": 48,
+      "sec3": 85.4,
+      "sec3CI95": [
+        75,
+        93.8
+      ]
+    },
+    {
+      "method": "hybrid-dashscope",
+      "variant": "clean",
+      "n": 48,
+      "sec3": 95.8,
+      "sec3CI95": [
+        89.6,
+        100
+      ]
+    },
+    {
+      "method": "hybrid-dashscope",
+      "variant": "asr",
+      "n": 48,
+      "sec3": 85.4,
+      "sec3CI95": [
+        75,
+        93.8
+      ]
+    }
+  ],
+  "e2e": [
+    {
+      "method": "bm25",
+      "variant": "asr",
+      "n": 48,
+      "fullCorrect": 37.5,
+      "fullCorrectCI95": [
+        25,
+        52.1
+      ],
+      "wrongOrEmpty": 45.8
+    },
+    {
+      "method": "dense-dashscope",
+      "variant": "asr",
+      "n": 48,
+      "fullCorrect": 60.4,
+      "fullCorrectCI95": [
+        45.8,
+        72.9
+      ],
+      "wrongOrEmpty": 14.6
+    },
+    {
+      "method": "hybrid-dashscope",
+      "variant": "asr",
+      "n": 48,
+      "fullCorrect": 52.1,
+      "fullCorrectCI95": [
+        37.5,
+        66.7
+      ],
+      "wrongOrEmpty": 16.7
+    }
+  ],
+  "spend": {
+    "calls": 336,
+    "cny": 0.21
+  }
+}

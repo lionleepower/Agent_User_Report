@@ -1,0 +1,11 @@
+config,goldHit,fullCorrect,wrongOrEmpty,contextCharsP50,buildMs
+langchain-bm25-default,27.1,18.8,72.9,3408,16
+llamaindex-bm25-default,27.1,18.8,72.9,1721,111
+ours-bm25,64.6,45.8,35.4,642,53
+ours-hybrid-bge,79.2,60.4,16.7,924,
+langchain-bm25-jieba,81.3,60.4,18.8,2857,800
+langchain-dense-fixed,91.7,66.7,10.4,2832,158441
+ours-dense-dashscope,85.4,68.8,10.4,878,
+llamaindex-dense-default,89.6,70.8,12.5,3035,88279
+llamaindex-dense-tuned,95.8,77.1,8.3,1967,113800
+llamaindex-query-engine,,77.1,6.3,,166471

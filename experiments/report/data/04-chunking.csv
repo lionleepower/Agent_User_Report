@@ -1,0 +1,16 @@
+retriever,target,goldTop3
+bm25,200,56.3
+bm25,400,64.6
+bm25,800,68.8
+bm25,1200,66.7
+bm25,fixed-400,62.5
+bge-small-zh,200,66.7
+bge-small-zh,400,77.1
+bge-small-zh,800,77.1
+bge-small-zh,1200,79.2
+bge-small-zh,fixed-400,64.6
+dashscope-v4,200,66.7
+dashscope-v4,400,85.4
+dashscope-v4,800,91.7
+dashscope-v4,1200,95.8
+dashscope-v4,fixed-400,79.2

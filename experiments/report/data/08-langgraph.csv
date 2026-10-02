@@ -1,0 +1,3 @@
+variant,fullCorrect,llmCallsMean,rewroteShare,firstAnswerMsP50,totalMsP50,cnyPerQuestion
+clean,72.9,2.98,2.1,885,5136,0.01237
+asr,64.6,3,4.2,1034,5564,0.01147

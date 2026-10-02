@@ -1,0 +1,14 @@
+task,method,successful,totalMsP50,totalMsP95,firstAnswerMsP50,meanModelRequestsPerQuery,meanInputTokens,meanCachedTokens
+clean,whole,96,1076,1464,788,1,88351,88192
+noise,whole,96,1033,1418,747,1,88361,88192
+multi,whole,24,1227,1572,862,1,88368,88192
+clean,bm25,96,710,931,493,1,543,365
+noise,bm25,96,680,1054,477,1,403,207
+multi,bm25,24,709,1044,528,1,535,299
+clean,dense,96,1143,1785,879,2,804,404
+noise,dense,96,1181,1734,931,2,766,412
+multi,dense,24,1249,1770,892,2,914,501
+clean,pageindex,96,6350,7577,6089,4.062,31457,19725
+noise,pageindex,96,6707,8718,6422,4.094,32562,18841
+multi,pageindex,24,6593,8019,6239,4.125,34467,24394
+multi,native,23,8184,9265,,2.917,30078,19701

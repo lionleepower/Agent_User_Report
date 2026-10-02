@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title>Embedding space: similar meanings sit close together</title>
+  <rect width="720" height="400" fill="#ffffff"/>
+  <text x="24" y="34" font-size="18" font-weight="bold" fill="#1f2328">Embedding space: similar meanings get nearby coordinates</text>
+  <text x="24" y="58" font-size="12" fill="#57606a">Real embeddings have 512–1024 dimensions; squashed to 2 here. Closeness is usually cosine similarity.</text>
+  <line x1="60" y1="360" x2="690" y2="360" stroke="#8c959f" stroke-width="1.5"/>
+  <line x1="60" y1="360" x2="60" y2="80" stroke="#8c959f" stroke-width="1.5"/>
+  <text x="560" y="382" font-size="11" fill="#8c959f">dimension 1 (illustrative)</text>
+  <text x="66" y="92" font-size="11" fill="#8c959f">dimension 2 (illustrative)</text>
+  <ellipse cx="230" cy="175" rx="150" ry="70" fill="#0072B2" fill-opacity="0.08" stroke="#0072B2" stroke-dasharray="4 3"/>
+  <text x="104" y="118" font-size="12" fill="#0072B2">network protocols</text>
+  <circle cx="190" cy="165" r="7" fill="#0072B2"/>
+  <text x="202" y="160" font-size="13" fill="#1f2328">"TCP three-way handshake"</text>
+  <circle cx="250" cy="200" r="7" fill="#0072B2"/>
+  <text x="262" y="205" font-size="13" fill="#1f2328">"how a connection is set up"</text>
+  <circle cx="160" cy="215" r="7" fill="#D55E00"/>
+  <text x="44" y="245" font-size="13" fill="#D55E00">"tee-see-pee handshake" (ASR typo)</text>
+  <ellipse cx="530" cy="270" rx="140" ry="60" fill="#009E73" fill-opacity="0.08" stroke="#009E73" stroke-dasharray="4 3"/>
+  <text x="545" y="222" font-size="12" fill="#009E73">garbage collection</text>
+  <circle cx="470" cy="265" r="7" fill="#009E73"/>
+  <text x="482" y="260" font-size="13" fill="#1f2328">"when does Full GC run"</text>
+  <circle cx="500" cy="300" r="7" fill="#009E73"/>
+  <text x="512" y="305" font-size="13" fill="#1f2328">"PermGen is full"</text>
+  <line x1="190" y1="165" x2="160" y2="215" stroke="#D55E00" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="420" y="112" font-size="12" fill="#57606a">Keyword search (BM25) only sees words:</text>
+  <text x="420" y="130" font-size="12" fill="#57606a">"tee-see-pee" shares nothing with "TCP".</text>
+  <text x="420" y="154" font-size="12" fill="#57606a">Dense search looks at position: the typo</text>
+  <text x="420" y="172" font-size="12" fill="#57606a">still lands near "network protocols",</text>
+  <text x="420" y="190" font-size="12" fill="#57606a">so it can still be found.</text>
+</svg>

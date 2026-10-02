@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 330" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <title>量化示意：用更少的位数存模型权重</title>
+  <rect width="720" height="330" fill="#ffffff"/>
+  <text x="24" y="34" font-size="18" font-weight="bold" fill="#1f2328">量化：用更少的位数存同一个模型</text>
+  <text x="24" y="58" font-size="12" fill="#57606a">条的长度 = 每个权重占的位数（按平均每权重位数等比例绘制；实际文件还含少量元数据）</text>
+  <text x="24" y="100" font-size="13" fill="#1f2328">f16</text>
+  <rect x="120" y="84" width="480" height="24" rx="3" fill="#0072B2"/>
+  <text x="610" y="101" font-size="12" fill="#57606a">16 位，基准</text>
+  <text x="24" y="140" font-size="13" fill="#1f2328">Q8_0 / q8</text>
+  <rect x="120" y="124" width="255" height="24" rx="3" fill="#009E73"/>
+  <text x="385" y="141" font-size="12" fill="#57606a">约 8.5 位：体积约减半，质量几乎不变</text>
+  <text x="24" y="180" font-size="13" fill="#1f2328">Q6_K</text>
+  <rect x="120" y="164" width="198" height="24" rx="3" fill="#E69F00"/>
+  <text x="328" y="181" font-size="12" fill="#57606a">约 6.6 位</text>
+  <text x="24" y="220" font-size="13" fill="#1f2328">Q4_K_M</text>
+  <rect x="120" y="204" width="144" height="24" rx="3" fill="#D55E00"/>
+  <text x="274" y="221" font-size="12" fill="#57606a">约 4.8 位：8 GB 显卡跑 8B 模型的常用选择</text>
+  <line x1="24" y1="248" x2="696" y2="248" stroke="#d0d7de"/>
+  <text x="24" y="274" font-size="12" fill="#1f2328">• 报告第 6 节：Qwen3-8B 用 Q4_K_M 本地跑，和云端同模型答对率一致（60.4% vs 60.4%）。</text>
+  <text x="24" y="296" font-size="12" fill="#1f2328">• 量化既能用在模型权重上（GGUF 文件名里的 Q4_K_M、Q8_0），也能用在 KV cache 上（q8_0 KV）。</text>
+  <text x="24" y="318" font-size="12" fill="#1f2328">• “K” 系列是 llama.cpp 的分块量化方法，“_M”表示中等配置；位数越低越省显存，但质量风险越大。</text>
+</svg>

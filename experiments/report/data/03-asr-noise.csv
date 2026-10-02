@@ -1,0 +1,5 @@
+method,clean,asr
+bm25,64.6,52.1
+hybrid-bge,87.5,79.2
+dense-dashscope,93.8,85.4
+hybrid-dashscope,95.8,85.4

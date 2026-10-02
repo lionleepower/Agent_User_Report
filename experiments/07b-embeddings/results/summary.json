@@ -1,0 +1,164 @@
+{
+  "date": "2026-09-28T12:42:14.959Z",
+  "corpus": "CS-Notes M tier: 637 passages",
+  "questions": 48,
+  "retrieval": "top 5, at most 3 per document",
+  "qwenIndexMs": 25023,
+  "qwenRuntime": "llama.cpp b11222 CUDA, RTX 4060 Laptop, --pooling last, Q8_0",
+  "rows": [
+    {
+      "method": "bm25",
+      "variant": "clean",
+      "n": 48,
+      "goldTop5": 81.3,
+      "goldTop5CI95": [
+        68.8,
+        91.7
+      ],
+      "queryMsP50": 0.1
+    },
+    {
+      "method": "bm25",
+      "variant": "asr",
+      "n": 48,
+      "goldTop5": 75,
+      "goldTop5CI95": [
+        62.5,
+        85.4
+      ],
+      "queryMsP50": 0.1
+    },
+    {
+      "method": "bge-small-zh",
+      "variant": "clean",
+      "n": 48,
+      "goldTop5": 83.3,
+      "goldTop5CI95": [
+        72.9,
+        93.8
+      ],
+      "queryMsP50": 1.2
+    },
+    {
+      "method": "bge-small-zh",
+      "variant": "asr",
+      "n": 48,
+      "goldTop5": 77.1,
+      "goldTop5CI95": [
+        64.6,
+        87.5
+      ],
+      "queryMsP50": 4.2
+    },
+    {
+      "method": "qwen3-embedding-0.6b",
+      "variant": "clean",
+      "n": 48,
+      "goldTop5": 95.8,
+      "goldTop5CI95": [
+        89.6,
+        100
+      ],
+      "queryMsP50": 19.8
+    },
+    {
+      "method": "qwen3-embedding-0.6b",
+      "variant": "asr",
+      "n": 48,
+      "goldTop5": 91.7,
+      "goldTop5CI95": [
+        83.3,
+        97.9
+      ],
+      "queryMsP50": 17.8
+    },
+    {
+      "method": "dashscope-v4",
+      "variant": "clean",
+      "n": 48,
+      "goldTop5": 97.9,
+      "goldTop5CI95": [
+        93.8,
+        100
+      ],
+      "queryMsP50": 2.2
+    },
+    {
+      "method": "dashscope-v4",
+      "variant": "asr",
+      "n": 48,
+      "goldTop5": 91.7,
+      "goldTop5CI95": [
+        83.3,
+        97.9
+      ],
+      "queryMsP50": 5.3
+    },
+    {
+      "method": "bm25+bge-small-zh",
+      "variant": "clean",
+      "n": 48,
+      "goldTop5": 91.7,
+      "goldTop5CI95": [
+        83.3,
+        97.9
+      ],
+      "queryMsP50": 1.2
+    },
+    {
+      "method": "bm25+bge-small-zh",
+      "variant": "asr",
+      "n": 48,
+      "goldTop5": 79.2,
+      "goldTop5CI95": [
+        66.7,
+        89.6
+      ],
+      "queryMsP50": 1.1
+    },
+    {
+      "method": "bm25+qwen3-embedding-0.6b",
+      "variant": "clean",
+      "n": 48,
+      "goldTop5": 95.8,
+      "goldTop5CI95": [
+        89.6,
+        100
+      ],
+      "queryMsP50": 17.4
+    },
+    {
+      "method": "bm25+qwen3-embedding-0.6b",
+      "variant": "asr",
+      "n": 48,
+      "goldTop5": 89.6,
+      "goldTop5CI95": [
+        81.3,
+        97.9
+      ],
+      "queryMsP50": 24.8
+    },
+    {
+      "method": "bm25+dashscope-v4 (1:2)",
+      "variant": "clean",
+      "n": 48,
+      "goldTop5": 95.8,
+      "goldTop5CI95": [
+        89.6,
+        100
+      ],
+      "queryMsP50": 5.4
+    },
+    {
+      "method": "bm25+dashscope-v4 (1:2)",
+      "variant": "asr",
+      "n": 48,
+      "goldTop5": 89.6,
+      "goldTop5CI95": [
+        81.3,
+        97.9
+      ],
+      "queryMsP50": 2.4
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title>GPU memory hierarchy: closer to compute means faster and smaller</title>
+  <rect width="780" height="470" fill="#ffffff"/>
+  <text x="24" y="34" font-size="18" font-weight="bold" fill="#1f2328">GPU memory hierarchy: closer to compute = faster and smaller</text>
+  <text x="24" y="56" font-size="12" fill="#57606a">Capacities for the report's RTX 4060 Laptop (Ada, AD107, 24 SMs), approximate; speeds as orders of magnitude</text>
+  <rect x="24" y="72" width="440" height="250" rx="8" fill="#f6f8fa" stroke="#8c959f" stroke-dasharray="5 3"/>
+  <text x="36" y="92" font-size="12" fill="#57606a">on-chip</text>
+  <rect x="44" y="102" width="400" height="44" rx="5" fill="#D55E00"/>
+  <text x="58" y="122" font-size="14" font-weight="bold" fill="#ffffff">Registers</text>
+  <text x="58" y="139" font-size="11" fill="#ffffff">private per thread; ~256 KB per SM, ~6 MB total; fastest (~1 clock cycle)</text>
+  <rect x="44" y="154" width="400" height="44" rx="5" fill="#E69F00"/>
+  <text x="58" y="174" font-size="14" font-weight="bold" fill="#1f2328">L1 cache / shared memory</text>
+  <text x="58" y="191" font-size="11" fill="#1f2328">~128 KB per SM (~3 MB total), shared by threads in an SM; tens of cycles</text>
+  <rect x="44" y="206" width="400" height="44" rx="5" fill="#009E73"/>
+  <text x="58" y="226" font-size="14" font-weight="bold" fill="#ffffff">L2 cache</text>
+  <text x="58" y="243" font-size="11" fill="#ffffff">shared by the whole card; ~32 MB; one to two hundred cycles</text>
+  <text x="44" y="276" font-size="11" fill="#57606a">Each SM (streaming multiprocessor) also holds CUDA cores and Tensor Cores;</text>
+  <text x="44" y="294" font-size="11" fill="#57606a">registers and shared memory are the only fast storage programmers control.</text>
+  <rect x="24" y="336" width="440" height="72" rx="8" fill="#0072B2"/>
+  <text x="36" y="360" font-size="14" font-weight="bold" fill="#ffffff">Global memory = VRAM</text>
+  <text x="36" y="379" font-size="11" fill="#ffffff">here 8 GB GDDR6, ~256 GB/s; data-center cards use HBM (~3 TB/s order)</text>
+  <text x="36" y="397" font-size="11" fill="#ffffff">model weights and the KV cache live here; hundreds of cycles</text>
+  <rect x="24" y="420" width="440" height="36" rx="6" fill="#57606a"/>
+  <text x="36" y="443" font-size="12" fill="#ffffff">System RAM (16 GB) ← PCIe 4.0 ×8, ~16 GB/s → graphics card</text>
+  <line x1="484" y1="100" x2="484" y2="450" stroke="#1f2328" stroke-width="1.5"/>
+  <polygon points="478,112 484,96 490,112" fill="#1f2328"/>
+  <polygon points="478,438 484,454 490,438" fill="#1f2328"/>
+  <text x="494" y="112" font-size="12" fill="#1f2328">faster, smaller</text>
+  <text x="494" y="450" font-size="12" fill="#1f2328">bigger, slower</text>
+  <rect x="520" y="150" width="240" height="180" rx="8" fill="#fff8f0" stroke="#D55E00"/>
+  <text x="532" y="172" font-size="13" font-weight="bold" fill="#D55E00">The misleading "local memory"</text>
+  <text x="532" y="194" font-size="11" fill="#1f2328">Despite the name, it is not on-chip:</text>
+  <text x="532" y="212" font-size="11" fill="#1f2328">when a thread runs out of registers,</text>
+  <text x="532" y="230" font-size="11" fill="#1f2328">extra variables "spill" into a</text>
+  <text x="532" y="248" font-size="11" fill="#1f2328">thread-private area of global memory,</text>
+  <text x="532" y="266" font-size="11" fill="#1f2328">helped only by the L1 / L2 caches.</text>
+  <text x="532" y="292" font-size="11" fill="#1f2328">So local memory is as slow as VRAM;</text>
+  <text x="532" y="310" font-size="11" fill="#1f2328">fast kernels avoid spilling.</text>
+</svg>

@@ -1,0 +1,9 @@
+shape,concurrency,variant,planned,ok,inputTokens,cachedTokens,cachedShare,firstAnswerMsP50,firstAnswerMsP95
+retrieval,1,stable,8,8,3816,1792,0.4696,363,718
+retrieval,1,varying,8,8,3816,0,0.0,378,1099
+retrieval,4,varying,8,8,3816,0,0.0,646,896
+retrieval,4,stable,8,8,3816,2048,0.5367,440,698
+whole,1,stable,8,8,74800,64512,0.8625,673,984
+whole,1,varying,8,8,74800,0,0.0,593,719
+whole,4,varying,8,8,74800,0,0.0,522,772
+whole,4,stable,8,8,74800,73728,0.9857,551,773

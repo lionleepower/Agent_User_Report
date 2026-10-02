@@ -1,0 +1,16 @@
+{
+  "runId": "embeddings-2026-09-30T13-18-58-306Z",
+  "status": "complete",
+  "model": "text-embedding-v4",
+  "source": "b70121d377cb6005eb65f12b098cd5decd905669",
+  "chunks": 637,
+  "indexMs": 23543.8592,
+  "usage": {
+    "requests": 64,
+    "cnyByUsageAtPublishedRate": 0.038975499999999996,
+    "unknownReservedCny": 0,
+    "inputTokens": 77951,
+    "cachedTokens": 0,
+    "outputTokens": 0
+  }
+}

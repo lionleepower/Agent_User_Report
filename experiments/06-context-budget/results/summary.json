@@ -1,0 +1,129 @@
+{
+  "date": "2026-09-28T11:32:32.747Z",
+  "model": "deepseek-chat",
+  "corpus": "CS-Notes M tier (200k chars)",
+  "questions": 48,
+  "rows": [
+    {
+      "method": "bm25",
+      "k": 3,
+      "perDoc": 2,
+      "contextCharsP50": 640,
+      "fullCorrect": 43.8,
+      "fullCorrectCI95": [
+        29.2,
+        58.3
+      ],
+      "wrongOrEmpty": 35.4,
+      "ttftP50": 649
+    },
+    {
+      "method": "bm25",
+      "k": 5,
+      "perDoc": 3,
+      "contextCharsP50": 813,
+      "fullCorrect": 56.3,
+      "fullCorrectCI95": [
+        41.7,
+        70.8
+      ],
+      "wrongOrEmpty": 29.2,
+      "ttftP50": 630
+    },
+    {
+      "method": "bm25",
+      "k": 8,
+      "perDoc": 3,
+      "contextCharsP50": 813,
+      "fullCorrect": 54.2,
+      "fullCorrectCI95": [
+        39.6,
+        68.8
+      ],
+      "wrongOrEmpty": 29.2,
+      "ttftP50": 640
+    },
+    {
+      "method": "hybrid-bge",
+      "k": 3,
+      "perDoc": 2,
+      "contextCharsP50": 921,
+      "fullCorrect": 58.3,
+      "fullCorrectCI95": [
+        43.8,
+        70.8
+      ],
+      "wrongOrEmpty": 18.8,
+      "ttftP50": 580
+    },
+    {
+      "method": "hybrid-bge",
+      "k": 5,
+      "perDoc": 3,
+      "contextCharsP50": 1558,
+      "fullCorrect": 64.6,
+      "fullCorrectCI95": [
+        52.1,
+        77.1
+      ],
+      "wrongOrEmpty": 12.5,
+      "ttftP50": 634
+    },
+    {
+      "method": "hybrid-bge",
+      "k": 8,
+      "perDoc": 3,
+      "contextCharsP50": 2498,
+      "fullCorrect": 68.8,
+      "fullCorrectCI95": [
+        56.3,
+        81.3
+      ],
+      "wrongOrEmpty": 12.5,
+      "ttftP50": 744
+    },
+    {
+      "method": "dense-dashscope",
+      "k": 3,
+      "perDoc": 2,
+      "contextCharsP50": 875,
+      "fullCorrect": 64.6,
+      "fullCorrectCI95": [
+        50,
+        79.2
+      ],
+      "wrongOrEmpty": 8.3,
+      "ttftP50": 596
+    },
+    {
+      "method": "dense-dashscope",
+      "k": 5,
+      "perDoc": 3,
+      "contextCharsP50": 1390,
+      "fullCorrect": 72.9,
+      "fullCorrectCI95": [
+        60.4,
+        85.4
+      ],
+      "wrongOrEmpty": 6.3,
+      "ttftP50": 615
+    },
+    {
+      "method": "dense-dashscope",
+      "k": 8,
+      "perDoc": 3,
+      "contextCharsP50": 2237,
+      "fullCorrect": 70.8,
+      "fullCorrectCI95": [
+        58.3,
+        83.3
+      ],
+      "wrongOrEmpty": 4.2,
+      "ttftP50": 655
+    }
+  ],
+  "spend": {
+    "calls": 864,
+    "cny": 0.609
+  }
+}

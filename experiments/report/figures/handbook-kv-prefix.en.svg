@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title>KV cache and prefix reuse</title>
+  <rect width="760" height="360" fill="#ffffff"/>
+  <text x="24" y="34" font-size="18" font-weight="bold" fill="#1f2328">KV cache and prefix reuse: an identical start isn't computed twice</text>
+  <text x="24" y="58" font-size="12" fill="#57606a">Each block is a run of tokens. The model computes and stores a Key / Value for every token it reads: that store is the KV cache.</text>
+  <text x="24" y="100" font-size="13" font-weight="bold" fill="#1f2328">Request 1</text>
+  <rect x="110" y="82" width="300" height="30" rx="4" fill="#0072B2"/>
+  <text x="260" y="102" font-size="12" fill="#ffffff" text-anchor="middle">system prompt + material (stable prefix)</text>
+  <rect x="414" y="82" width="110" height="30" rx="4" fill="#E69F00"/>
+  <text x="469" y="102" font-size="12" fill="#1f2328" text-anchor="middle">question A</text>
+  <text x="538" y="102" font-size="12" fill="#57606a">everything computed (prefill)</text>
+  <text x="24" y="160" font-size="13" font-weight="bold" fill="#1f2328">Request 2</text>
+  <rect x="110" y="142" width="300" height="30" rx="4" fill="#0072B2" fill-opacity="0.25" stroke="#0072B2"/>
+  <text x="260" y="162" font-size="12" fill="#0072B2" text-anchor="middle">same stable prefix → cache hit</text>
+  <rect x="414" y="142" width="110" height="30" rx="4" fill="#E69F00"/>
+  <text x="469" y="162" font-size="12" fill="#1f2328" text-anchor="middle">question B</text>
+  <text x="538" y="162" font-size="12" fill="#57606a">only the new question → faster</text>
+  <text x="24" y="220" font-size="13" font-weight="bold" fill="#1f2328">Request 3</text>
+  <rect x="110" y="202" width="40" height="30" rx="4" fill="#D55E00"/>
+  <text x="130" y="222" font-size="10" fill="#ffffff" text-anchor="middle">diff</text>
+  <rect x="154" y="202" width="256" height="30" rx="4" fill="#0072B2"/>
+  <text x="282" y="222" font-size="12" fill="#ffffff" text-anchor="middle">rest identical, but…</text>
+  <rect x="414" y="202" width="110" height="30" rx="4" fill="#E69F00"/>
+  <text x="469" y="222" font-size="12" fill="#1f2328" text-anchor="middle">question C</text>
+  <text x="538" y="222" font-size="12" fill="#D55E00">start changed → recompute all</text>
+  <line x1="24" y1="256" x2="736" y2="256" stroke="#d0d7de"/>
+  <text x="24" y="282" font-size="12" fill="#1f2328">• Local (llama.cpp): the KV cache sits in VRAM; quantizing it from f16 to q8_0 nearly halves the startup allocation (46.875%, report 9.1).</text>
+  <text x="24" y="304" font-size="12" fill="#1f2328">• Cloud (DeepSeek): the provider discounts cached tokens. It's a billing concept; you can't see its VRAM (report 9.2).</text>
+  <text x="24" y="326" font-size="12" fill="#1f2328">• So put stable content first and what changes every time (the question, live transcript) last.</text>
+</svg>

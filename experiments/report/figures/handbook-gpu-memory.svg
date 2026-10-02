@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <title>GPU 存储层级：越靠近计算单元越快越小</title>
+  <rect width="780" height="470" fill="#ffffff"/>
+  <text x="24" y="34" font-size="18" font-weight="bold" fill="#1f2328">GPU 存储层级：越靠近计算单元，越快、越小</text>
+  <text x="24" y="56" font-size="12" fill="#57606a">容量以本报告的 RTX 4060 Laptop（Ada 架构 AD107，24 个 SM）为例，均为约数；速度只标量级</text>
+  <rect x="24" y="72" width="440" height="250" rx="8" fill="#f6f8fa" stroke="#8c959f" stroke-dasharray="5 3"/>
+  <text x="36" y="92" font-size="12" fill="#57606a">芯片内（on-chip）</text>
+  <rect x="44" y="102" width="400" height="44" rx="5" fill="#D55E00"/>
+  <text x="58" y="122" font-size="14" font-weight="bold" fill="#ffffff">寄存器 Register</text>
+  <text x="58" y="139" font-size="11" fill="#ffffff">每个线程私有；每 SM 约 256 KB，全卡约 6 MB；最快（约 1 个时钟周期）</text>
+  <rect x="44" y="154" width="400" height="44" rx="5" fill="#E69F00"/>
+  <text x="58" y="174" font-size="14" font-weight="bold" fill="#1f2328">L1 缓存 / 共享内存 Shared memory</text>
+  <text x="58" y="191" font-size="11" fill="#1f2328">每 SM 约 128 KB（全卡约 3 MB），SM 内线程共用；几十个周期</text>
+  <rect x="44" y="206" width="400" height="44" rx="5" fill="#009E73"/>
+  <text x="58" y="226" font-size="14" font-weight="bold" fill="#ffffff">L2 缓存</text>
+  <text x="58" y="243" font-size="11" fill="#ffffff">全卡共享；约 32 MB；约一两百个周期</text>
+  <text x="44" y="276" font-size="11" fill="#57606a">SM（流式多处理器）里还有 CUDA core、Tensor Core 负责计算；</text>
+  <text x="44" y="294" font-size="11" fill="#57606a">程序员能直接安排的快速存储只有寄存器和共享内存。</text>
+  <rect x="24" y="336" width="440" height="72" rx="8" fill="#0072B2"/>
+  <text x="36" y="360" font-size="14" font-weight="bold" fill="#ffffff">全局内存 Global memory ＝ 显存 VRAM</text>
+  <text x="36" y="379" font-size="11" fill="#ffffff">本机 8 GB GDDR6，约 256 GB/s；数据中心卡用 HBM（约 3 TB/s 量级）</text>
+  <text x="36" y="397" font-size="11" fill="#ffffff">模型权重、KV cache 都放在这里；几百个周期</text>
+  <rect x="24" y="420" width="440" height="36" rx="6" fill="#57606a"/>
+  <text x="36" y="443" font-size="12" fill="#ffffff">系统内存 RAM（16 GB）← PCIe 4.0 ×8，约 16 GB/s → 显卡</text>
+  <line x1="484" y1="100" x2="484" y2="450" stroke="#1f2328" stroke-width="1.5"/>
+  <polygon points="478,112 484,96 490,112" fill="#1f2328"/>
+  <polygon points="478,438 484,454 490,438" fill="#1f2328"/>
+  <text x="494" y="112" font-size="12" fill="#1f2328">更快、更小</text>
+  <text x="494" y="450" font-size="12" fill="#1f2328">更大、更慢</text>
+  <rect x="520" y="150" width="236" height="180" rx="8" fill="#fff8f0" stroke="#D55E00"/>
+  <text x="532" y="172" font-size="13" font-weight="bold" fill="#D55E00">容易误会的“local memory”</text>
+  <text x="532" y="194" font-size="11" fill="#1f2328">名字叫 local（本地），但它不在芯片上：</text>
+  <text x="532" y="212" font-size="11" fill="#1f2328">当一个线程的寄存器不够用时，</text>
+  <text x="532" y="230" font-size="11" fill="#1f2328">多出来的变量会“溢出”（spill）到</text>
+  <text x="532" y="248" font-size="11" fill="#1f2328">全局内存里一块线程私有的区域，</text>
+  <text x="532" y="266" font-size="11" fill="#1f2328">只经过 L1 / L2 缓存加速。</text>
+  <text x="532" y="292" font-size="11" fill="#1f2328">所以 local memory 慢得和显存一样，</text>
+  <text x="532" y="310" font-size="11" fill="#1f2328">写高性能 kernel 时要尽量避免溢出。</text>
+</svg>

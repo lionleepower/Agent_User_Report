@@ -1,0 +1,15 @@
+method,variant,goldTop5
+bm25,clean,81.3
+bge-small-zh,clean,83.3
+qwen3-embedding-0.6b,clean,95.8
+dashscope-v4,clean,97.9
+bm25+bge-small-zh,clean,91.7
+bm25+qwen3-embedding-0.6b,clean,95.8
+bm25+dashscope-v4 (1:2),clean,95.8
+bm25,asr,75
+bge-small-zh,asr,77.1
+qwen3-embedding-0.6b,asr,91.7
+dashscope-v4,asr,91.7
+bm25+bge-small-zh,asr,79.2
+bm25+qwen3-embedding-0.6b,asr,89.6
+bm25+dashscope-v4 (1:2),asr,89.6

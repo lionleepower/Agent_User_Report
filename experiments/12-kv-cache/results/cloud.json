@@ -1,0 +1,716 @@
+{
+  "runId": "cloud-2026-09-30T14-16-25-123Z",
+  "date": "2026-09-30T14:17:14.505Z",
+  "status": "complete",
+  "model": "deepseek-flash",
+  "markerTokens": 11,
+  "rows": [
+    {
+      "shape": "retrieval",
+      "concurrency": 1,
+      "variant": "stable",
+      "planned": 8,
+      "actual": 8,
+      "errors": 0,
+      "firstAnswerMsP50": 363,
+      "firstAnswerMsP95": 718,
+      "inputTokens": 3816,
+      "cachedTokens": 1792,
+      "outputTokens": 392,
+      "records": [
+        {
+          "i": 0,
+          "status": "ok",
+          "firstAnswerMs": 718,
+          "totalMs": 864,
+          "promptTokens": 477,
+          "cachedTokens": 0,
+          "completionTokens": 49
+        },
+        {
+          "i": 1,
+          "status": "ok",
+          "firstAnswerMs": 358,
+          "totalMs": 582,
+          "promptTokens": 477,
+          "cachedTokens": 256,
+          "completionTokens": 49
+        },
+        {
+          "i": 2,
+          "status": "ok",
+          "firstAnswerMs": 363,
+          "totalMs": 573,
+          "promptTokens": 477,
+          "cachedTokens": 256,
+          "completionTokens": 49
+        },
+        {
+          "i": 3,
+          "status": "ok",
+          "firstAnswerMs": 315,
+          "totalMs": 536,
+          "promptTokens": 477,
+          "cachedTokens": 256,
+          "completionTokens": 49
+        },
+        {
+          "i": 4,
+          "status": "ok",
+          "firstAnswerMs": 638,
+          "totalMs": 877,
+          "promptTokens": 477,
+          "cachedTokens": 256,
+          "completionTokens": 49
+        },
+        {
+          "i": 5,
+          "status": "ok",
+          "firstAnswerMs": 249,
+          "totalMs": 487,
+          "promptTokens": 477,
+          "cachedTokens": 256,
+          "completionTokens": 49
+        },
+        {
+          "i": 6,
+          "status": "ok",
+          "firstAnswerMs": 193,
+          "totalMs": 974,
+          "promptTokens": 477,
+          "cachedTokens": 256,
+          "completionTokens": 49
+        },
+        {
+          "i": 7,
+          "status": "ok",
+          "firstAnswerMs": 443,
+          "totalMs": 649,
+          "promptTokens": 477,
+          "cachedTokens": 256,
+          "completionTokens": 49
+        }
+      ]
+    },
+    {
+      "shape": "retrieval",
+      "concurrency": 1,
+      "variant": "varying",
+      "planned": 8,
+      "actual": 8,
+      "errors": 0,
+      "firstAnswerMsP50": 378,
+      "firstAnswerMsP95": 1099,
+      "inputTokens": 3816,
+      "cachedTokens": 0,
+      "outputTokens": 389,
+      "records": [
+        {
+          "i": 0,
+          "status": "ok",
+          "firstAnswerMs": 366,
+          "totalMs": 601,
+          "promptTokens": 477,
+          "cachedTokens": 0,
+          "completionTokens": 48
+        },
+        {
+          "i": 1,
+          "status": "ok",
+          "firstAnswerMs": 342,
+          "totalMs": 562,
+          "promptTokens": 477,
+          "cachedTokens": 0,
+          "completionTokens": 49
+        },
+        {
+          "i": 2,
+          "status": "ok",
+          "firstAnswerMs": 288,
+          "totalMs": 514,
+          "promptTokens": 477,
+          "cachedTokens": 0,
+          "completionTokens": 49
+        },
+        {
+          "i": 3,
+          "status": "ok",
+          "firstAnswerMs": 378,
+          "totalMs": 618,
+          "promptTokens": 477,
+          "cachedTokens": 0,
+          "completionTokens": 49
+        },
+        {
+          "i": 4,
+          "status": "ok",
+          "firstAnswerMs": 459,
+          "totalMs": 684,
+          "promptTokens": 477,
+          "cachedTokens": 0,
+          "completionTokens": 47
+        },
+        {
+          "i": 5,
+          "status": "ok",
+          "firstAnswerMs": 1099,
+          "totalMs": 1321,
+          "promptTokens": 477,
+          "cachedTokens": 0,
+          "completionTokens": 49
+        },
+        {
+          "i": 6,
+          "status": "ok",
+          "firstAnswerMs": 313,
+          "totalMs": 520,
+          "promptTokens": 477,
+          "cachedTokens": 0,
+          "completionTokens": 49
+        },
+        {
+          "i": 7,
+          "status": "ok",
+          "firstAnswerMs": 701,
+          "totalMs": 959,
+          "promptTokens": 477,
+          "cachedTokens": 0,
+          "completionTokens": 49
+        }
+      ]
+    },
+    {
+      "shape": "retrieval",
+      "concurrency": 4,
+      "variant": "varying",
+      "planned": 8,
+      "actual": 8,
+      "errors": 0,
+      "firstAnswerMsP50": 646,
+      "firstAnswerMsP95": 896,
+      "inputTokens": 3816,
+      "cachedTokens": 0,
+      "outputTokens": 390,
+      "records": [
+        {
+          "i": 0,
+          "status": "ok",
+          "firstAnswerMs": 453,
+          "totalMs": 746,
+          "promptTokens": 477,
+          "cachedTokens": 0,
+          "completionTokens": 49
+        },
+        {
+          "i": 2,
+          "status": "ok",
+          "firstAnswerMs": 670,
+          "totalMs": 888,
+          "promptTokens": 477,
+          "cachedTokens": 0,
+          "completionTokens": 49
+        },
+        {
+          "i": 1,
+          "status": "ok",
+          "firstAnswerMs": 646,
+          "totalMs": 916,
+          "promptTokens": 477,
+          "cachedTokens": 0,
+          "completionTokens": 49
+        },
+        {
+          "i": 3,
+          "status": "ok",
+          "firstAnswerMs": 866,
+          "totalMs": 1099,
+          "promptTokens": 477,
+          "cachedTokens": 0,
+          "completionTokens": 49
+        },
+        {
+          "i": 4,
+          "status": "ok",
+          "firstAnswerMs": 406,
+          "totalMs": 645,
+          "promptTokens": 477,
+          "cachedTokens": 0,
+          "completionTokens": 49
+        },
+        {
+          "i": 6,
+          "status": "ok",
+          "firstAnswerMs": 360,
+          "totalMs": 593,
+          "promptTokens": 477,
+          "cachedTokens": 0,
+          "completionTokens": 47
+        },
+        {
+          "i": 7,
+          "status": "ok",
+          "firstAnswerMs": 257,
+          "totalMs": 490,
+          "promptTokens": 477,
+          "cachedTokens": 0,
+          "completionTokens": 49
+        },
+        {
+          "i": 5,
+          "status": "ok",
+          "firstAnswerMs": 896,
+          "totalMs": 932,
+          "promptTokens": 477,
+          "cachedTokens": 0,
+          "completionTokens": 49
+        }
+      ]
+    },
+    {
+      "shape": "retrieval",
+      "concurrency": 4,
+      "variant": "stable",
+      "planned": 8,
+      "actual": 8,
+      "errors": 0,
+      "firstAnswerMsP50": 440,
+      "firstAnswerMsP95": 698,
+      "inputTokens": 3816,
+      "cachedTokens": 2048,
+      "outputTokens": 392,
+      "records": [
+        {
+          "i": 2,
+          "status": "ok",
+          "firstAnswerMs": 261,
+          "totalMs": 476,
+          "promptTokens": 477,
+          "cachedTokens": 256,
+          "completionTokens": 49
+        },
+        {
+          "i": 1,
+          "status": "ok",
+          "firstAnswerMs": 374,
+          "totalMs": 581,
+          "promptTokens": 477,
+          "cachedTokens": 256,
+          "completionTokens": 49
+        },
+        {
+          "i": 3,
+          "status": "ok",
+          "firstAnswerMs": 563,
+          "totalMs": 802,
+          "promptTokens": 477,
+          "cachedTokens": 256,
+          "completionTokens": 49
+        },
+        {
+          "i": 0,
+          "status": "ok",
+          "firstAnswerMs": 684,
+          "totalMs": 901,
+          "promptTokens": 477,
+          "cachedTokens": 256,
+          "completionTokens": 49
+        },
+        {
+          "i": 4,
+          "status": "ok",
+          "firstAnswerMs": 182,
+          "totalMs": 437,
+          "promptTokens": 477,
+          "cachedTokens": 256,
+          "completionTokens": 49
+        },
+        {
+          "i": 5,
+          "status": "ok",
+          "firstAnswerMs": 440,
+          "totalMs": 644,
+          "promptTokens": 477,
+          "cachedTokens": 256,
+          "completionTokens": 49
+        },
+        {
+          "i": 6,
+          "status": "ok",
+          "firstAnswerMs": 429,
+          "totalMs": 624,
+          "promptTokens": 477,
+          "cachedTokens": 256,
+          "completionTokens": 49
+        },
+        {
+          "i": 7,
+          "status": "ok",
+          "firstAnswerMs": 698,
+          "totalMs": 911,
+          "promptTokens": 477,
+          "cachedTokens": 256,
+          "completionTokens": 49
+        }
+      ]
+    },
+    {
+      "shape": "whole",
+      "concurrency": 1,
+      "variant": "stable",
+      "planned": 8,
+      "actual": 8,
+      "errors": 0,
+      "firstAnswerMsP50": 673,
+      "firstAnswerMsP95": 984,
+      "inputTokens": 74800,
+      "cachedTokens": 64512,
+      "outputTokens": 381,
+      "records": [
+        {
+          "i": 0,
+          "status": "ok",
+          "firstAnswerMs": 542,
+          "totalMs": 767,
+          "promptTokens": 9350,
+          "cachedTokens": 0,
+          "completionTokens": 49
+        },
+        {
+          "i": 1,
+          "status": "ok",
+          "firstAnswerMs": 250,
+          "totalMs": 879,
+          "promptTokens": 9350,
+          "cachedTokens": 9216,
+          "completionTokens": 46
+        },
+        {
+          "i": 2,
+          "status": "ok",
+          "firstAnswerMs": 673,
+          "totalMs": 908,
+          "promptTokens": 9350,
+          "cachedTokens": 9216,
+          "completionTokens": 46
+        },
+        {
+          "i": 3,
+          "status": "ok",
+          "firstAnswerMs": 826,
+          "totalMs": 1064,
+          "promptTokens": 9350,
+          "cachedTokens": 9216,
+          "completionTokens": 46
+        },
+        {
+          "i": 4,
+          "status": "ok",
+          "firstAnswerMs": 658,
+          "totalMs": 917,
+          "promptTokens": 9350,
+          "cachedTokens": 9216,
+          "completionTokens": 45
+        },
+        {
+          "i": 5,
+          "status": "ok",
+          "firstAnswerMs": 683,
+          "totalMs": 901,
+          "promptTokens": 9350,
+          "cachedTokens": 9216,
+          "completionTokens": 46
+        },
+        {
+          "i": 6,
+          "status": "ok",
+          "firstAnswerMs": 984,
+          "totalMs": 1218,
+          "promptTokens": 9350,
+          "cachedTokens": 9216,
+          "completionTokens": 51
+        },
+        {
+          "i": 7,
+          "status": "ok",
+          "firstAnswerMs": 338,
+          "totalMs": 622,
+          "promptTokens": 9350,
+          "cachedTokens": 9216,
+          "completionTokens": 52
+        }
+      ]
+    },
+    {
+      "shape": "whole",
+      "concurrency": 1,
+      "variant": "varying",
+      "planned": 8,
+      "actual": 8,
+      "errors": 0,
+      "firstAnswerMsP50": 593,
+      "firstAnswerMsP95": 719,
+      "inputTokens": 74800,
+      "cachedTokens": 0,
+      "outputTokens": 378,
+      "records": [
+        {
+          "i": 0,
+          "status": "ok",
+          "firstAnswerMs": 659,
+          "totalMs": 1061,
+          "promptTokens": 9350,
+          "cachedTokens": 0,
+          "completionTokens": 46
+        },
+        {
+          "i": 1,
+          "status": "ok",
+          "firstAnswerMs": 334,
+          "totalMs": 566,
+          "promptTokens": 9350,
+          "cachedTokens": 0,
+          "completionTokens": 46
+        },
+        {
+          "i": 2,
+          "status": "ok",
+          "firstAnswerMs": 275,
+          "totalMs": 485,
+          "promptTokens": 9350,
+          "cachedTokens": 0,
+          "completionTokens": 48
+        },
+        {
+          "i": 3,
+          "status": "ok",
+          "firstAnswerMs": 434,
+          "totalMs": 650,
+          "promptTokens": 9350,
+          "cachedTokens": 0,
+          "completionTokens": 47
+        },
+        {
+          "i": 4,
+          "status": "ok",
+          "firstAnswerMs": 593,
+          "totalMs": 844,
+          "promptTokens": 9350,
+          "cachedTokens": 0,
+          "completionTokens": 46
+        },
+        {
+          "i": 5,
+          "status": "ok",
+          "firstAnswerMs": 484,
+          "totalMs": 698,
+          "promptTokens": 9350,
+          "cachedTokens": 0,
+          "completionTokens": 47
+        },
+        {
+          "i": 6,
+          "status": "ok",
+          "firstAnswerMs": 654,
+          "totalMs": 1002,
+          "promptTokens": 9350,
+          "cachedTokens": 0,
+          "completionTokens": 50
+        },
+        {
+          "i": 7,
+          "status": "ok",
+          "firstAnswerMs": 719,
+          "totalMs": 972,
+          "promptTokens": 9350,
+          "cachedTokens": 0,
+          "completionTokens": 48
+        }
+      ]
+    },
+    {
+      "shape": "whole",
+      "concurrency": 4,
+      "variant": "varying",
+      "planned": 8,
+      "actual": 8,
+      "errors": 0,
+      "firstAnswerMsP50": 522,
+      "firstAnswerMsP95": 772,
+      "inputTokens": 74800,
+      "cachedTokens": 0,
+      "outputTokens": 375,
+      "records": [
+        {
+          "i": 1,
+          "status": "ok",
+          "firstAnswerMs": 362,
+          "totalMs": 597,
+          "promptTokens": 9350,
+          "cachedTokens": 0,
+          "completionTokens": 48
+        },
+        {
+          "i": 3,
+          "status": "ok",
+          "firstAnswerMs": 371,
+          "totalMs": 609,
+          "promptTokens": 9350,
+          "cachedTokens": 0,
+          "completionTokens": 45
+        },
+        {
+          "i": 0,
+          "status": "ok",
+          "firstAnswerMs": 637,
+          "totalMs": 867,
+          "promptTokens": 9350,
+          "cachedTokens": 0,
+          "completionTokens": 49
+        },
+        {
+          "i": 2,
+          "status": "ok",
+          "firstAnswerMs": 716,
+          "totalMs": 952,
+          "promptTokens": 9350,
+          "cachedTokens": 0,
+          "completionTokens": 46
+        },
+        {
+          "i": 5,
+          "status": "ok",
+          "firstAnswerMs": 381,
+          "totalMs": 635,
+          "promptTokens": 9350,
+          "cachedTokens": 0,
+          "completionTokens": 48
+        },
+        {
+          "i": 4,
+          "status": "ok",
+          "firstAnswerMs": 389,
+          "totalMs": 686,
+          "promptTokens": 9350,
+          "cachedTokens": 0,
+          "completionTokens": 45
+        },
+        {
+          "i": 6,
+          "status": "ok",
+          "firstAnswerMs": 772,
+          "totalMs": 1045,
+          "promptTokens": 9350,
+          "cachedTokens": 0,
+          "completionTokens": 46
+        },
+        {
+          "i": 7,
+          "status": "ok",
+          "firstAnswerMs": 522,
+          "totalMs": 971,
+          "promptTokens": 9350,
+          "cachedTokens": 0,
+          "completionTokens": 48
+        }
+      ]
+    },
+    {
+      "shape": "whole",
+      "concurrency": 4,
+      "variant": "stable",
+      "planned": 8,
+      "actual": 8,
+      "errors": 0,
+      "firstAnswerMsP50": 551,
+      "firstAnswerMsP95": 773,
+      "inputTokens": 74800,
+      "cachedTokens": 73728,
+      "outputTokens": 377,
+      "records": [
+        {
+          "i": 2,
+          "status": "ok",
+          "firstAnswerMs": 551,
+          "totalMs": 791,
+          "promptTokens": 9350,
+          "cachedTokens": 9216,
+          "completionTokens": 45
+        },
+        {
+          "i": 1,
+          "status": "ok",
+          "firstAnswerMs": 599,
+          "totalMs": 815,
+          "promptTokens": 9350,
+          "cachedTokens": 9216,
+          "completionTokens": 47
+        },
+        {
+          "i": 0,
+          "status": "ok",
+          "firstAnswerMs": 545,
+          "totalMs": 850,
+          "promptTokens": 9350,
+          "cachedTokens": 9216,
+          "completionTokens": 46
+        },
+        {
+          "i": 3,
+          "status": "ok",
+          "firstAnswerMs": 737,
+          "totalMs": 1022,
+          "promptTokens": 9350,
+          "cachedTokens": 9216,
+          "completionTokens": 50
+        },
+        {
+          "i": 5,
+          "status": "ok",
+          "firstAnswerMs": 286,
+          "totalMs": 530,
+          "promptTokens": 9350,
+          "cachedTokens": 9216,
+          "completionTokens": 46
+        },
+        {
+          "i": 6,
+          "status": "ok",
+          "firstAnswerMs": 374,
+          "totalMs": 617,
+          "promptTokens": 9350,
+          "cachedTokens": 9216,
+          "completionTokens": 46
+        },
+        {
+          "i": 7,
+          "status": "ok",
+          "firstAnswerMs": 476,
+          "totalMs": 706,
+          "promptTokens": 9350,
+          "cachedTokens": 9216,
+          "completionTokens": 52
+        },
+        {
+          "i": 4,
+          "status": "ok",
+          "firstAnswerMs": 773,
+          "totalMs": 1047,
+          "promptTokens": 9350,
+          "cachedTokens": 9216,
+          "completionTokens": 45
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "requests": 97,
+    "cnyByUsageAtPublishedRate": 0.37603319999999996,
+    "unknownReservedCny": 0
+  },
+  "costBasis": "usage x verified peak list price; not a provider bill",
+  "limitations": [
+    "first request is not guaranteed uncached",
+    "hit counts expose provider billing cache, not KV memory",
+    "concurrency 4 starts four requests on one prefix at once, so early requests may all miss"
+  ]
+}

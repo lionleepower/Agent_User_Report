@@ -1,0 +1,316 @@
+{
+  "date": "2026-09-28T12:27:51.864Z",
+  "model": "deepseek-chat",
+  "topic": "CS-Notes 设计模式 (27 docs)",
+  "needles": 22,
+  "retrieval": {
+    "k": 5,
+    "perDoc": 3
+  },
+  "rows": [
+    {
+      "docs": 10,
+      "chars": 23425,
+      "method": "full",
+      "n": 22,
+      "fullCorrect": 95.5,
+      "fullCorrectCI95": [
+        86.4,
+        100
+      ],
+      "wrongOrEmpty": 0,
+      "goldRetrieved": null,
+      "ttftP50": 737,
+      "cnyPerAnswer": 0.00281
+    },
+    {
+      "docs": 10,
+      "chars": 23425,
+      "method": "bm25",
+      "n": 22,
+      "fullCorrect": 59.1,
+      "fullCorrectCI95": [
+        36.4,
+        77.3
+      ],
+      "wrongOrEmpty": 36.4,
+      "goldRetrieved": 63.6,
+      "ttftP50": 631,
+      "cnyPerAnswer": 0.00055
+    },
+    {
+      "docs": 10,
+      "chars": 23425,
+      "method": "hybrid",
+      "n": 22,
+      "fullCorrect": 86.4,
+      "fullCorrectCI95": [
+        72.7,
+        100
+      ],
+      "wrongOrEmpty": 4.5,
+      "goldRetrieved": 90.9,
+      "ttftP50": 578,
+      "cnyPerAnswer": 0.00124
+    },
+    {
+      "docs": 10,
+      "chars": 23425,
+      "method": "dense",
+      "n": 22,
+      "fullCorrect": 95.5,
+      "fullCorrectCI95": [
+        86.4,
+        100
+      ],
+      "wrongOrEmpty": 0,
+      "goldRetrieved": 100,
+      "ttftP50": 684,
+      "cnyPerAnswer": 0.00111
+    },
+    {
+      "docs": 18,
+      "chars": 45705,
+      "method": "full",
+      "n": 22,
+      "fullCorrect": 95.5,
+      "fullCorrectCI95": [
+        86.4,
+        100
+      ],
+      "wrongOrEmpty": 0,
+      "goldRetrieved": null,
+      "ttftP50": 948,
+      "cnyPerAnswer": 0.00503
+    },
+    {
+      "docs": 18,
+      "chars": 45705,
+      "method": "bm25",
+      "n": 22,
+      "fullCorrect": 50,
+      "fullCorrectCI95": [
+        27.3,
+        72.7
+      ],
+      "wrongOrEmpty": 40.9,
+      "goldRetrieved": 59.1,
+      "ttftP50": 573,
+      "cnyPerAnswer": 0.00066
+    },
+    {
+      "docs": 18,
+      "chars": 45705,
+      "method": "hybrid",
+      "n": 22,
+      "fullCorrect": 81.8,
+      "fullCorrectCI95": [
+        63.6,
+        95.5
+      ],
+      "wrongOrEmpty": 9.1,
+      "goldRetrieved": 86.4,
+      "ttftP50": 644,
+      "cnyPerAnswer": 0.00111
+    },
+    {
+      "docs": 18,
+      "chars": 45705,
+      "method": "dense",
+      "n": 22,
+      "fullCorrect": 95.5,
+      "fullCorrectCI95": [
+        86.4,
+        100
+      ],
+      "wrongOrEmpty": 0,
+      "goldRetrieved": 100,
+      "ttftP50": 589,
+      "cnyPerAnswer": 0.00102
+    },
+    {
+      "docs": 26,
+      "chars": 69046,
+      "method": "full",
+      "n": 22,
+      "fullCorrect": 95.5,
+      "fullCorrectCI95": [
+        86.4,
+        100
+      ],
+      "wrongOrEmpty": 0,
+      "goldRetrieved": null,
+      "ttftP50": 873,
+      "cnyPerAnswer": 0.00717
+    },
+    {
+      "docs": 26,
+      "chars": 69046,
+      "method": "bm25",
+      "n": 22,
+      "fullCorrect": 50,
+      "fullCorrectCI95": [
+        27.3,
+        72.7
+      ],
+      "wrongOrEmpty": 40.9,
+      "goldRetrieved": 59.1,
+      "ttftP50": 632,
+      "cnyPerAnswer": 0.00056
+    },
+    {
+      "docs": 26,
+      "chars": 69046,
+      "method": "hybrid",
+      "n": 22,
+      "fullCorrect": 81.8,
+      "fullCorrectCI95": [
+        63.6,
+        95.5
+      ],
+      "wrongOrEmpty": 9.1,
+      "goldRetrieved": 86.4,
+      "ttftP50": 628,
+      "cnyPerAnswer": 0.00084
+    },
+    {
+      "docs": 26,
+      "chars": 69046,
+      "method": "dense",
+      "n": 22,
+      "fullCorrect": 95.5,
+      "fullCorrectCI95": [
+        86.4,
+        100
+      ],
+      "wrongOrEmpty": 0,
+      "goldRetrieved": 100,
+      "ttftP50": 598,
+      "cnyPerAnswer": 0.00065
+    },
+    {
+      "docs": 26,
+      "chars": 69046,
+      "method": "full",
+      "n": 22,
+      "fullCorrect": 95.5,
+      "fullCorrectCI95": [
+        86.4,
+        100
+      ],
+      "wrongOrEmpty": 0,
+      "goldRetrieved": null,
+      "ttftP50": 1018,
+      "cnyPerAnswer": 0.00523
+    },
+    {
+      "docs": 26,
+      "chars": 69046,
+      "method": "bm25",
+      "n": 22,
+      "fullCorrect": 50,
+      "fullCorrectCI95": [
+        27.3,
+        72.7
+      ],
+      "wrongOrEmpty": 40.9,
+      "goldRetrieved": 59.1,
+      "ttftP50": 621,
+      "cnyPerAnswer": 0.00048
+    },
+    {
+      "docs": 26,
+      "chars": 69046,
+      "method": "hybrid",
+      "n": 22,
+      "fullCorrect": 81.8,
+      "fullCorrectCI95": [
+        63.6,
+        95.5
+      ],
+      "wrongOrEmpty": 9.1,
+      "goldRetrieved": 86.4,
+      "ttftP50": 647,
+      "cnyPerAnswer": 0.00056
+    },
+    {
+      "docs": 26,
+      "chars": 69046,
+      "method": "dense",
+      "n": 22,
+      "fullCorrect": 95.5,
+      "fullCorrectCI95": [
+        86.4,
+        100
+      ],
+      "wrongOrEmpty": 0,
+      "goldRetrieved": 100,
+      "ttftP50": 703,
+      "cnyPerAnswer": 0.00058
+    },
+    {
+      "docs": 26,
+      "chars": 69046,
+      "method": "full",
+      "n": 22,
+      "fullCorrect": 90.9,
+      "fullCorrectCI95": [
+        77.3,
+        100
+      ],
+      "wrongOrEmpty": 0,
+      "goldRetrieved": null,
+      "ttftP50": 953,
+      "cnyPerAnswer": 0.00523
+    },
+    {
+      "docs": 26,
+      "chars": 69046,
+      "method": "bm25",
+      "n": 22,
+      "fullCorrect": 50,
+      "fullCorrectCI95": [
+        27.3,
+        72.7
+      ],
+      "wrongOrEmpty": 40.9,
+      "goldRetrieved": 59.1,
+      "ttftP50": 611,
+      "cnyPerAnswer": 0.00048
+    },
+    {
+      "docs": 26,
+      "chars": 69046,
+      "method": "hybrid",
+      "n": 22,
+      "fullCorrect": 81.8,
+      "fullCorrectCI95": [
+        63.6,
+        95.5
+      ],
+      "wrongOrEmpty": 9.1,
+      "goldRetrieved": 86.4,
+      "ttftP50": 651,
+      "cnyPerAnswer": 0.00056
+    },
+    {
+      "docs": 26,
+      "chars": 69046,
+      "method": "dense",
+      "n": 22,
+      "fullCorrect": 95.5,
+      "fullCorrectCI95": [
+        86.4,
+        100
+      ],
+      "wrongOrEmpty": 0,
+      "goldRetrieved": 100,
+      "ttftP50": 597,
+      "cnyPerAnswer": 0.00058
+    }
+  ],
+  "spend": {
+    "calls": 902,
+    "cny": 0.979
+  }
+}

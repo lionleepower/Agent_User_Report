@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 330" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title>Quantization: storing model weights with fewer bits</title>
+  <rect width="720" height="330" fill="#ffffff"/>
+  <text x="24" y="34" font-size="18" font-weight="bold" fill="#1f2328">Quantization: the same model in fewer bits</text>
+  <text x="24" y="58" font-size="12" fill="#57606a">Bar length = bits per weight (drawn to scale by average bits per weight; real files add a little metadata)</text>
+  <text x="24" y="100" font-size="13" fill="#1f2328">f16</text>
+  <rect x="120" y="84" width="480" height="24" rx="3" fill="#0072B2"/>
+  <text x="610" y="101" font-size="12" fill="#57606a">16 bits, baseline</text>
+  <text x="24" y="140" font-size="13" fill="#1f2328">Q8_0 / q8</text>
+  <rect x="120" y="124" width="255" height="24" rx="3" fill="#009E73"/>
+  <text x="385" y="141" font-size="12" fill="#57606a">about 8.5 bits: half the size, almost no quality loss</text>
+  <text x="24" y="180" font-size="13" fill="#1f2328">Q6_K</text>
+  <rect x="120" y="164" width="198" height="24" rx="3" fill="#E69F00"/>
+  <text x="328" y="181" font-size="12" fill="#57606a">about 6.6 bits</text>
+  <text x="24" y="220" font-size="13" fill="#1f2328">Q4_K_M</text>
+  <rect x="120" y="204" width="144" height="24" rx="3" fill="#D55E00"/>
+  <text x="274" y="221" font-size="12" fill="#57606a">about 4.8 bits: the usual choice for 8B models on an 8 GB card</text>
+  <line x1="24" y1="248" x2="696" y2="248" stroke="#d0d7de"/>
+  <text x="24" y="274" font-size="12" fill="#1f2328">• Report section 6: Qwen3-8B in Q4_K_M locally scored the same as the cloud version (60.4% vs 60.4%).</text>
+  <text x="24" y="296" font-size="12" fill="#1f2328">• Quantization applies to model weights (Q4_K_M, Q8_0 in GGUF file names) and to the KV cache (q8_0 KV).</text>
+  <text x="24" y="318" font-size="12" fill="#1f2328">• "K" is llama.cpp's block quantization, "_M" a medium setting; fewer bits save memory but risk quality.</text>
+</svg>

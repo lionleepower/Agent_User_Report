@@ -1,0 +1,3179 @@
+{
+  "runId": "multi-2026-09-30T14-07-16-171Z",
+  "date": "2026-09-30T14:12:13.490Z",
+  "status": "complete",
+  "phase": "multi",
+  "model": "deepseek-flash",
+  "corpusCommit": "b70121d377cb6005eb65f12b098cd5decd905669",
+  "planned": 96,
+  "actual": 96,
+  "repetitions": 2,
+  "records": [
+    {
+      "id": "multi-01",
+      "task": "multi",
+      "repeat": 0,
+      "method": "whole",
+      "status": "ok",
+      "score": 1,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.1309999999999718,
+      "firstAnswerMs": 1100.1309999999999,
+      "totalMs": 1537.8528,
+      "generationFirstMs": 1100,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00450968,
+        "unknownReservedCny": 0,
+        "inputTokens": 88375,
+        "cachedTokens": 88192,
+        "outputTokens": 77
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000618,
+        "unknownReservedCny": 0,
+        "inputTokens": 289,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-01",
+      "task": "multi",
+      "repeat": 0,
+      "method": "bm25",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.5951999999997497,
+      "firstAnswerMs": 181.59519999999975,
+      "totalMs": 667.0317,
+      "generationFirstMs": 181,
+      "evidenceChars": 1138,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00119648,
+        "unknownReservedCny": 0,
+        "inputTokens": 724,
+        "cachedTokens": 512,
+        "outputTokens": 94
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000652,
+        "unknownReservedCny": 0,
+        "inputTokens": 306,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-01",
+      "task": "multi",
+      "repeat": 0,
+      "method": "dense",
+      "status": "ok",
+      "score": 1,
+      "evidenceCoverage": 1,
+      "retrievalMs": 277.1233000000002,
+      "firstAnswerMs": 931.1233000000002,
+      "totalMs": 1360.0781000000006,
+      "generationFirstMs": 654,
+      "evidenceChars": 1641,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.00096172,
+        "unknownReservedCny": 0,
+        "inputTokens": 969,
+        "cachedTokens": 768,
+        "outputTokens": 74
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000612,
+        "unknownReservedCny": 0,
+        "inputTokens": 286,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-01",
+      "task": "multi",
+      "repeat": 0,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 5914.285600000001,
+      "firstAnswerMs": 6333.285600000001,
+      "totalMs": 6792.4192,
+      "generationFirstMs": 419,
+      "evidenceChars": 1095,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.01754644,
+        "unknownReservedCny": 0,
+        "inputTokens": 32256,
+        "cachedTokens": 25211,
+        "outputTokens": 306
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00065,
+        "unknownReservedCny": 0,
+        "inputTokens": 305,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-02",
+      "task": "multi",
+      "repeat": 0,
+      "method": "bm25",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.17780000000129803,
+      "firstAnswerMs": 630.1778000000013,
+      "totalMs": 1001.7524000000012,
+      "generationFirstMs": 630,
+      "evidenceChars": 551,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00090024,
+        "unknownReservedCny": 0,
+        "inputTokens": 425,
+        "cachedTokens": 256,
+        "outputTokens": 69
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000508,
+        "unknownReservedCny": 0,
+        "inputTokens": 234,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-02",
+      "task": "multi",
+      "repeat": 0,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 622.0360000000001,
+      "firstAnswerMs": 1109.036,
+      "totalMs": 1539.6121000000003,
+      "generationFirstMs": 487,
+      "evidenceChars": 739,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.00099086,
+        "unknownReservedCny": 0,
+        "inputTokens": 625,
+        "cachedTokens": 384,
+        "outputTokens": 69
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000508,
+        "unknownReservedCny": 0,
+        "inputTokens": 234,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-02",
+      "task": "multi",
+      "repeat": 0,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 5548.6404,
+      "firstAnswerMs": 6195.6404,
+      "totalMs": 6593.034899999999,
+      "generationFirstMs": 647,
+      "evidenceChars": 666,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.019640639999999997,
+        "unknownReservedCny": 0,
+        "inputTokens": 33272,
+        "cachedTokens": 25216,
+        "outputTokens": 315
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.0005,
+        "unknownReservedCny": 0,
+        "inputTokens": 230,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-02",
+      "task": "multi",
+      "repeat": 0,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.017599999999220017,
+      "firstAnswerMs": 1065.0175999999992,
+      "totalMs": 1607.0082000000002,
+      "generationFirstMs": 1065,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.004401680000000001,
+        "unknownReservedCny": 0,
+        "inputTokens": 88369,
+        "cachedTokens": 88192,
+        "outputTokens": 65
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.0005,
+        "unknownReservedCny": 0,
+        "inputTokens": 230,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-03",
+      "task": "multi",
+      "repeat": 0,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 283.1722000000009,
+      "firstAnswerMs": 685.1722000000009,
+      "totalMs": 1038.954600000001,
+      "generationFirstMs": 402,
+      "evidenceChars": 1663,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.0010337200000000001,
+        "unknownReservedCny": 0,
+        "inputTokens": 1044,
+        "cachedTokens": 768,
+        "outputTokens": 62
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000436,
+        "unknownReservedCny": 0,
+        "inputTokens": 198,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-03",
+      "task": "multi",
+      "repeat": 0,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 5691.7624,
+      "firstAnswerMs": 6411.7624,
+      "totalMs": 6868.3361,
+      "generationFirstMs": 720,
+      "evidenceChars": 1094,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.014713279999999999,
+        "unknownReservedCny": 0,
+        "inputTokens": 30648,
+        "cachedTokens": 24832,
+        "outputTokens": 261
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000422,
+        "unknownReservedCny": 0,
+        "inputTokens": 191,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-03",
+      "task": "multi",
+      "repeat": 0,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.02200000000448199,
+      "firstAnswerMs": 886.0220000000045,
+      "totalMs": 1186.873599999999,
+      "generationFirstMs": 886,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00420768,
+        "unknownReservedCny": 0,
+        "inputTokens": 88360,
+        "cachedTokens": 88192,
+        "outputTokens": 43
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000398,
+        "unknownReservedCny": 0,
+        "inputTokens": 179,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-03",
+      "task": "multi",
+      "repeat": 0,
+      "method": "bm25",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 0.20790000000124564,
+      "firstAnswerMs": 724.2079000000012,
+      "totalMs": 1044.4890000000014,
+      "generationFirstMs": 724,
+      "evidenceChars": 1244,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.0006776,
+        "unknownReservedCny": 0,
+        "inputTokens": 786,
+        "cachedTokens": 640,
+        "outputTokens": 45
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000402,
+        "unknownReservedCny": 0,
+        "inputTokens": 181,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-04",
+      "task": "multi",
+      "repeat": 0,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 5872.342299999997,
+      "firstAnswerMs": 6320.342299999997,
+      "totalMs": 7152.704599999997,
+      "generationFirstMs": 448,
+      "evidenceChars": 820,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.0344192,
+        "unknownReservedCny": 0,
+        "inputTokens": 29956,
+        "cachedTokens": 14080,
+        "outputTokens": 263
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000694,
+        "unknownReservedCny": 0,
+        "inputTokens": 327,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-04",
+      "task": "multi",
+      "repeat": 0,
+      "method": "whole",
+      "status": "ok",
+      "score": 0,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.022299999996903352,
+      "firstAnswerMs": 875.0222999999969,
+      "totalMs": 1038.4252999999953,
+      "generationFirstMs": 875,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00391568,
+        "unknownReservedCny": 0,
+        "inputTokens": 88370,
+        "cachedTokens": 88192,
+        "outputTokens": 4
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00053,
+        "unknownReservedCny": 0,
+        "inputTokens": 245,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-04",
+      "task": "multi",
+      "repeat": 0,
+      "method": "bm25",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.1860999999989872,
+      "firstAnswerMs": 265.186099999999,
+      "totalMs": 788.4078000000009,
+      "generationFirstMs": 265,
+      "evidenceChars": 1681,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00104896,
+        "unknownReservedCny": 0,
+        "inputTokens": 1168,
+        "cachedTokens": 1024,
+        "outputTokens": 90
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00045112,
+        "unknownReservedCny": 0,
+        "inputTokens": 331,
+        "cachedTokens": 128,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-04",
+      "task": "multi",
+      "repeat": 0,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 264.01750000000175,
+      "firstAnswerMs": 717.0175000000017,
+      "totalMs": 1186.1288000000059,
+      "generationFirstMs": 453,
+      "evidenceChars": 1321,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.00110822,
+        "unknownReservedCny": 0,
+        "inputTokens": 1008,
+        "cachedTokens": 768,
+        "outputTokens": 82
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00043512,
+        "unknownReservedCny": 0,
+        "inputTokens": 323,
+        "cachedTokens": 128,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-05",
+      "task": "multi",
+      "repeat": 0,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.05369999999675201,
+      "firstAnswerMs": 408.05369999999675,
+      "totalMs": 872.6414000000004,
+      "generationFirstMs": 408,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00450768,
+        "unknownReservedCny": 0,
+        "inputTokens": 88366,
+        "cachedTokens": 88192,
+        "outputTokens": 79
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000504,
+        "unknownReservedCny": 0,
+        "inputTokens": 232,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-05",
+      "task": "multi",
+      "repeat": 0,
+      "method": "bm25",
+      "status": "ok",
+      "score": 0,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 0.14719999999942956,
+      "firstAnswerMs": 528.1471999999994,
+      "totalMs": 632.255799999999,
+      "generationFirstMs": 528,
+      "evidenceChars": 256,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000484,
+        "unknownReservedCny": 0,
+        "inputTokens": 226,
+        "cachedTokens": 0,
+        "outputTokens": 4
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000354,
+        "unknownReservedCny": 0,
+        "inputTokens": 157,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-05",
+      "task": "multi",
+      "repeat": 0,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 173.11670000000595,
+      "firstAnswerMs": 467.11670000000595,
+      "totalMs": 836.321600000003,
+      "generationFirstMs": 294,
+      "evidenceChars": 1534,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.0024465,
+        "unknownReservedCny": 0,
+        "inputTokens": 976,
+        "cachedTokens": 0,
+        "outputTokens": 68
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000482,
+        "unknownReservedCny": 0,
+        "inputTokens": 221,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-05",
+      "task": "multi",
+      "repeat": 0,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 6116.012000000002,
+      "firstAnswerMs": 6589.012000000002,
+      "totalMs": 6893.790500000003,
+      "generationFirstMs": 473,
+      "evidenceChars": 750,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.04236408,
+        "unknownReservedCny": 0,
+        "inputTokens": 33439,
+        "cachedTokens": 13952,
+        "outputTokens": 354
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00046,
+        "unknownReservedCny": 0,
+        "inputTokens": 210,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-06",
+      "task": "multi",
+      "repeat": 0,
+      "method": "bm25",
+      "status": "ok",
+      "score": 0,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 0.7762999999977183,
+      "firstAnswerMs": 539.7762999999977,
+      "totalMs": 628.8391999999949,
+      "generationFirstMs": 539,
+      "evidenceChars": 689,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000938,
+        "unknownReservedCny": 0,
+        "inputTokens": 453,
+        "cachedTokens": 0,
+        "outputTokens": 4
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000382,
+        "unknownReservedCny": 0,
+        "inputTokens": 171,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-06",
+      "task": "multi",
+      "repeat": 0,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 0,
+      "retrievalMs": 229.6562000000049,
+      "firstAnswerMs": 655.6562000000049,
+      "totalMs": 1117.613400000002,
+      "generationFirstMs": 426,
+      "evidenceChars": 835,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.0019515,
+        "unknownReservedCny": 0,
+        "inputTokens": 673,
+        "cachedTokens": 0,
+        "outputTokens": 83
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00054,
+        "unknownReservedCny": 0,
+        "inputTokens": 250,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-06",
+      "task": "multi",
+      "repeat": 0,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 5885.832399999999,
+      "firstAnswerMs": 6178.832399999999,
+      "totalMs": 6527.380100000009,
+      "generationFirstMs": 293,
+      "evidenceChars": 958,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.03809408,
+        "unknownReservedCny": 0,
+        "inputTokens": 31556,
+        "cachedTokens": 13952,
+        "outputTokens": 291
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000496,
+        "unknownReservedCny": 0,
+        "inputTokens": 228,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-06",
+      "task": "multi",
+      "repeat": 0,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.03449999999429565,
+      "firstAnswerMs": 1333.0344999999943,
+      "totalMs": 1572.3766000000032,
+      "generationFirstMs": 1333,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00447568,
+        "unknownReservedCny": 0,
+        "inputTokens": 88370,
+        "cachedTokens": 88192,
+        "outputTokens": 74
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000522,
+        "unknownReservedCny": 0,
+        "inputTokens": 241,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-07",
+      "task": "multi",
+      "repeat": 0,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 258.2299000000057,
+      "firstAnswerMs": 834.2299000000057,
+      "totalMs": 1151.5325000000012,
+      "generationFirstMs": 576,
+      "evidenceChars": 2000,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.00246862,
+        "unknownReservedCny": 0,
+        "inputTokens": 1186,
+        "cachedTokens": 128,
+        "outputTokens": 50
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000494,
+        "unknownReservedCny": 0,
+        "inputTokens": 227,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-07",
+      "task": "multi",
+      "repeat": 0,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 7169.7837,
+      "firstAnswerMs": 7695.7837,
+      "totalMs": 8018.763699999996,
+      "generationFirstMs": 526,
+      "evidenceChars": 1246,
+      "searchCalls": 4,
+      "usage": {
+        "requests": 5,
+        "cnyByUsageAtPublishedRate": 0.061675520000000005,
+        "unknownReservedCny": 0,
+        "inputTokens": 69712,
+        "cachedTokens": 41088,
+        "outputTokens": 348
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000504,
+        "unknownReservedCny": 0,
+        "inputTokens": 232,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-07",
+      "task": "multi",
+      "repeat": 0,
+      "method": "whole",
+      "status": "ok",
+      "score": 1,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.012000000002444722,
+      "firstAnswerMs": 940.0120000000024,
+      "totalMs": 1342.2654000000039,
+      "generationFirstMs": 940,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00428768,
+        "unknownReservedCny": 0,
+        "inputTokens": 88364,
+        "cachedTokens": 88192,
+        "outputTokens": 52
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000498,
+        "unknownReservedCny": 0,
+        "inputTokens": 229,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-07",
+      "task": "multi",
+      "repeat": 0,
+      "method": "bm25",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.14830000000074506,
+      "firstAnswerMs": 556.1483000000007,
+      "totalMs": 840.4780000000028,
+      "generationFirstMs": 556,
+      "evidenceChars": 1350,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00197912,
+        "unknownReservedCny": 0,
+        "inputTokens": 891,
+        "cachedTokens": 128,
+        "outputTokens": 56
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000506,
+        "unknownReservedCny": 0,
+        "inputTokens": 233,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-08",
+      "task": "multi",
+      "repeat": 0,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 6589.194699999993,
+      "firstAnswerMs": 6834.194699999993,
+      "totalMs": 7123.474799999996,
+      "generationFirstMs": 245,
+      "evidenceChars": 737,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.03872408,
+        "unknownReservedCny": 0,
+        "inputTokens": 31787,
+        "cachedTokens": 13952,
+        "outputTokens": 312
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00049,
+        "unknownReservedCny": 0,
+        "inputTokens": 225,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-08",
+      "task": "multi",
+      "repeat": 0,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.044899999993504025,
+      "firstAnswerMs": 594.0448999999935,
+      "totalMs": 932.6630999999907,
+      "generationFirstMs": 594,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.004401680000000001,
+        "unknownReservedCny": 0,
+        "inputTokens": 88373,
+        "cachedTokens": 88192,
+        "outputTokens": 64
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000492,
+        "unknownReservedCny": 0,
+        "inputTokens": 226,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-08",
+      "task": "multi",
+      "repeat": 0,
+      "method": "bm25",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.1558999999979278,
+      "firstAnswerMs": 1004.1558999999979,
+      "totalMs": 1329.7818999999872,
+      "generationFirstMs": 1004,
+      "evidenceChars": 1155,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00155224,
+        "unknownReservedCny": 0,
+        "inputTokens": 763,
+        "cachedTokens": 256,
+        "outputTokens": 66
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000496,
+        "unknownReservedCny": 0,
+        "inputTokens": 228,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-08",
+      "task": "multi",
+      "repeat": 0,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 676.0109999999986,
+      "firstAnswerMs": 1351.0109999999986,
+      "totalMs": 1639.9725000000035,
+      "generationFirstMs": 675,
+      "evidenceChars": 1604,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.00146948,
+        "unknownReservedCny": 0,
+        "inputTokens": 1004,
+        "cachedTokens": 512,
+        "outputTokens": 66
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000496,
+        "unknownReservedCny": 0,
+        "inputTokens": 228,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-09",
+      "task": "multi",
+      "repeat": 0,
+      "method": "whole",
+      "status": "ok",
+      "score": 1,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.05239999998593703,
+      "firstAnswerMs": 1011.0523999999859,
+      "totalMs": 1303.3131999999896,
+      "generationFirstMs": 1011,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00414168,
+        "unknownReservedCny": 0,
+        "inputTokens": 88359,
+        "cachedTokens": 88192,
+        "outputTokens": 35
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000404,
+        "unknownReservedCny": 0,
+        "inputTokens": 182,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-09",
+      "task": "multi",
+      "repeat": 0,
+      "method": "bm25",
+      "status": "ok",
+      "score": 0,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 0.13479999999981374,
+      "firstAnswerMs": 318.1347999999998,
+      "totalMs": 399.84619999999995,
+      "generationFirstMs": 318,
+      "evidenceChars": 591,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00059312,
+        "unknownReservedCny": 0,
+        "inputTokens": 406,
+        "cachedTokens": 128,
+        "outputTokens": 4
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000342,
+        "unknownReservedCny": 0,
+        "inputTokens": 151,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-09",
+      "task": "multi",
+      "repeat": 0,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 192.43339999999444,
+      "firstAnswerMs": 538.4333999999944,
+      "totalMs": 873.0055999999895,
+      "generationFirstMs": 346,
+      "evidenceChars": 1464,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.0016806199999999999,
+        "unknownReservedCny": 0,
+        "inputTokens": 782,
+        "cachedTokens": 128,
+        "outputTokens": 51
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000436,
+        "unknownReservedCny": 0,
+        "inputTokens": 198,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-09",
+      "task": "multi",
+      "repeat": 0,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 5434.8661999999895,
+      "firstAnswerMs": 5817.8661999999895,
+      "totalMs": 6081.0302999999985,
+      "generationFirstMs": 383,
+      "evidenceChars": 676,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.03454896,
+        "unknownReservedCny": 0,
+        "inputTokens": 29966,
+        "cachedTokens": 13824,
+        "outputTokens": 214
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000438,
+        "unknownReservedCny": 0,
+        "inputTokens": 199,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-10",
+      "task": "multi",
+      "repeat": 0,
+      "method": "bm25",
+      "status": "ok",
+      "score": 1,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 0.13229999999748543,
+      "firstAnswerMs": 757.1322999999975,
+      "totalMs": 876.1549999999988,
+      "generationFirstMs": 757,
+      "evidenceChars": 355,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00097,
+        "unknownReservedCny": 0,
+        "inputTokens": 277,
+        "cachedTokens": 0,
+        "outputTokens": 52
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00048,
+        "unknownReservedCny": 0,
+        "inputTokens": 220,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-10",
+      "task": "multi",
+      "repeat": 0,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 327.7630000000063,
+      "firstAnswerMs": 928.7630000000063,
+      "totalMs": 1237.8436000000074,
+      "generationFirstMs": 601,
+      "evidenceChars": 1950,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.00187174,
+        "unknownReservedCny": 0,
+        "inputTokens": 936,
+        "cachedTokens": 256,
+        "outputTokens": 70
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000516,
+        "unknownReservedCny": 0,
+        "inputTokens": 238,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-10",
+      "task": "multi",
+      "repeat": 0,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 6214.806699999986,
+      "firstAnswerMs": 6530.806699999986,
+      "totalMs": 6885.445999999996,
+      "generationFirstMs": 316,
+      "evidenceChars": 877,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.03536496,
+        "unknownReservedCny": 0,
+        "inputTokens": 30098,
+        "cachedTokens": 13824,
+        "outputTokens": 283
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000516,
+        "unknownReservedCny": 0,
+        "inputTokens": 238,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-10",
+      "task": "multi",
+      "repeat": 0,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.00969999999506399,
+      "firstAnswerMs": 533.0096999999951,
+      "totalMs": 921.6013999999996,
+      "generationFirstMs": 533,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00452368,
+        "unknownReservedCny": 0,
+        "inputTokens": 88370,
+        "cachedTokens": 88192,
+        "outputTokens": 80
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000536,
+        "unknownReservedCny": 0,
+        "inputTokens": 248,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-11",
+      "task": "multi",
+      "repeat": 0,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 829.7906000000075,
+      "firstAnswerMs": 1200.7906000000075,
+      "totalMs": 1496.195900000006,
+      "generationFirstMs": 371,
+      "evidenceChars": 939,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.00108674,
+        "unknownReservedCny": 0,
+        "inputTokens": 626,
+        "cachedTokens": 256,
+        "outputTokens": 49
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00044,
+        "unknownReservedCny": 0,
+        "inputTokens": 200,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-11",
+      "task": "multi",
+      "repeat": 0,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 6621.651000000013,
+      "firstAnswerMs": 6881.651000000013,
+      "totalMs": 7172.246400000004,
+      "generationFirstMs": 260,
+      "evidenceChars": 811,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.03132008,
+        "unknownReservedCny": 0,
+        "inputTokens": 28261,
+        "cachedTokens": 13952,
+        "outputTokens": 268
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000434,
+        "unknownReservedCny": 0,
+        "inputTokens": 197,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-11",
+      "task": "multi",
+      "repeat": 0,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.04070000001229346,
+      "firstAnswerMs": 673.0407000000123,
+      "totalMs": 943.2804999999935,
+      "generationFirstMs": 673,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00432368,
+        "unknownReservedCny": 0,
+        "inputTokens": 88366,
+        "cachedTokens": 88192,
+        "outputTokens": 56
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000454,
+        "unknownReservedCny": 0,
+        "inputTokens": 207,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-11",
+      "task": "multi",
+      "repeat": 0,
+      "method": "bm25",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 0.14389999999548309,
+      "firstAnswerMs": 242.14389999999548,
+      "totalMs": 577.1175999999978,
+      "generationFirstMs": 242,
+      "evidenceChars": 198,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00072,
+        "unknownReservedCny": 0,
+        "inputTokens": 192,
+        "cachedTokens": 0,
+        "outputTokens": 42
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000426,
+        "unknownReservedCny": 0,
+        "inputTokens": 193,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-12",
+      "task": "multi",
+      "repeat": 0,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 6278.767299999978,
+      "firstAnswerMs": 6906.767299999978,
+      "totalMs": 7271.336199999991,
+      "generationFirstMs": 628,
+      "evidenceChars": 1147,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.03317207999999999,
+        "unknownReservedCny": 0,
+        "inputTokens": 29135,
+        "cachedTokens": 13952,
+        "outputTokens": 281
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000468,
+        "unknownReservedCny": 0,
+        "inputTokens": 214,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-12",
+      "task": "multi",
+      "repeat": 0,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.03420000002370216,
+      "firstAnswerMs": 612.0342000000237,
+      "totalMs": 920.9953000000096,
+      "generationFirstMs": 612,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00443768,
+        "unknownReservedCny": 0,
+        "inputTokens": 88379,
+        "cachedTokens": 88192,
+        "outputTokens": 67
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000488,
+        "unknownReservedCny": 0,
+        "inputTokens": 224,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-12",
+      "task": "multi",
+      "repeat": 0,
+      "method": "bm25",
+      "status": "ok",
+      "score": 0,
+      "evidenceCoverage": 0,
+      "retrievalMs": 0.12299999999231659,
+      "firstAnswerMs": 571.1229999999923,
+      "totalMs": 669.7387999999919,
+      "generationFirstMs": 571,
+      "evidenceChars": 0,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000246,
+        "unknownReservedCny": 0,
+        "inputTokens": 107,
+        "cachedTokens": 0,
+        "outputTokens": 4
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000362,
+        "unknownReservedCny": 0,
+        "inputTokens": 161,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-12",
+      "task": "multi",
+      "repeat": 0,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 306.79570000001695,
+      "firstAnswerMs": 907.795700000017,
+      "totalMs": 1326.1059999999998,
+      "generationFirstMs": 601,
+      "evidenceChars": 1855,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.0026825,
+        "unknownReservedCny": 0,
+        "inputTokens": 1134,
+        "cachedTokens": 0,
+        "outputTokens": 61
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000476,
+        "unknownReservedCny": 0,
+        "inputTokens": 218,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-01",
+      "task": "multi",
+      "repeat": 1,
+      "method": "bm25",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.1638000000093598,
+      "firstAnswerMs": 351.16380000000936,
+      "totalMs": 780.122000000003,
+      "generationFirstMs": 351,
+      "evidenceChars": 1138,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00117248,
+        "unknownReservedCny": 0,
+        "inputTokens": 724,
+        "cachedTokens": 512,
+        "outputTokens": 91
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000646,
+        "unknownReservedCny": 0,
+        "inputTokens": 303,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-01",
+      "task": "multi",
+      "repeat": 1,
+      "method": "dense",
+      "status": "ok",
+      "score": 1,
+      "evidenceCoverage": 1,
+      "retrievalMs": 618.1228000000119,
+      "firstAnswerMs": 1090.122800000012,
+      "totalMs": 1446.3132000000041,
+      "generationFirstMs": 472,
+      "evidenceChars": 1641,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.00097772,
+        "unknownReservedCny": 0,
+        "inputTokens": 969,
+        "cachedTokens": 768,
+        "outputTokens": 76
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000616,
+        "unknownReservedCny": 0,
+        "inputTokens": 288,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-01",
+      "task": "multi",
+      "repeat": 1,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 5266.038700000005,
+      "firstAnswerMs": 5713.038700000005,
+      "totalMs": 6161.49920000002,
+      "generationFirstMs": 447,
+      "evidenceChars": 1095,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.00519532,
+        "unknownReservedCny": 0,
+        "inputTokens": 32247,
+        "cachedTokens": 31483,
+        "outputTokens": 301
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000646,
+        "unknownReservedCny": 0,
+        "inputTokens": 303,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-01",
+      "task": "multi",
+      "repeat": 1,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.006900000007590279,
+      "firstAnswerMs": 453.0069000000076,
+      "totalMs": 1004.6113999999943,
+      "generationFirstMs": 453,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00447768,
+        "unknownReservedCny": 0,
+        "inputTokens": 88375,
+        "cachedTokens": 88192,
+        "outputTokens": 73
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00061,
+        "unknownReservedCny": 0,
+        "inputTokens": 285,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-02",
+      "task": "multi",
+      "repeat": 1,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 372.74239999998827,
+      "firstAnswerMs": 838.7423999999883,
+      "totalMs": 1250.1014999999898,
+      "generationFirstMs": 466,
+      "evidenceChars": 739,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.0009828600000000001,
+        "unknownReservedCny": 0,
+        "inputTokens": 625,
+        "cachedTokens": 384,
+        "outputTokens": 68
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000506,
+        "unknownReservedCny": 0,
+        "inputTokens": 233,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-02",
+      "task": "multi",
+      "repeat": 1,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 7037.335599999991,
+      "firstAnswerMs": 7809.335599999991,
+      "totalMs": 8260.812799999985,
+      "generationFirstMs": 772,
+      "evidenceChars": 596,
+      "searchCalls": 4,
+      "usage": {
+        "requests": 5,
+        "cnyByUsageAtPublishedRate": 0.00974472,
+        "unknownReservedCny": 0,
+        "inputTokens": 54325,
+        "cachedTokens": 51968,
+        "outputTokens": 369
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00051,
+        "unknownReservedCny": 0,
+        "inputTokens": 235,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-02",
+      "task": "multi",
+      "repeat": 1,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.01860000001033768,
+      "firstAnswerMs": 857.0186000000103,
+      "totalMs": 1266.396299999993,
+      "generationFirstMs": 857,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00444168,
+        "unknownReservedCny": 0,
+        "inputTokens": 88369,
+        "cachedTokens": 88192,
+        "outputTokens": 70
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00051,
+        "unknownReservedCny": 0,
+        "inputTokens": 235,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-02",
+      "task": "multi",
+      "repeat": 1,
+      "method": "bm25",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.15740000002551824,
+      "firstAnswerMs": 540.1574000000255,
+      "totalMs": 888.9022000000114,
+      "generationFirstMs": 540,
+      "evidenceChars": 551,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00090024,
+        "unknownReservedCny": 0,
+        "inputTokens": 425,
+        "cachedTokens": 256,
+        "outputTokens": 69
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000508,
+        "unknownReservedCny": 0,
+        "inputTokens": 234,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-03",
+      "task": "multi",
+      "repeat": 1,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 5718.723499999993,
+      "firstAnswerMs": 6142.723499999993,
+      "totalMs": 6477.860799999995,
+      "generationFirstMs": 424,
+      "evidenceChars": 1094,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.013878640000000001,
+        "unknownReservedCny": 0,
+        "inputTokens": 30639,
+        "cachedTokens": 25216,
+        "outputTokens": 253
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000424,
+        "unknownReservedCny": 0,
+        "inputTokens": 192,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-03",
+      "task": "multi",
+      "repeat": 1,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.007800000021234155,
+      "firstAnswerMs": 1097.0078000000212,
+      "totalMs": 1440.0697000000218,
+      "generationFirstMs": 1097,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00420768,
+        "unknownReservedCny": 0,
+        "inputTokens": 88360,
+        "cachedTokens": 88192,
+        "outputTokens": 43
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000398,
+        "unknownReservedCny": 0,
+        "inputTokens": 179,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-03",
+      "task": "multi",
+      "repeat": 1,
+      "method": "bm25",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 0.14199999999254942,
+      "firstAnswerMs": 299.14199999999255,
+      "totalMs": 673.1549999999988,
+      "generationFirstMs": 299,
+      "evidenceChars": 1244,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.0008136,
+        "unknownReservedCny": 0,
+        "inputTokens": 786,
+        "cachedTokens": 640,
+        "outputTokens": 62
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000436,
+        "unknownReservedCny": 0,
+        "inputTokens": 198,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-03",
+      "task": "multi",
+      "repeat": 1,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 309.05589999997756,
+      "firstAnswerMs": 659.0558999999776,
+      "totalMs": 1018.6392999999807,
+      "generationFirstMs": 350,
+      "evidenceChars": 1663,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.0010257200000000001,
+        "unknownReservedCny": 0,
+        "inputTokens": 1044,
+        "cachedTokens": 768,
+        "outputTokens": 61
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000434,
+        "unknownReservedCny": 0,
+        "inputTokens": 197,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-04",
+      "task": "multi",
+      "repeat": 1,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.0076000000117346644,
+      "firstAnswerMs": 604.0076000000117,
+      "totalMs": 1241.3288999999932,
+      "generationFirstMs": 604,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00461968,
+        "unknownReservedCny": 0,
+        "inputTokens": 88370,
+        "cachedTokens": 88192,
+        "outputTokens": 92
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00045512,
+        "unknownReservedCny": 0,
+        "inputTokens": 333,
+        "cachedTokens": 128,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-04",
+      "task": "multi",
+      "repeat": 1,
+      "method": "bm25",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.16539999999804422,
+      "firstAnswerMs": 340.16539999999804,
+      "totalMs": 864.9635000000126,
+      "generationFirstMs": 340,
+      "evidenceChars": 1681,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00104896,
+        "unknownReservedCny": 0,
+        "inputTokens": 1168,
+        "cachedTokens": 1024,
+        "outputTokens": 90
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00045112,
+        "unknownReservedCny": 0,
+        "inputTokens": 331,
+        "cachedTokens": 128,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-04",
+      "task": "multi",
+      "repeat": 1,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 186.5407000000123,
+      "firstAnswerMs": 836.5407000000123,
+      "totalMs": 1191.859300000011,
+      "generationFirstMs": 650,
+      "evidenceChars": 1321,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.00112422,
+        "unknownReservedCny": 0,
+        "inputTokens": 1008,
+        "cachedTokens": 768,
+        "outputTokens": 84
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00043912,
+        "unknownReservedCny": 0,
+        "inputTokens": 325,
+        "cachedTokens": 128,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-04",
+      "task": "multi",
+      "repeat": 1,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 5144.290999999997,
+      "firstAnswerMs": 5648.290999999997,
+      "totalMs": 6123.226699999999,
+      "generationFirstMs": 504,
+      "evidenceChars": 820,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.012769520000000001,
+        "unknownReservedCny": 0,
+        "inputTokens": 29951,
+        "cachedTokens": 25088,
+        "outputTokens": 255
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00043712,
+        "unknownReservedCny": 0,
+        "inputTokens": 324,
+        "cachedTokens": 128,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-05",
+      "task": "multi",
+      "repeat": 1,
+      "method": "bm25",
+      "status": "ok",
+      "score": 0,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 0.17459999999846332,
+      "firstAnswerMs": 589.1745999999985,
+      "totalMs": 687.9897999999812,
+      "generationFirstMs": 589,
+      "evidenceChars": 256,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000484,
+        "unknownReservedCny": 0,
+        "inputTokens": 226,
+        "cachedTokens": 0,
+        "outputTokens": 4
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000354,
+        "unknownReservedCny": 0,
+        "inputTokens": 157,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-05",
+      "task": "multi",
+      "repeat": 1,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 250.70670000000973,
+      "firstAnswerMs": 664.7067000000097,
+      "totalMs": 1057.3232000000135,
+      "generationFirstMs": 414,
+      "evidenceChars": 1534,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.00089322,
+        "unknownReservedCny": 0,
+        "inputTokens": 976,
+        "cachedTokens": 768,
+        "outputTokens": 62
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00047,
+        "unknownReservedCny": 0,
+        "inputTokens": 215,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-05",
+      "task": "multi",
+      "repeat": 1,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 5717.332699999999,
+      "firstAnswerMs": 6008.332699999999,
+      "totalMs": 6370.2038000000175,
+      "generationFirstMs": 291,
+      "evidenceChars": 750,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.02055952,
+        "unknownReservedCny": 0,
+        "inputTokens": 33438,
+        "cachedTokens": 25088,
+        "outputTokens": 357
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00046,
+        "unknownReservedCny": 0,
+        "inputTokens": 210,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-05",
+      "task": "multi",
+      "repeat": 1,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.03239999999641441,
+      "firstAnswerMs": 690.0323999999964,
+      "totalMs": 1124.8881999999867,
+      "generationFirstMs": 690,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00441168,
+        "unknownReservedCny": 0,
+        "inputTokens": 88366,
+        "cachedTokens": 88192,
+        "outputTokens": 67
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00048,
+        "unknownReservedCny": 0,
+        "inputTokens": 220,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-06",
+      "task": "multi",
+      "repeat": 1,
+      "method": "dense",
+      "status": "ok",
+      "score": 0,
+      "evidenceCoverage": 0,
+      "retrievalMs": 719.0892999999924,
+      "firstAnswerMs": 1361.0892999999924,
+      "totalMs": 1467.5510000000068,
+      "generationFirstMs": 642,
+      "evidenceChars": 835,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.00056686,
+        "unknownReservedCny": 0,
+        "inputTokens": 673,
+        "cachedTokens": 384,
+        "outputTokens": 4
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000382,
+        "unknownReservedCny": 0,
+        "inputTokens": 171,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-06",
+      "task": "multi",
+      "repeat": 1,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 5325.081600000005,
+      "firstAnswerMs": 5740.081600000005,
+      "totalMs": 6299.4488999999885,
+      "generationFirstMs": 415,
+      "evidenceChars": 958,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.0162494,
+        "unknownReservedCny": 0,
+        "inputTokens": 31564,
+        "cachedTokens": 25085,
+        "outputTokens": 286
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000516,
+        "unknownReservedCny": 0,
+        "inputTokens": 238,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-06",
+      "task": "multi",
+      "repeat": 1,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.012699999992037192,
+      "firstAnswerMs": 1033.012699999992,
+      "totalMs": 1524.2163,
+      "generationFirstMs": 1033,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00459568,
+        "unknownReservedCny": 0,
+        "inputTokens": 88370,
+        "cachedTokens": 88192,
+        "outputTokens": 89
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000552,
+        "unknownReservedCny": 0,
+        "inputTokens": 256,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-06",
+      "task": "multi",
+      "repeat": 1,
+      "method": "bm25",
+      "status": "ok",
+      "score": 1,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 0.2260999999998603,
+      "firstAnswerMs": 454.22609999999986,
+      "totalMs": 832.5022000000172,
+      "generationFirstMs": 454,
+      "evidenceChars": 689,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00090824,
+        "unknownReservedCny": 0,
+        "inputTokens": 453,
+        "cachedTokens": 256,
+        "outputTokens": 63
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.0005,
+        "unknownReservedCny": 0,
+        "inputTokens": 230,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-07",
+      "task": "multi",
+      "repeat": 1,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 5684.347999999998,
+      "firstAnswerMs": 6239.347999999998,
+      "totalMs": 6524.580799999996,
+      "generationFirstMs": 555,
+      "evidenceChars": 1246,
+      "searchCalls": 4,
+      "usage": {
+        "requests": 5,
+        "cnyByUsageAtPublishedRate": 0.02872072,
+        "unknownReservedCny": 0,
+        "inputTokens": 57557,
+        "cachedTokens": 45568,
+        "outputTokens": 365
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000502,
+        "unknownReservedCny": 0,
+        "inputTokens": 231,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-07",
+      "task": "multi",
+      "repeat": 1,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.042600000015227124,
+      "firstAnswerMs": 640.0426000000152,
+      "totalMs": 990.1094000000157,
+      "generationFirstMs": 640,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00428768,
+        "unknownReservedCny": 0,
+        "inputTokens": 88364,
+        "cachedTokens": 88192,
+        "outputTokens": 52
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000498,
+        "unknownReservedCny": 0,
+        "inputTokens": 229,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-07",
+      "task": "multi",
+      "repeat": 1,
+      "method": "bm25",
+      "status": "ok",
+      "score": 1,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.12940000000526197,
+      "firstAnswerMs": 699.1294000000053,
+      "totalMs": 998.2544000000053,
+      "generationFirstMs": 699,
+      "evidenceChars": 1350,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.0009676,
+        "unknownReservedCny": 0,
+        "inputTokens": 891,
+        "cachedTokens": 640,
+        "outputTokens": 55
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000504,
+        "unknownReservedCny": 0,
+        "inputTokens": 232,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-07",
+      "task": "multi",
+      "repeat": 1,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 576.9833999999973,
+      "firstAnswerMs": 1192.9833999999973,
+      "totalMs": 1916.940900000016,
+      "generationFirstMs": 616,
+      "evidenceChars": 2000,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.00098734,
+        "unknownReservedCny": 0,
+        "inputTokens": 1186,
+        "cachedTokens": 896,
+        "outputTokens": 53
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.0005,
+        "unknownReservedCny": 0,
+        "inputTokens": 230,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-08",
+      "task": "multi",
+      "repeat": 1,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.006400000012945384,
+      "firstAnswerMs": 881.006400000013,
+      "totalMs": 1227.0052000000142,
+      "generationFirstMs": 881,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00444168,
+        "unknownReservedCny": 0,
+        "inputTokens": 88373,
+        "cachedTokens": 88192,
+        "outputTokens": 69
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000502,
+        "unknownReservedCny": 0,
+        "inputTokens": 231,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-08",
+      "task": "multi",
+      "repeat": 1,
+      "method": "bm25",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.157100000011269,
+      "firstAnswerMs": 400.15710000001127,
+      "totalMs": 709.1521000000066,
+      "generationFirstMs": 400,
+      "evidenceChars": 1155,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.0010504800000000001,
+        "unknownReservedCny": 0,
+        "inputTokens": 763,
+        "cachedTokens": 512,
+        "outputTokens": 66
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000496,
+        "unknownReservedCny": 0,
+        "inputTokens": 228,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-08",
+      "task": "multi",
+      "repeat": 1,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 360.94939999998314,
+      "firstAnswerMs": 891.9493999999831,
+      "totalMs": 1174.1015999999945,
+      "generationFirstMs": 531,
+      "evidenceChars": 1604,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.00096772,
+        "unknownReservedCny": 0,
+        "inputTokens": 1004,
+        "cachedTokens": 768,
+        "outputTokens": 66
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000496,
+        "unknownReservedCny": 0,
+        "inputTokens": 228,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-08",
+      "task": "multi",
+      "repeat": 1,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 5079.10070000001,
+      "firstAnswerMs": 5804.10070000001,
+      "totalMs": 6150.514599999995,
+      "generationFirstMs": 725,
+      "evidenceChars": 651,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.0131744,
+        "unknownReservedCny": 0,
+        "inputTokens": 29864,
+        "cachedTokens": 24960,
+        "outputTokens": 296
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000498,
+        "unknownReservedCny": 0,
+        "inputTokens": 229,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-09",
+      "task": "multi",
+      "repeat": 1,
+      "method": "bm25",
+      "status": "ok",
+      "score": 0,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 0.13160000002244487,
+      "firstAnswerMs": 431.13160000002244,
+      "totalMs": 490.94840000002296,
+      "generationFirstMs": 431,
+      "evidenceChars": 591,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00034224,
+        "unknownReservedCny": 0,
+        "inputTokens": 406,
+        "cachedTokens": 256,
+        "outputTokens": 4
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000342,
+        "unknownReservedCny": 0,
+        "inputTokens": 151,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-09",
+      "task": "multi",
+      "repeat": 1,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 302.13730000000214,
+      "firstAnswerMs": 735.1373000000021,
+      "totalMs": 1004.4774000000034,
+      "generationFirstMs": 433,
+      "evidenceChars": 1464,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.0009199799999999999,
+        "unknownReservedCny": 0,
+        "inputTokens": 782,
+        "cachedTokens": 512,
+        "outputTokens": 50
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000434,
+        "unknownReservedCny": 0,
+        "inputTokens": 197,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-09",
+      "task": "multi",
+      "repeat": 1,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 6104.921100000007,
+      "firstAnswerMs": 6707.921100000007,
+      "totalMs": 6833.458299999998,
+      "generationFirstMs": 603,
+      "evidenceChars": 789,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.01363328,
+        "unknownReservedCny": 0,
+        "inputTokens": 30056,
+        "cachedTokens": 24832,
+        "outputTokens": 274
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000424,
+        "unknownReservedCny": 0,
+        "inputTokens": 192,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-09",
+      "task": "multi",
+      "repeat": 1,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.006399999954737723,
+      "firstAnswerMs": 775.0063999999547,
+      "totalMs": 1023.1325999999535,
+      "generationFirstMs": 775,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.004205680000000001,
+        "unknownReservedCny": 0,
+        "inputTokens": 88359,
+        "cachedTokens": 88192,
+        "outputTokens": 43
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00042,
+        "unknownReservedCny": 0,
+        "inputTokens": 190,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-10",
+      "task": "multi",
+      "repeat": 1,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 644.0958000000101,
+      "firstAnswerMs": 1300.09580000001,
+      "totalMs": 1572.4430000000284,
+      "generationFirstMs": 656,
+      "evidenceChars": 1950,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.00087802,
+        "unknownReservedCny": 0,
+        "inputTokens": 936,
+        "cachedTokens": 763,
+        "outputTokens": 70
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000516,
+        "unknownReservedCny": 0,
+        "inputTokens": 238,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-10",
+      "task": "multi",
+      "repeat": 1,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 5019.375400000019,
+      "firstAnswerMs": 5461.375400000019,
+      "totalMs": 5753.229200000002,
+      "generationFirstMs": 442,
+      "evidenceChars": 877,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.0141084,
+        "unknownReservedCny": 0,
+        "inputTokens": 30103,
+        "cachedTokens": 24960,
+        "outputTokens": 353
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000516,
+        "unknownReservedCny": 0,
+        "inputTokens": 238,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-10",
+      "task": "multi",
+      "repeat": 1,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.0076000000117346644,
+      "firstAnswerMs": 873.0076000000117,
+      "totalMs": 1277.9363000000012,
+      "generationFirstMs": 873,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.004499680000000001,
+        "unknownReservedCny": 0,
+        "inputTokens": 88370,
+        "cachedTokens": 88192,
+        "outputTokens": 77
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00053,
+        "unknownReservedCny": 0,
+        "inputTokens": 245,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-10",
+      "task": "multi",
+      "repeat": 1,
+      "method": "bm25",
+      "status": "ok",
+      "score": 1,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 0.12489999999525025,
+      "firstAnswerMs": 401.12489999999525,
+      "totalMs": 672.2760000000126,
+      "generationFirstMs": 401,
+      "evidenceChars": 355,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00079912,
+        "unknownReservedCny": 0,
+        "inputTokens": 277,
+        "cachedTokens": 128,
+        "outputTokens": 62
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.0005,
+        "unknownReservedCny": 0,
+        "inputTokens": 230,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-11",
+      "task": "multi",
+      "repeat": 1,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 4965.954599999997,
+      "firstAnswerMs": 5325.954599999997,
+      "totalMs": 5718.365099999995,
+      "generationFirstMs": 360,
+      "evidenceChars": 811,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.0093624,
+        "unknownReservedCny": 0,
+        "inputTokens": 28254,
+        "cachedTokens": 24960,
+        "outputTokens": 222
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000434,
+        "unknownReservedCny": 0,
+        "inputTokens": 197,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-11",
+      "task": "multi",
+      "repeat": 1,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.00890000001527369,
+      "firstAnswerMs": 572.0089000000153,
+      "totalMs": 970.5500000000466,
+      "generationFirstMs": 572,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00429168,
+        "unknownReservedCny": 0,
+        "inputTokens": 88366,
+        "cachedTokens": 88192,
+        "outputTokens": 52
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000446,
+        "unknownReservedCny": 0,
+        "inputTokens": 203,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-11",
+      "task": "multi",
+      "repeat": 1,
+      "method": "bm25",
+      "status": "ok",
+      "score": 0,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 0.14400000002933666,
+      "firstAnswerMs": 315.14400000002934,
+      "totalMs": 546.0148000000045,
+      "generationFirstMs": 315,
+      "evidenceChars": 198,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000592,
+        "unknownReservedCny": 0,
+        "inputTokens": 192,
+        "cachedTokens": 0,
+        "outputTokens": 26
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000394,
+        "unknownReservedCny": 0,
+        "inputTokens": 177,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-11",
+      "task": "multi",
+      "repeat": 1,
+      "method": "dense",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 788.9145000000135,
+      "firstAnswerMs": 1429.9145000000135,
+      "totalMs": 1769.5378000000492,
+      "generationFirstMs": 641,
+      "evidenceChars": 939,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.00088386,
+        "unknownReservedCny": 0,
+        "inputTokens": 626,
+        "cachedTokens": 384,
+        "outputTokens": 55
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000452,
+        "unknownReservedCny": 0,
+        "inputTokens": 206,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-12",
+      "task": "multi",
+      "repeat": 1,
+      "method": "whole",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 0.0087000000057742,
+      "firstAnswerMs": 862.0087000000058,
+      "totalMs": 1258.8150000000023,
+      "generationFirstMs": 862,
+      "evidenceChars": 200347,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.00442168,
+        "unknownReservedCny": 0,
+        "inputTokens": 88379,
+        "cachedTokens": 88192,
+        "outputTokens": 65
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000484,
+        "unknownReservedCny": 0,
+        "inputTokens": 222,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-12",
+      "task": "multi",
+      "repeat": 1,
+      "method": "bm25",
+      "status": "ok",
+      "score": 0,
+      "evidenceCoverage": 0,
+      "retrievalMs": 0.14110000000800937,
+      "firstAnswerMs": 568.141100000008,
+      "totalMs": 693.5778999999748,
+      "generationFirstMs": 568,
+      "evidenceChars": 0,
+      "searchCalls": null,
+      "usage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000246,
+        "unknownReservedCny": 0,
+        "inputTokens": 107,
+        "cachedTokens": 0,
+        "outputTokens": 4
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000362,
+        "unknownReservedCny": 0,
+        "inputTokens": 161,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-12",
+      "task": "multi",
+      "repeat": 1,
+      "method": "dense",
+      "status": "ok",
+      "score": 1,
+      "evidenceCoverage": 0.5,
+      "retrievalMs": 145.37859999999637,
+      "firstAnswerMs": 824.3785999999964,
+      "totalMs": 1248.824900000007,
+      "generationFirstMs": 679,
+      "evidenceChars": 1855,
+      "searchCalls": null,
+      "usage": {
+        "requests": 2,
+        "cnyByUsageAtPublishedRate": 0.0009903400000000001,
+        "unknownReservedCny": 0,
+        "inputTokens": 1134,
+        "cachedTokens": 896,
+        "outputTokens": 69
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000492,
+        "unknownReservedCny": 0,
+        "inputTokens": 226,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    },
+    {
+      "id": "multi-12",
+      "task": "multi",
+      "repeat": 1,
+      "method": "pageindex",
+      "status": "ok",
+      "score": 2,
+      "evidenceCoverage": 1,
+      "retrievalMs": 4937.5768999999855,
+      "firstAnswerMs": 5124.5768999999855,
+      "totalMs": 5559.974800000025,
+      "generationFirstMs": 187,
+      "evidenceChars": 1147,
+      "searchCalls": 3,
+      "usage": {
+        "requests": 4,
+        "cnyByUsageAtPublishedRate": 0.0049046,
+        "unknownReservedCny": 0,
+        "inputTokens": 29135,
+        "cachedTokens": 28415,
+        "outputTokens": 291
+      },
+      "judgeUsage": {
+        "requests": 1,
+        "cnyByUsageAtPublishedRate": 0.000504,
+        "unknownReservedCny": 0,
+        "inputTokens": 232,
+        "cachedTokens": 0,
+        "outputTokens": 5
+      }
+    }
+  ],
+  "groups": [
+    {
+      "task": "multi",
+      "method": "whole",
+      "questionsObserved": 12,
+      "responses": 24,
+      "failures": 0,
+      "fullyCorrect": 0.8333333333333334,
+      "fullyCorrectCI95": [
+        0.7083333333333334,
+        0.9583333333333334
+      ],
+      "zeroOrFailed": 0.041666666666666664,
+      "evidenceCoverage": 1,
+      "meanEvidenceChars": 200347,
+      "successfulLatency": {
+        "firstAnswerMsP50": 862.0087000000058,
+        "firstAnswerMsP95": 1100.1309999999999,
+        "totalMsP50": 1227.0052000000142,
+        "totalMsP95": 1572.3766000000032,
+        "n": 24
+      },
+      "meanSearchCalls": null,
+      "perQuery": {
+        "requests": 1,
+        "inputTokens": 88368.41666666667,
+        "cachedTokens": 88192,
+        "outputTokens": 62,
+        "cnyByUsage": 0.004376513333333334,
+        "unknownReservedCny": 0
+      }
+    },
+    {
+      "task": "multi",
+      "method": "bm25",
+      "questionsObserved": 12,
+      "responses": 24,
+      "failures": 0,
+      "fullyCorrect": 0.5,
+      "fullyCorrectCI95": [
+        0.25,
+        0.75
+      ],
+      "zeroOrFailed": 0.3333333333333333,
+      "evidenceCoverage": 0.6666666666666666,
+      "meanEvidenceChars": 767.3333333333334,
+      "successfulLatency": {
+        "firstAnswerMsP50": 528.1471999999994,
+        "firstAnswerMsP95": 757.1322999999975,
+        "totalMsP50": 709.1521000000066,
+        "totalMsP95": 1044.4890000000014,
+        "n": 24
+      },
+      "meanSearchCalls": null,
+      "perQuery": {
+        "requests": 1,
+        "inputTokens": 534.8333333333334,
+        "cachedTokens": 298.6666666666667,
+        "outputTokens": 46.916666666666664,
+        "cnyByUsage": 0.0008596133333333332,
+        "unknownReservedCny": 0
+      }
+    },
+    {
+      "task": "multi",
+      "method": "dense",
+      "questionsObserved": 12,
+      "responses": 24,
+      "failures": 0,
+      "fullyCorrect": 0.8333333333333334,
+      "fullyCorrectCI95": [
+        0.625,
+        1
+      ],
+      "zeroOrFailed": 0.041666666666666664,
+      "evidenceCoverage": 0.7916666666666666,
+      "meanEvidenceChars": 1462.0833333333333,
+      "successfulLatency": {
+        "firstAnswerMsP50": 891.9493999999831,
+        "firstAnswerMsP95": 1361.0892999999924,
+        "totalMsP50": 1248.824900000007,
+        "totalMsP95": 1769.5378000000492,
+        "n": 24
+      },
+      "meanSearchCalls": null,
+      "perQuery": {
+        "requests": 2,
+        "inputTokens": 913.5833333333334,
+        "cachedTokens": 501.125,
+        "outputTokens": 62.625,
+        "cnyByUsage": 0.0012895866666666667,
+        "unknownReservedCny": 0
+      }
+    },
+    {
+      "task": "multi",
+      "method": "pageindex",
+      "questionsObserved": 12,
+      "responses": 24,
+      "failures": 0,
+      "fullyCorrect": 1,
+      "fullyCorrectCI95": [
+        1,
+        1
+      ],
+      "zeroOrFailed": 0,
+      "evidenceCoverage": 0.9166666666666666,
+      "meanEvidenceChars": 904.625,
+      "successfulLatency": {
+        "firstAnswerMsP50": 6239.347999999998,
+        "firstAnswerMsP95": 7695.7837,
+        "totalMsP50": 6593.034899999999,
+        "totalMsP95": 8018.763699999996,
+        "n": 24
+      },
+      "meanSearchCalls": 3.125,
+      "perQuery": {
+        "requests": 4.125,
+        "inputTokens": 34467.458333333336,
+        "cachedTokens": 24394.083333333332,
+        "outputTokens": 296.5833333333333,
+        "cnyByUsage": 0.02349518,
+        "unknownReservedCny": 0
+      }
+    }
+  ],
+  "pairedDifferences": [
+    {
+      "task": "multi",
+      "a": "pageindex",
+      "b": "whole",
+      "pairedQuestions": 12,
+      "diff": 0.16666666666666666,
+      "diffCI95": [
+        0.041666666666666664,
+        0.2916666666666667
+      ],
+      "aBetter": 4,
+      "bBetter": 0
+    },
+    {
+      "task": "multi",
+      "a": "pageindex",
+      "b": "bm25",
+      "pairedQuestions": 12,
+      "diff": 0.5,
+      "diffCI95": [
+        0.25,
+        0.75
+      ],
+      "aBetter": 7,
+      "bBetter": 0
+    },
+    {
+      "task": "multi",
+      "a": "pageindex",
+      "b": "dense",
+      "pairedQuestions": 12,
+      "diff": 0.16666666666666666,
+      "diffCI95": [
+        0,
+        0.375
+      ],
+      "aBetter": 3,
+      "bBetter": 0
+    }
+  ],
+  "usage": {
+    "requests": 291,
+    "cnyByUsageAtPublishedRate": 0.7667361600000001,
+    "unknownReservedCny": 0,
+    "inputTokens": 3004773,
+    "cachedTokens": 2722029,
+    "outputTokens": 11715
+  },
+  "usageAllRuns": {
+    "requests": 291,
+    "cnyByUsageAtPublishedRate": 0.7667361600000001,
+    "unknownReservedCny": 0,
+    "inputTokens": 3004773,
+    "cachedTokens": 2722029,
+    "outputTokens": 11715
+  },
+  "statistics": "question is the unit: repeats averaged per question; failures count as not fully correct; percentile bootstrap 2000x seed 7 over questions; paired differences only on questions both methods attempted",
+  "limitations": [
+    "partial groups do not represent the full planned sample",
+    "native evidence length is the sum of observed page reads (repeats included); null when no page read was observed",
+    "tree adapter startup included in end-to-end latency",
+    "judge calls reported as judgeUsage, excluded from per-query cost and answer latency"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "date": "2026-09-28T12:42:43.704Z",
+  "model": "deepseek-chat (every node)",
+  "retriever": "LangChain InMemoryVectorStore on DashScope text-embedding-v4, RecursiveCharacterTextSplitter 1000/200, k=5",
+  "maxRounds": 2,
+  "indexBuildMs": 98153,
+  "rows": [
+    {
+      "config": "langgraph-agentic-rag",
+      "variant": "clean",
+      "n": 48,
+      "errors": 0,
+      "fullCorrect": 72.9,
+      "fullCorrectCI95": [
+        60.4,
+        85.4
+      ],
+      "wrongOrEmpty": 6.3,
+      "llmCallsMean": 2.98,
+      "llmCallsMax": 4,
+      "retrievalsMean": 0.98,
+      "rewroteShare": 2.1,
+      "noRetrievalShare": 2.1,
+      "firstAnswerMsP50": 885,
+      "firstAnswerMsP90": 1489,
+      "totalMsP50": 5136,
+      "cnyPerQuestion": 0.01237
+    },
+    {
+      "config": "langgraph-agentic-rag",
+      "variant": "asr",
+      "n": 48,
+      "errors": 0,
+      "fullCorrect": 64.6,
+      "fullCorrectCI95": [
+        52.1,
+        77.1
+      ],
+      "wrongOrEmpty": 16.7,
+      "llmCallsMean": 3,
+      "llmCallsMax": 4,
+      "retrievalsMean": 0.98,
+      "rewroteShare": 4.2,
+      "noRetrievalShare": 2.1,
+      "firstAnswerMsP50": 1034,
+      "firstAnswerMsP90": 5702,
+      "totalMsP50": 5564,
+      "cnyPerQuestion": 0.01147
+    }
+  ],
+  "singlePassBaselines": {
+    "clean": {
+      "ours-dense-dashscope": 68.8,
+      "langchain-dense-fixed": 66.7,
+      "llamaindex-query-engine": 77.1
+    },
+    "asr": {
+      "ours-bm25": 37.5,
+      "ours-dense-dashscope": 60.4,
+      "ours-hybrid-dashscope": 52.1
+    }
+  },
+  "judgeSpend": {
+    "calls": 96,
+    "cny": 0.046
+  }
+}

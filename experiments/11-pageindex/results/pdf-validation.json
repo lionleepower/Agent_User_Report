@@ -1,0 +1,14 @@
+{
+  "corpusCommit": "b70121d377cb6005eb65f12b098cd5decd905669",
+  "pdfSha256": "7afb901148eae2dd30c3056577de72667b7f473c0a6e9eacd4727ca88755321b",
+  "pages": 136,
+  "sourceDocs": 37,
+  "chunkMappings": 637,
+  "textExtraction": "exact after whitespace normalization; tabs drawn as spaces",
+  "renderedQaPages": [
+    1,
+    69,
+    136
+  ],
+  "containsPublicText": true
+}

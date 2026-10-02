@@ -1,0 +1,11 @@
+kvType,contextTotal,slots,shape,n,cachedPromptTokensP50
+f16,8192,1,retrieval,5,535
+f16,8192,2,retrieval,5,535
+f16,16384,1,retrieval,5,535
+f16,16384,1,whole,5,8630
+f16,16384,2,retrieval,5,535
+q8_0,8192,1,retrieval,5,535
+q8_0,8192,2,retrieval,5,535
+q8_0,16384,1,retrieval,5,535
+q8_0,16384,1,whole,5,8630
+q8_0,16384,2,retrieval,5,535

@@ -1,0 +1,157 @@
+{
+  "date": "2026-09-28T10:19:10.771Z",
+  "model": "deepseek-chat",
+  "corpus": "CS-Notes M tier: 37 documents, 200347 chars",
+  "questions": 48,
+  "importMs": {
+    "langchain": 2356,
+    "llamaindex": 5134
+  },
+  "spend": {
+    "calls": 912,
+    "cny": 0.929
+  },
+  "summary": [
+    {
+      "config": "ours-bm25",
+      "notes": "product BM25 (shared/retrieval.ts), heading-aware ~400-char chunks, top 3",
+      "goldHit": 64.6,
+      "contextCharsP50": 642,
+      "fullCorrect": 45.8,
+      "fullCorrectCI95": [
+        31.3,
+        60.4
+      ],
+      "wrongOrEmpty": 35.4,
+      "buildMs": 53,
+      "retrieveMsP50": 0.08
+    },
+    {
+      "config": "ours-hybrid-bge",
+      "notes": "BM25 + local bge-small-zh, RRF, top 3",
+      "goldHit": 79.2,
+      "contextCharsP50": 924,
+      "fullCorrect": 60.4,
+      "fullCorrectCI95": [
+        47.9,
+        72.9
+      ],
+      "wrongOrEmpty": 16.7
+    },
+    {
+      "config": "ours-dense-dashscope",
+      "notes": "DashScope text-embedding-v4 on the same chunks, top 3",
+      "goldHit": 85.4,
+      "contextCharsP50": 878,
+      "fullCorrect": 68.8,
+      "fullCorrectCI95": [
+        56.3,
+        81.3
+      ],
+      "wrongOrEmpty": 10.4
+    },
+    {
+      "config": "langchain-bm25-default",
+      "notes": "RecursiveCharacterTextSplitter(1000/200) + BM25Retriever, default k=4, default tokeniser (str.split)",
+      "goldHit": 27.1,
+      "contextCharsP50": 3408,
+      "fullCorrect": 18.8,
+      "fullCorrectCI95": [
+        8.3,
+        31.3
+      ],
+      "wrongOrEmpty": 72.9,
+      "buildMs": 16,
+      "retrieveMsP50": 0.1
+    },
+    {
+      "config": "langchain-bm25-jieba",
+      "notes": "same splits, jieba tokeniser, k=3",
+      "goldHit": 81.3,
+      "contextCharsP50": 2857,
+      "fullCorrect": 60.4,
+      "fullCorrectCI95": [
+        45.8,
+        72.9
+      ],
+      "wrongOrEmpty": 18.8,
+      "buildMs": 800,
+      "retrieveMsP50": 0.8
+    },
+    {
+      "config": "langchain-dense-default",
+      "notes": "OpenAIEmbeddings pointed at DashScope with defaults, InMemoryVectorStore, default k=4",
+      "error": "BadRequestError: Error code: 400 - {'error': {'message': '<400> InternalError.Algo.InvalidParameter: Value error, contents is neither str nor list of str.: input.contents', 'type': 'InvalidParameter', 'param': None, 'code': 'InvalidParameter'}, 'id': '38ea39e8-b6cd-96ef-8163-eef4f823317c', 'request_id': '38ea39e8-b6cd-96ef-8163-eef4f823317c'}"
+    },
+    {
+      "config": "langchain-dense-fixed",
+      "notes": "check_embedding_ctx_length=False, chunk_size=10 and a retry wrapper (all needed for DashScope), k=3",
+      "goldHit": 91.7,
+      "contextCharsP50": 2832,
+      "fullCorrect": 66.7,
+      "fullCorrectCI95": [
+        54.2,
+        79.2
+      ],
+      "wrongOrEmpty": 10.4,
+      "buildMs": 158441,
+      "retrieveMsP50": 586.4
+    },
+    {
+      "config": "llamaindex-dense-default",
+      "notes": "SentenceSplitter defaults (1024 tokens / 200 overlap), VectorStoreIndex, default similarity_top_k=2",
+      "goldHit": 89.6,
+      "contextCharsP50": 3035,
+      "fullCorrect": 70.8,
+      "fullCorrectCI95": [
+        58.3,
+        83.3
+      ],
+      "wrongOrEmpty": 12.5,
+      "buildMs": 88279,
+      "retrieveMsP50": 526.2
+    },
+    {
+      "config": "llamaindex-dense-tuned",
+      "notes": "SentenceSplitter(400 tokens / 60), similarity_top_k=3",
+      "goldHit": 95.8,
+      "contextCharsP50": 1967,
+      "fullCorrect": 77.1,
+      "fullCorrectCI95": [
+        64.6,
+        89.6
+      ],
+      "wrongOrEmpty": 8.3,
+      "buildMs": 113800,
+      "retrieveMsP50": 562
+    },
+    {
+      "config": "llamaindex-bm25-default",
+      "notes": "BM25Retriever.from_defaults (bm25s, English stemmer and tokenisation), top 2",
+      "goldHit": 27.1,
+      "contextCharsP50": 1721,
+      "fullCorrect": 18.8,
+      "fullCorrectCI95": [
+        8.3,
+        31.3
+      ],
+      "wrongOrEmpty": 72.9,
+      "buildMs": 111,
+      "retrieveMsP50": 0.3
+    },
+    {
+      "config": "llamaindex-query-engine",
+      "notes": "VectorStoreIndex(default splitter).as_query_engine() with default prompts, same LLM",
+      "fullCorrect": 77.1,
+      "fullCorrectCI95": [
+        64.6,
+        89.6
+      ],
+      "wrongOrEmpty": 6.3,
+      "answeredInEnglish": 2.1,
+      "answerCharsP50": 182,
+      "buildMs": 166471,
+      "totalMsP50": 2140
+    }
+  ]
+}

@@ -1,0 +1,458 @@
+{
+  "date": "2026-09-28T10:19:21.926Z",
+  "model": "deepseek-chat",
+  "needles": 44,
+  "runs": 2,
+  "spend": {
+    "calls": 3520,
+    "cny": 4.428
+  },
+  "summary": [
+    {
+      "docs": 8,
+      "chars": 21608,
+      "method": "full",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 75,
+      "fullCorrectCI95": [
+        61.4,
+        86.4
+      ],
+      "wrongOrEmpty": 2.3,
+      "paraphraseCorrect": 68.2,
+      "goldRetrieved": null,
+      "runFlipShare": 0,
+      "ttftP50": 870,
+      "ttftP90": 1365,
+      "promptTokensP50": 9347,
+      "cacheHitShare": 96.8,
+      "cnyPerAnswer": 0.00254
+    },
+    {
+      "docs": 8,
+      "chars": 21608,
+      "method": "bm25",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 46.6,
+      "fullCorrectCI95": [
+        33,
+        60.2
+      ],
+      "wrongOrEmpty": 36.4,
+      "paraphraseCorrect": 29.5,
+      "goldRetrieved": 65.9,
+      "runFlipShare": 6.8,
+      "ttftP50": 657,
+      "ttftP90": 1214,
+      "promptTokensP50": 298,
+      "cacheHitShare": 32.4,
+      "cnyPerAnswer": 0.00048
+    },
+    {
+      "docs": 8,
+      "chars": 21608,
+      "method": "hybrid",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 69.3,
+      "fullCorrectCI95": [
+        55.7,
+        81.8
+      ],
+      "wrongOrEmpty": 10.2,
+      "paraphraseCorrect": 63.6,
+      "goldRetrieved": 88.6,
+      "runFlipShare": 9.1,
+      "ttftP50": 726,
+      "ttftP90": 1332,
+      "promptTokensP50": 532,
+      "cacheHitShare": 44.6,
+      "cnyPerAnswer": 0.00075
+    },
+    {
+      "docs": 8,
+      "chars": 21608,
+      "method": "dense",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 76.1,
+      "fullCorrectCI95": [
+        63.6,
+        87.5
+      ],
+      "wrongOrEmpty": 0,
+      "paraphraseCorrect": 77.3,
+      "goldRetrieved": 95.5,
+      "runFlipShare": 2.3,
+      "ttftP50": 744,
+      "ttftP90": 1147,
+      "promptTokensP50": 521,
+      "cacheHitShare": 44.2,
+      "cnyPerAnswer": 0.00076
+    },
+    {
+      "docs": 9,
+      "chars": 32692,
+      "method": "full",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 75,
+      "fullCorrectCI95": [
+        62.5,
+        87.5
+      ],
+      "wrongOrEmpty": 4.5,
+      "paraphraseCorrect": 68.2,
+      "goldRetrieved": null,
+      "runFlipShare": 4.5,
+      "ttftP50": 777,
+      "ttftP90": 1023,
+      "promptTokensP50": 14472,
+      "cacheHitShare": 97.7,
+      "cnyPerAnswer": 0.00363
+    },
+    {
+      "docs": 9,
+      "chars": 32692,
+      "method": "bm25",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 46.6,
+      "fullCorrectCI95": [
+        31.8,
+        61.4
+      ],
+      "wrongOrEmpty": 36.4,
+      "paraphraseCorrect": 29.5,
+      "goldRetrieved": 65.9,
+      "runFlipShare": 6.8,
+      "ttftP50": 567,
+      "ttftP90": 802,
+      "promptTokensP50": 298,
+      "cacheHitShare": 42.2,
+      "cnyPerAnswer": 0.00043
+    },
+    {
+      "docs": 9,
+      "chars": 32692,
+      "method": "hybrid",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 70.5,
+      "fullCorrectCI95": [
+        56.8,
+        83
+      ],
+      "wrongOrEmpty": 13.6,
+      "paraphraseCorrect": 59.1,
+      "goldRetrieved": 86.4,
+      "runFlipShare": 4.5,
+      "ttftP50": 586,
+      "ttftP90": 777,
+      "promptTokensP50": 511,
+      "cacheHitShare": 56.7,
+      "cnyPerAnswer": 0.00064
+    },
+    {
+      "docs": 9,
+      "chars": 32692,
+      "method": "dense",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 77.3,
+      "fullCorrectCI95": [
+        64.8,
+        88.6
+      ],
+      "wrongOrEmpty": 0,
+      "paraphraseCorrect": 72.7,
+      "goldRetrieved": 95.5,
+      "runFlipShare": 4.5,
+      "ttftP50": 593,
+      "ttftP90": 756,
+      "promptTokensP50": 544,
+      "cacheHitShare": 61.8,
+      "cnyPerAnswer": 0.00061
+    },
+    {
+      "docs": 13,
+      "chars": 50224,
+      "method": "full",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 75,
+      "fullCorrectCI95": [
+        62.5,
+        87.5
+      ],
+      "wrongOrEmpty": 2.3,
+      "paraphraseCorrect": 68.2,
+      "goldRetrieved": null,
+      "runFlipShare": 4.5,
+      "ttftP50": 895,
+      "ttftP90": 1076,
+      "promptTokensP50": 22909,
+      "cacheHitShare": 97.9,
+      "cnyPerAnswer": 0.0056
+    },
+    {
+      "docs": 13,
+      "chars": 50224,
+      "method": "bm25",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 46.6,
+      "fullCorrectCI95": [
+        33,
+        60.2
+      ],
+      "wrongOrEmpty": 36.4,
+      "paraphraseCorrect": 29.5,
+      "goldRetrieved": 65.9,
+      "runFlipShare": 6.8,
+      "ttftP50": 613,
+      "ttftP90": 770,
+      "promptTokensP50": 309,
+      "cacheHitShare": 41.6,
+      "cnyPerAnswer": 0.00048
+    },
+    {
+      "docs": 13,
+      "chars": 50224,
+      "method": "hybrid",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 65.9,
+      "fullCorrectCI95": [
+        52.3,
+        79.5
+      ],
+      "wrongOrEmpty": 13.6,
+      "paraphraseCorrect": 56.8,
+      "goldRetrieved": 86.4,
+      "runFlipShare": 4.5,
+      "ttftP50": 611,
+      "ttftP90": 763,
+      "promptTokensP50": 526,
+      "cacheHitShare": 53.2,
+      "cnyPerAnswer": 0.00066
+    },
+    {
+      "docs": 13,
+      "chars": 50224,
+      "method": "dense",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 76.1,
+      "fullCorrectCI95": [
+        63.6,
+        87.5
+      ],
+      "wrongOrEmpty": 0,
+      "paraphraseCorrect": 70.5,
+      "goldRetrieved": 95.5,
+      "runFlipShare": 6.8,
+      "ttftP50": 630,
+      "ttftP90": 792,
+      "promptTokensP50": 526,
+      "cacheHitShare": 61.8,
+      "cnyPerAnswer": 0.00058
+    },
+    {
+      "docs": 17,
+      "chars": 84820,
+      "method": "full",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 75,
+      "fullCorrectCI95": [
+        63.6,
+        86.4
+      ],
+      "wrongOrEmpty": 4.5,
+      "paraphraseCorrect": 63.6,
+      "goldRetrieved": null,
+      "runFlipShare": 9.1,
+      "ttftP50": 1041,
+      "ttftP90": 1257,
+      "promptTokensP50": 38457,
+      "cacheHitShare": 98.4,
+      "cnyPerAnswer": 0.00893
+    },
+    {
+      "docs": 17,
+      "chars": 84820,
+      "method": "bm25",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 45.5,
+      "fullCorrectCI95": [
+        31.8,
+        59.1
+      ],
+      "wrongOrEmpty": 36.4,
+      "paraphraseCorrect": 25,
+      "goldRetrieved": 65.9,
+      "runFlipShare": 9.1,
+      "ttftP50": 599,
+      "ttftP90": 776,
+      "promptTokensP50": 309,
+      "cacheHitShare": 43.1,
+      "cnyPerAnswer": 0.00047
+    },
+    {
+      "docs": 17,
+      "chars": 84820,
+      "method": "hybrid",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 68.2,
+      "fullCorrectCI95": [
+        53.4,
+        81.8
+      ],
+      "wrongOrEmpty": 15.9,
+      "paraphraseCorrect": 52.3,
+      "goldRetrieved": 84.1,
+      "runFlipShare": 4.5,
+      "ttftP50": 595,
+      "ttftP90": 791,
+      "promptTokensP50": 486,
+      "cacheHitShare": 54.7,
+      "cnyPerAnswer": 0.00062
+    },
+    {
+      "docs": 17,
+      "chars": 84820,
+      "method": "dense",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 77.3,
+      "fullCorrectCI95": [
+        65.9,
+        88.6
+      ],
+      "wrongOrEmpty": 0,
+      "paraphraseCorrect": 72.7,
+      "goldRetrieved": 95.5,
+      "runFlipShare": 0,
+      "ttftP50": 630,
+      "ttftP90": 811,
+      "promptTokensP50": 533,
+      "cacheHitShare": 63,
+      "cnyPerAnswer": 0.00058
+    },
+    {
+      "docs": 19,
+      "chars": 129096,
+      "method": "full",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 69.3,
+      "fullCorrectCI95": [
+        56.8,
+        81.8
+      ],
+      "wrongOrEmpty": 10.2,
+      "paraphraseCorrect": 65.9,
+      "goldRetrieved": null,
+      "runFlipShare": 11.4,
+      "ttftP50": 994,
+      "ttftP90": 1204,
+      "promptTokensP50": 56020,
+      "cacheHitShare": 98.5,
+      "cnyPerAnswer": 0.01285
+    },
+    {
+      "docs": 19,
+      "chars": 129096,
+      "method": "bm25",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 45.5,
+      "fullCorrectCI95": [
+        31.8,
+        59.1
+      ],
+      "wrongOrEmpty": 36.4,
+      "paraphraseCorrect": 27.3,
+      "goldRetrieved": 65.9,
+      "runFlipShare": 9.1,
+      "ttftP50": 557,
+      "ttftP90": 780,
+      "promptTokensP50": 309,
+      "cacheHitShare": 45.4,
+      "cnyPerAnswer": 0.00046
+    },
+    {
+      "docs": 19,
+      "chars": 129096,
+      "method": "hybrid",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 69.3,
+      "fullCorrectCI95": [
+        55.7,
+        81.8
+      ],
+      "wrongOrEmpty": 13.6,
+      "paraphraseCorrect": 56.8,
+      "goldRetrieved": 86.4,
+      "runFlipShare": 6.8,
+      "ttftP50": 592,
+      "ttftP90": 789,
+      "promptTokensP50": 479,
+      "cacheHitShare": 57.5,
+      "cnyPerAnswer": 0.00058
+    },
+    {
+      "docs": 19,
+      "chars": 129096,
+      "method": "dense",
+      "answers": 88,
+      "errors": 0,
+      "fullCorrect": 77.3,
+      "fullCorrectCI95": [
+        65.9,
+        88.6
+      ],
+      "wrongOrEmpty": 0,
+      "paraphraseCorrect": 72.7,
+      "goldRetrieved": 95.5,
+      "runFlipShare": 13.6,
+      "ttftP50": 593,
+      "ttftP90": 752,
+      "promptTokensP50": 533,
+      "cacheHitShare": 62.7,
+      "cnyPerAnswer": 0.00058
+    }
+  ],
+  "fullByNeedlePosition": [
+    {
+      "from": 0,
+      "to": 0.25,
+      "answers": 48,
+      "fullCorrect": 77.1
+    },
+    {
+      "from": 0.25,
+      "to": 0.5,
+      "answers": 104,
+      "fullCorrect": 68.3
+    },
+    {
+      "from": 0.5,
+      "to": 0.75,
+      "answers": 108,
+      "fullCorrect": 74.1
+    },
+    {
+      "from": 0.75,
+      "to": 1,
+      "answers": 180,
+      "fullCorrect": 76.1
+    }
+  ]
+}

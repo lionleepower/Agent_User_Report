@@ -1,0 +1,22 @@
+{
+  "status": "approved",
+  "checkedDate": "2026-09-30",
+  "approval": "User approved on 2026-09-30 replacing the delisted deepseek-chat with deepseek-flash (non-thinking) for all new paid experiments. New results are not pooled with historical deepseek-chat data.",
+  "deepseek": {
+    "model": "deepseek-flash",
+    "versionPublished": "DeepSeek-V4.1-Flash",
+    "contextTokens": 1000000,
+    "source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+    "thinkingSource": "https://api-docs.deepseek.com/zh-cn/guides/thinking_mode",
+    "pricePolicy": "peak CNY rate used conservatively (off-peak is half); service bill not read",
+    "models": {
+      "deepseek-flash": {"resource":"chat/completions","price":{"hit":0.04,"miss":2,"out":8},"extra":{"thinking":{"type":"disabled"}}}
+    }
+  },
+  "dashscope": {
+    "source": "https://help.aliyun.com/zh/model-studio/embedding",
+    "checkedDate": "2026-09-30",
+    "region": "Beijing domestic endpoint",
+    "models": {"text-embedding-v4":{"resource":"embeddings","price":{"hit":0.5,"miss":0.5,"out":0}}}
+  }
+}

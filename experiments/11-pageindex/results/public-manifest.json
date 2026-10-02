@@ -1,0 +1,194 @@
+{
+  "commit": "b70121d377cb6005eb65f12b098cd5decd905669",
+  "sha256": "508a0277608ff6a1ed62260ae5405968ad939bac399530de9bc412e5f4a4e813",
+  "docs": [
+    {
+      "name": "notes/5. 替换空格.md",
+      "chars": 1249,
+      "sha256": "1a12475729e2f0120830b2f5f46626fbee1269b27f100d86cbfc304d011e2474"
+    },
+    {
+      "name": "notes/10.1 斐波那契数列.md",
+      "chars": 1885,
+      "sha256": "73cdacdfc6847098af0a86f5bf578a4a28168544047d14419104ed7206426418"
+    },
+    {
+      "name": "notes/计算机网络 - 概述.md",
+      "chars": 4358,
+      "sha256": "12a05a1eca1f92e4f222fc219034d925f4b065505b8aded2cd350c846b337232"
+    },
+    {
+      "name": "notes/10.4 变态跳台阶.md",
+      "chars": 1156,
+      "sha256": "cf1cf20204029a8c6e441dbf81103ee3988d721f0cd873358fc25baec673845c"
+    },
+    {
+      "name": "notes/构建工具.md",
+      "chars": 3117,
+      "sha256": "cf20aae0139f1939711774067b3b9c110d33987c08929c6e24b7c4930bd8457a"
+    },
+    {
+      "name": "notes/7. 重建二叉树.md",
+      "chars": 1474,
+      "sha256": "4c98aaf77201dbd7043b55dd0b71088e75231f9d4490df7340dc091e3dbc1e8a"
+    },
+    {
+      "name": "notes/18.1 在 O(1) 时间内删除链表节点.md",
+      "chars": 1259,
+      "sha256": "de12df1585cdc2817eb5f2685dd49ffe8404d3ece927b9fc7747c140379bb0fe"
+    },
+    {
+      "name": "notes/设计模式 - 状态.md",
+      "chars": 7110,
+      "sha256": "7670b2cccbed63237cc4cf1377a2b3d688f24c8b584773752354f5dc25ce5099"
+    },
+    {
+      "name": "notes/Leetcode 题解 - 位运算.md",
+      "chars": 11084,
+      "sha256": "637b9643a6438618cd65d60a70277e3da17c8be8037c5962e5f00449828ac815"
+    },
+    {
+      "name": "notes/设计模式 - 抽象工厂.md",
+      "chars": 2448,
+      "sha256": "129a15747611ca31611de51ed28d37b16e3fd2962ff455950cba08489962519b"
+    },
+    {
+      "name": "notes/设计模式 - 策略.md",
+      "chars": 1935,
+      "sha256": "8c5de7700a0e32a871dd7ac224bca11200e457b4f924510a038ea22a580746d5"
+    },
+    {
+      "name": "notes/MySQL.md",
+      "chars": 11137,
+      "sha256": "9bb762abdaa7bec4cec9f81b070ee3c7166696d43e53ea7b76f967a46cf7b981"
+    },
+    {
+      "name": "notes/消息队列.md",
+      "chars": 2012,
+      "sha256": "28b0238e43ff193a5bb2dd73a65d5180897dcf6c166a2fdb18e42a23a01341e1"
+    },
+    {
+      "name": "notes/Leetcode 题解 - 字符串.md",
+      "chars": 5629,
+      "sha256": "419e8501cef41cdcf44f17e2879538481f8ab2c6a3987f525cc91ea9fa7fb8a3"
+    },
+    {
+      "name": "notes/算法 - 并查集.md",
+      "chars": 4191,
+      "sha256": "d9c45b9ab579b5b24f98eb86fa61d6a2adb0645aaea13429d79c082db61fb5f8"
+    },
+    {
+      "name": "notes/Java 虚拟机.md",
+      "chars": 23712,
+      "sha256": "60aa9ff6df34dc95c744f510bd69267c69d6740c2f9c67a980ad0b32aa7776a0"
+    },
+    {
+      "name": "notes/设计模式 - 外观.md",
+      "chars": 1064,
+      "sha256": "7da5753b03cba561ad778c5f69978a981725e8583e2c738769594f7710622276"
+    },
+    {
+      "name": "notes/Leetcode 题解 - 链表.md",
+      "chars": 9531,
+      "sha256": "ee3168723765fb5108c0fd1b8eb55e511a93a43cb222b7c9ade8a8ec3fc187c1"
+    },
+    {
+      "name": "notes/Java 基础.md",
+      "chars": 34745,
+      "sha256": "8d5e3f1f43bd73de261586f030e1f0cd5cc31a33a59b90da8b8e740ddc288222"
+    },
+    {
+      "name": "notes/6. 从尾到头打印链表.md",
+      "chars": 2596,
+      "sha256": "77ee50c1fc07a306af612a7ee102b37bc5d8cfa3256773d32c7f219ebc7ded80"
+    },
+    {
+      "name": "notes/41.2 字符流中第一个不重复的字符.md",
+      "chars": 873,
+      "sha256": "f48587b09ed102385254ea61215b8de6b6fed54f710b19065d9dd15eb237dfa8"
+    },
+    {
+      "name": "notes/32.2 把二叉树打印成多行.md",
+      "chars": 903,
+      "sha256": "f58e29e28ffc0ab83f480854c4d9520b6e6c4048bbd2ab59793f96230b89ba91"
+    },
+    {
+      "name": "notes/27. 二叉树的镜像.md",
+      "chars": 630,
+      "sha256": "c31f6be7e9a9b1cbb1f4f017f12105c3ef71f6413bfbd0f5b7ec36f16593b3d1"
+    },
+    {
+      "name": "notes/Leetcode 题解 - 数组与矩阵.md",
+      "chars": 11742,
+      "sha256": "ccb6ac66a0b8c940ca2f72608a75f40a8873cd3ab13fe533aa8959523af8005a"
+    },
+    {
+      "name": "notes/系统设计基础.md",
+      "chars": 1865,
+      "sha256": "c474e2f11587641ab8d1c9cc5bb841e1dbf5e986de403c016563e55937c767b2"
+    },
+    {
+      "name": "notes/51. 数组中的逆序对.md",
+      "chars": 1296,
+      "sha256": "99c619f659f4fe009a58318102950ad411752af4a49c50beed236261a6ba2cff"
+    },
+    {
+      "name": "notes/设计模式 - 代理.md",
+      "chars": 2660,
+      "sha256": "35dcd1196acfe4ce26bc48a0fda84d5424aeac19a07453c2ade99feaf8cd228a"
+    },
+    {
+      "name": "notes/Leetcode 题解 - 二分查找.md",
+      "chars": 7837,
+      "sha256": "0667eae3e72c10454c8266bd44a4c425cbb096dcbc7fa48ea7d8040234b0f495"
+    },
+    {
+      "name": "notes/47. 礼物的最大价值.md",
+      "chars": 784,
+      "sha256": "e889f6367a15d1616381911f0b770a3287fc8b7979fc0de81d1e2719fe9a4ab1"
+    },
+    {
+      "name": "notes/计算机操作系统 - 进程管理.md",
+      "chars": 15682,
+      "sha256": "81bd8a81bb1055b6663bbf4e853a50cba4b34c802ca393da9feb66f455f89300"
+    },
+    {
+      "name": "notes/计算机网络 - 应用层.md",
+      "chars": 5649,
+      "sha256": "0bf0a7d12f9590d3bb07c6fe3df16f9cf29609a9146217ccb9f4012c4df4826e"
+    },
+    {
+      "name": "notes/计算机网络 - 网络层.md",
+      "chars": 8235,
+      "sha256": "5e54865e07cbe176c144a711e0e22894ab19de6a48d0cbb0b6d215b42fe641f2"
+    },
+    {
+      "name": "notes/16. 数值的整数次方.md",
+      "chars": 1448,
+      "sha256": "a88164de8c1a46468d22a6264ce6ee9550f2c838ab8fd0f42566c43fc9a0798c"
+    },
+    {
+      "name": "notes/设计模式 - 原型模式.md",
+      "chars": 1103,
+      "sha256": "6e5f06dc180eb489ce09e3d11363306e62938da17ce611495fbd5250aae35ba3"
+    },
+    {
+      "name": "notes/设计模式 - 生成器.md",
+      "chars": 2543,
+      "sha256": "9f407e81eb56a7fc3680da7d46d1b6dca1331c4aaf3e1775020c3f1f3af5696c"
+    },
+    {
+      "name": "notes/计算机网络 - 目录.md",
+      "chars": 1584,
+      "sha256": "45b504ebd0dc53f43567377a71fd05703ebdb7a407f461820559b39f5479227f"
+    },
+    {
+      "name": "notes/计算机操作系统 - 死锁.md",
+      "chars": 3821,
+      "sha256": "87a42f25f08e4a301a4ce8a7519089606fc77f6cd352cb544b6dabd9e96537a0"
+    }
+  ],
+  "questions": 48,
+  "noisePairs": 48,
+  "wholeChars": 21608
+}

@@ -1,0 +1,11 @@
+host,sample,dnsMs,tcpMs,tlsMs,waitMs,totalMs,httpCode,httpVersion,fakeIpTunProxy
+DeepSeek,1,17.8,2.0,40.7,60.8,121.3,401,1.1,True
+DeepSeek,2,12.3,2.8,86.5,75.1,176.6,401,1.1,True
+DeepSeek,3,4.6,1.1,36.2,108.3,150.3,401,1.1,True
+DeepSeek,4,13.1,1.0,39.9,67.4,121.5,401,1.1,True
+DeepSeek,5,25.0,2.8,415.6,57.9,501.2,401,1.1,True
+DashScope,1,22.7,1.6,69.3,30.0,123.5,401,1.1,True
+DashScope,2,12.1,15.5,49.5,60.6,137.6,401,1.1,True
+DashScope,3,14.4,15.9,72.5,50.6,153.4,401,1.1,True
+DashScope,4,18.5,16.1,73.3,50.9,158.8,401,1.1,True
+DashScope,5,6.5,0.8,65.2,36.9,109.5,401,1.1,True
