@@ -4,7 +4,7 @@
 
 [English](README.en.md) · [实验详解](experiments/report/WALKTHROUGH.zh-CN.md) · [完整报告](experiments/report/REPORT.zh-CN.md) · [小白手册](experiments/report/HANDBOOK.zh-CN.md) · [产品案例](docs/case-study-product.zh-CN.md) · [工程亮点](docs/engineering-highlights.zh-CN.md)
 
-## 30 秒看懂
+## 概览
 
 **要解决的问题**：我的一个个人项目要做实时语音问答。对方说完一句话，程序要从我自己的笔记里找到相关内容，让 AI 生成一段能直接说出口的回答，而且最好 2 秒内开始出字。那么，AI 该怎么“查资料”？
 
@@ -18,7 +18,7 @@
 
 ![四种取资料方式对比](experiments/report/figures/methods-compare.svg)
 
-## 核心结论（带数字）
+## 核心结论
 
 1. **资料不多时，整包发给模型就是最好的“检索”。** 6 万字以内放心整包，8.5 万字以内答对率不变（75%），前缀缓存命中 97–98%，每题不到一分钱。
 2. **检索时别只靠关键词。** BM25 完全正确 46–67%，向量检索 74–96%；语音识别的错字还会让 BM25 再掉十几个点。
