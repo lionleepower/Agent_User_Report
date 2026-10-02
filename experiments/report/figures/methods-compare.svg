@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <title>四种取资料方式对比</title>
+  <rect width="900" height="470" fill="#ffffff"/>
+  <text x="24" y="34" font-size="19" font-weight="bold" fill="#1f2328">四种“取资料”方式：怎么找、像什么、实测如何</text>
+  <text x="24" y="56" font-size="12" fill="#57606a">实测数字来自第二轮：20 万字公开笔记，48 道干净题 + 48 道语音噪声题，deepseek-flash 回答；费用为每题、不含评分</text>
+
+  <rect x="24" y="72" width="204" height="384" rx="8" fill="#0072B2" fill-opacity="0.07" stroke="#0072B2"/>
+  <text x="36" y="98" font-size="16" font-weight="bold" fill="#0072B2">整包</text>
+  <text x="36" y="120" font-size="11" fill="#1f2328">怎么找：不找，全部资料都给</text>
+  <text x="36" y="138" font-size="11" fill="#57606a">像：把小册子整本摊在桌上</text>
+  <text x="36" y="166" font-size="12" font-weight="bold" fill="#007a59">优点</text>
+  <text x="36" y="184" font-size="11" fill="#1f2328">不会“翻错页”；有前缀缓存</text>
+  <text x="36" y="200" font-size="11" fill="#1f2328">后又快又便宜</text>
+  <text x="36" y="226" font-size="12" font-weight="bold" fill="#D55E00">缺点</text>
+  <text x="36" y="244" font-size="11" fill="#1f2328">资料一大就贵、慢，超过上下文</text>
+  <text x="36" y="260" font-size="11" fill="#1f2328">窗口就放不下</text>
+  <text x="36" y="288" font-size="12" font-weight="bold" fill="#1f2328">实测</text>
+  <text x="36" y="306" font-size="11" fill="#1f2328">完全正确 76.0% / 69.8%</text>
+  <text x="36" y="322" font-size="11" fill="#1f2328">端到端 1.08 秒</text>
+  <text x="36" y="338" font-size="11" fill="#1f2328">每题约 0.4 分钱（缓存命中）</text>
+  <text x="36" y="366" font-size="12" font-weight="bold" fill="#0072B2">适合</text>
+  <text x="36" y="384" font-size="11" fill="#1f2328">资料 6 万字以内：首选</text>
+
+  <rect x="240" y="72" width="204" height="384" rx="8" fill="#E69F00" fill-opacity="0.08" stroke="#E69F00"/>
+  <text x="252" y="98" font-size="16" font-weight="bold" fill="#b06d00">BM25（关键词）</text>
+  <text x="252" y="120" font-size="11" fill="#1f2328">怎么找：按字面关键词打分</text>
+  <text x="252" y="138" font-size="11" fill="#57606a">像：查书后面的关键词索引</text>
+  <text x="252" y="166" font-size="12" font-weight="bold" fill="#007a59">优点</text>
+  <text x="252" y="184" font-size="11" fill="#1f2328">最快（0.1 毫秒）、最便宜、</text>
+  <text x="252" y="200" font-size="11" fill="#1f2328">不用模型、完全离线</text>
+  <text x="252" y="226" font-size="12" font-weight="bold" fill="#D55E00">缺点</text>
+  <text x="252" y="244" font-size="11" fill="#1f2328">换个说法、语音错字就找不到</text>
+  <text x="252" y="260" font-size="11" fill="#1f2328">（“踢西批”对不上“TCP”）</text>
+  <text x="252" y="288" font-size="12" font-weight="bold" fill="#1f2328">实测</text>
+  <text x="252" y="306" font-size="11" fill="#1f2328">完全正确 58.3% / 44.8%</text>
+  <text x="252" y="322" font-size="11" fill="#1f2328">端到端 0.71 秒</text>
+  <text x="252" y="338" font-size="11" fill="#1f2328">每题约 0.06 分钱</text>
+  <text x="252" y="366" font-size="12" font-weight="bold" fill="#b06d00">适合</text>
+  <text x="252" y="384" font-size="11" fill="#1f2328">精确术语查找；和向量混合</text>
+  <text x="252" y="400" font-size="11" fill="#1f2328">当兜底</text>
+
+  <rect x="456" y="72" width="204" height="384" rx="8" fill="#009E73" fill-opacity="0.07" stroke="#009E73"/>
+  <text x="468" y="98" font-size="16" font-weight="bold" fill="#007a59">向量检索</text>
+  <text x="468" y="120" font-size="11" fill="#1f2328">怎么找：把文字变成坐标，</text>
+  <text x="468" y="136" font-size="11" fill="#1f2328">找意思最近的几段</text>
+  <text x="468" y="154" font-size="11" fill="#57606a">像：在地图上找邻居</text>
+  <text x="468" y="180" font-size="12" font-weight="bold" fill="#007a59">优点</text>
+  <text x="468" y="198" font-size="11" fill="#1f2328">抗同义词、中英互换和错字</text>
+  <text x="468" y="226" font-size="12" font-weight="bold" fill="#D55E00">缺点</text>
+  <text x="468" y="244" font-size="11" fill="#1f2328">要向量模型和建索引；可能只</text>
+  <text x="468" y="260" font-size="11" fill="#1f2328">找到半截（有题目、没解法）</text>
+  <text x="468" y="288" font-size="12" font-weight="bold" fill="#1f2328">实测</text>
+  <text x="468" y="306" font-size="11" fill="#1f2328">完全正确 62.5% / 58.3%</text>
+  <text x="468" y="322" font-size="11" fill="#1f2328">端到端 1.14 秒</text>
+  <text x="468" y="338" font-size="11" fill="#1f2328">每题约 0.1 分钱（另建索引一次）</text>
+  <text x="468" y="366" font-size="12" font-weight="bold" fill="#007a59">适合</text>
+  <text x="468" y="384" font-size="11" fill="#1f2328">资料大、问题来自语音的</text>
+  <text x="468" y="400" font-size="11" fill="#1f2328">实时场景（和 BM25 混合）</text>
+
+  <rect x="672" y="72" width="204" height="384" rx="8" fill="#D55E00" fill-opacity="0.07" stroke="#D55E00"/>
+  <text x="684" y="98" font-size="16" font-weight="bold" fill="#D55E00">PageIndex</text>
+  <text x="684" y="120" font-size="11" fill="#1f2328">怎么找：模型先看目录、挑</text>
+  <text x="684" y="136" font-size="11" fill="#1f2328">章节，再读对应的页</text>
+  <text x="684" y="154" font-size="11" fill="#57606a">像：认真翻目录的好学生</text>
+  <text x="684" y="180" font-size="12" font-weight="bold" fill="#007a59">优点</text>
+  <text x="684" y="198" font-size="11" fill="#1f2328">最准，对错字也稳；</text>
+  <text x="684" y="214" font-size="11" fill="#1f2328">送给模型的证据最少</text>
+  <text x="684" y="240" font-size="12" font-weight="bold" fill="#D55E00">缺点</text>
+  <text x="684" y="258" font-size="11" fill="#1f2328">每题多调 3 次模型：慢、贵</text>
+  <text x="684" y="288" font-size="12" font-weight="bold" fill="#1f2328">实测</text>
+  <text x="684" y="306" font-size="11" fill="#1f2328">完全正确 79.2% / 78.1%</text>
+  <text x="684" y="322" font-size="11" fill="#1f2328">端到端 6.35 秒</text>
+  <text x="684" y="338" font-size="11" fill="#1f2328">每题约 2.8 分钱</text>
+  <text x="684" y="366" font-size="12" font-weight="bold" fill="#D55E00">适合</text>
+  <text x="684" y="384" font-size="11" fill="#1f2328">不赶时间的离线问答、复盘；</text>
+  <text x="684" y="400" font-size="11" fill="#1f2328">不适合实时</text>
+  <text x="684" y="432" font-size="10" fill="#57606a">与整包的差异不显著</text>
+</svg>

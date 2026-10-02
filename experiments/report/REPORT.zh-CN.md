@@ -1,6 +1,6 @@
 # 小资料先别急着上 RAG：个人知识库的检索、模型与框架实测与建议
 
-[English](REPORT.en.md) · [实验目录](../README.zh-CN.md) · [小白手册：读懂这份报告需要的概念](HANDBOOK.zh-CN.md)
+[English](REPORT.en.md) · [实验目录](../README.zh-CN.md) · [实验详解：示例题目、真实回答和每个实验的卡片](WALKTHROUGH.zh-CN.md) · [小白手册：读懂这份报告需要的概念](HANDBOOK.zh-CN.md)
 
 > 一份不太严肃的工程测试报告。所有数字都来自本仓库 `experiments/*/results/summary.json`，图表由 [`make_figures.py`](make_figures.py)、[`continuation_figures.py`](continuation_figures.py) 和 [`pageindex_figures.py`](pageindex_figures.py) 生成，绘图数据在 [`data/`](data/)。
 >
@@ -61,6 +61,10 @@ flowchart TD
 | 语料 | 公开的 [CS-Notes](https://github.com/CyC2018/CS-Notes)（CC BY-NC-SA 4.0，固定提交），正文不入库 |
 
 **方法**
+
+![一道题的完整旅程](figures/eval-pipeline.svg)
+
+真实题目和各方法的回答示例见[实验详解](WALKTHROUGH.zh-CN.md)。
 
 - **出题**：模型从资料段落出题，一半直接用术语，一半换个说法（同义词、中英互换），每题带 2–4 个答案要点。语音噪声题由模型把题目改写成“识别结果”的样子。第二轮另有 12 道跨章节组合题，由助手对照公开原文核对，不是独立人工标注。
 - **严格回答规则**：提示词模拟“有人刚口头问了一个技术问题”，要求口语化、只依据给出的资料回答，找不到就说“资料中没有相关内容”。这样检索漏了什么会直接变成答错，不会被模型的常识悄悄补上。

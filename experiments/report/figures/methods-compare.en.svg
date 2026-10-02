@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title>Four ways to fetch material</title>
+  <rect width="900" height="470" fill="#ffffff"/>
+  <text x="24" y="34" font-size="19" font-weight="bold" fill="#1f2328">Four ways to "fetch material": how, what it's like, what we measured</text>
+  <text x="24" y="56" font-size="12" fill="#57606a">Round 2: 200k-character public notes, 48 clean + 48 spoken-noise questions, answered by deepseek-flash; cost per question, judge excluded</text>
+
+  <rect x="24" y="72" width="204" height="384" rx="8" fill="#0072B2" fill-opacity="0.07" stroke="#0072B2"/>
+  <text x="36" y="98" font-size="16" font-weight="bold" fill="#0072B2">Whole pack</text>
+  <text x="36" y="120" font-size="11" fill="#1f2328">How: no search, send everything</text>
+  <text x="36" y="138" font-size="11" fill="#57606a">Like: the booklet open on the desk</text>
+  <text x="36" y="166" font-size="12" font-weight="bold" fill="#007a59">Strengths</text>
+  <text x="36" y="184" font-size="11" fill="#1f2328">Can't "turn to the wrong page";</text>
+  <text x="36" y="200" font-size="11" fill="#1f2328">fast and cheap with prefix cache</text>
+  <text x="36" y="226" font-size="12" font-weight="bold" fill="#D55E00">Weaknesses</text>
+  <text x="36" y="244" font-size="11" fill="#1f2328">Costly and slow for big material;</text>
+  <text x="36" y="260" font-size="11" fill="#1f2328">limited by the context window</text>
+  <text x="36" y="288" font-size="12" font-weight="bold" fill="#1f2328">Measured</text>
+  <text x="36" y="306" font-size="11" fill="#1f2328">Fully correct 76.0% / 69.8%</text>
+  <text x="36" y="322" font-size="11" fill="#1f2328">End to end 1.08 s</text>
+  <text x="36" y="338" font-size="11" fill="#1f2328">~0.004 CNY/question (cache hit)</text>
+  <text x="36" y="366" font-size="12" font-weight="bold" fill="#0072B2">Best for</text>
+  <text x="36" y="384" font-size="11" fill="#1f2328">Up to 60k characters: first choice</text>
+
+  <rect x="240" y="72" width="204" height="384" rx="8" fill="#E69F00" fill-opacity="0.08" stroke="#E69F00"/>
+  <text x="252" y="98" font-size="16" font-weight="bold" fill="#b06d00">BM25 (keywords)</text>
+  <text x="252" y="120" font-size="11" fill="#1f2328">How: score literal keywords</text>
+  <text x="252" y="138" font-size="11" fill="#57606a">Like: a book's back-of-book index</text>
+  <text x="252" y="166" font-size="12" font-weight="bold" fill="#007a59">Strengths</text>
+  <text x="252" y="184" font-size="11" fill="#1f2328">Fastest (0.1 ms), cheapest,</text>
+  <text x="252" y="200" font-size="11" fill="#1f2328">no model, fully offline</text>
+  <text x="252" y="226" font-size="12" font-weight="bold" fill="#D55E00">Weaknesses</text>
+  <text x="252" y="244" font-size="11" fill="#1f2328">Fails on paraphrases and speech</text>
+  <text x="252" y="260" font-size="11" fill="#1f2328">typos ("tee-see-pee" ≠ "TCP")</text>
+  <text x="252" y="288" font-size="12" font-weight="bold" fill="#1f2328">Measured</text>
+  <text x="252" y="306" font-size="11" fill="#1f2328">Fully correct 58.3% / 44.8%</text>
+  <text x="252" y="322" font-size="11" fill="#1f2328">End to end 0.71 s</text>
+  <text x="252" y="338" font-size="11" fill="#1f2328">~0.0006 CNY/question</text>
+  <text x="252" y="366" font-size="12" font-weight="bold" fill="#b06d00">Best for</text>
+  <text x="252" y="384" font-size="11" fill="#1f2328">Exact terms; a fallback mixed</text>
+  <text x="252" y="400" font-size="11" fill="#1f2328">with dense retrieval</text>
+
+  <rect x="456" y="72" width="204" height="384" rx="8" fill="#009E73" fill-opacity="0.07" stroke="#009E73"/>
+  <text x="468" y="98" font-size="16" font-weight="bold" fill="#007a59">Dense retrieval</text>
+  <text x="468" y="120" font-size="11" fill="#1f2328">How: turn text into coordinates,</text>
+  <text x="468" y="136" font-size="11" fill="#1f2328">find the closest in meaning</text>
+  <text x="468" y="154" font-size="11" fill="#57606a">Like: finding neighbors on a map</text>
+  <text x="468" y="180" font-size="12" font-weight="bold" fill="#007a59">Strengths</text>
+  <text x="468" y="198" font-size="11" fill="#1f2328">Robust to synonyms and typos</text>
+  <text x="468" y="226" font-size="12" font-weight="bold" fill="#D55E00">Weaknesses</text>
+  <text x="468" y="244" font-size="11" fill="#1f2328">Needs a model and an index; may</text>
+  <text x="468" y="260" font-size="11" fill="#1f2328">find half (the problem, no answer)</text>
+  <text x="468" y="288" font-size="12" font-weight="bold" fill="#1f2328">Measured</text>
+  <text x="468" y="306" font-size="11" fill="#1f2328">Fully correct 62.5% / 58.3%</text>
+  <text x="468" y="322" font-size="11" fill="#1f2328">End to end 1.14 s</text>
+  <text x="468" y="338" font-size="11" fill="#1f2328">~0.001 CNY/question (+ index once)</text>
+  <text x="468" y="366" font-size="12" font-weight="bold" fill="#007a59">Best for</text>
+  <text x="468" y="384" font-size="11" fill="#1f2328">Large material and spoken</text>
+  <text x="468" y="400" font-size="11" fill="#1f2328">questions (hybrid with BM25)</text>
+
+  <rect x="672" y="72" width="204" height="384" rx="8" fill="#D55E00" fill-opacity="0.07" stroke="#D55E00"/>
+  <text x="684" y="98" font-size="16" font-weight="bold" fill="#D55E00">PageIndex</text>
+  <text x="684" y="120" font-size="11" fill="#1f2328">How: the model reads the outline,</text>
+  <text x="684" y="136" font-size="11" fill="#1f2328">picks sections, reads pages</text>
+  <text x="684" y="154" font-size="11" fill="#57606a">Like: a diligent student</text>
+  <text x="684" y="180" font-size="12" font-weight="bold" fill="#007a59">Strengths</text>
+  <text x="684" y="198" font-size="11" fill="#1f2328">Most accurate, steady on typos;</text>
+  <text x="684" y="214" font-size="11" fill="#1f2328">sends the least evidence</text>
+  <text x="684" y="240" font-size="12" font-weight="bold" fill="#D55E00">Weaknesses</text>
+  <text x="684" y="258" font-size="11" fill="#1f2328">~3 extra model calls: slow, costly</text>
+  <text x="684" y="288" font-size="12" font-weight="bold" fill="#1f2328">Measured</text>
+  <text x="684" y="306" font-size="11" fill="#1f2328">Fully correct 79.2% / 78.1%</text>
+  <text x="684" y="322" font-size="11" fill="#1f2328">End to end 6.35 s</text>
+  <text x="684" y="338" font-size="11" fill="#1f2328">~0.028 CNY/question</text>
+  <text x="684" y="366" font-size="12" font-weight="bold" fill="#D55E00">Best for</text>
+  <text x="684" y="384" font-size="11" fill="#1f2328">Unhurried offline Q&amp;A, review;</text>
+  <text x="684" y="400" font-size="11" fill="#1f2328">not real time</text>
+  <text x="684" y="432" font-size="10" fill="#57606a">vs whole: not significant</text>
+</svg>

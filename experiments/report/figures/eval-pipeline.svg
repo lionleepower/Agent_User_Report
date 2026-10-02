@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" font-family="Microsoft YaHei, PingFang SC, sans-serif">
+  <title>一道题的完整旅程：评测流程</title>
+  <rect width="900" height="430" fill="#ffffff"/>
+  <text x="24" y="34" font-size="19" font-weight="bold" fill="#1f2328">一道题的完整旅程：实验是怎么判断“哪种方案更好”的</text>
+  <text x="24" y="58" font-size="12" fill="#57606a">每道题都走一遍下面的流程；同一道题用不同方案各答一次（第二轮每种答两次），只换被比较的那一个环节</text>
+
+  <rect x="24" y="80" width="170" height="150" rx="8" fill="#0072B2" fill-opacity="0.1" stroke="#0072B2"/>
+  <text x="36" y="102" font-size="14" font-weight="bold" fill="#0072B2">① 题库</text>
+  <text x="36" y="124" font-size="11" fill="#1f2328">问题：TCP/IP 跟 OSI</text>
+  <text x="36" y="140" font-size="11" fill="#1f2328">分层有什么不一样？</text>
+  <text x="36" y="162" font-size="11" fill="#1f2328">答案要点：只有四层；</text>
+  <text x="36" y="178" font-size="11" fill="#1f2328">链路层+物理层合并……</text>
+  <text x="36" y="200" font-size="11" fill="#1f2328">标准段落：</text>
+  <text x="36" y="216" font-size="11" fill="#1f2328">“体系结构 › TCP/IP”</text>
+
+  <rect x="24" y="250" width="170" height="70" rx="8" fill="#CC79A7" fill-opacity="0.12" stroke="#CC79A7"/>
+  <text x="36" y="272" font-size="13" font-weight="bold" fill="#a0507f">可选：语音噪声版</text>
+  <text x="36" y="292" font-size="11" fill="#1f2328">“嗯 那个踢西批 ip 体系</text>
+  <text x="36" y="308" font-size="11" fill="#1f2328">结构跟 哦艾斯艾……”</text>
+
+  <line x1="194" y1="155" x2="232" y2="155" stroke="#1f2328" stroke-width="2"/>
+  <polygon points="226,149 238,155 226,161" fill="#1f2328"/>
+
+  <rect x="238" y="80" width="200" height="240" rx="8" fill="#E69F00" fill-opacity="0.12" stroke="#E69F00"/>
+  <text x="250" y="102" font-size="14" font-weight="bold" fill="#b06d00">② 取资料（被比较的环节）</text>
+  <rect x="252" y="116" width="172" height="36" rx="5" fill="#ffffff" stroke="#0072B2"/>
+  <text x="262" y="138" font-size="12" fill="#1f2328">整包：全部资料都给</text>
+  <rect x="252" y="160" width="172" height="36" rx="5" fill="#ffffff" stroke="#E69F00"/>
+  <text x="262" y="182" font-size="12" fill="#1f2328">BM25：按关键词找</text>
+  <rect x="252" y="204" width="172" height="36" rx="5" fill="#ffffff" stroke="#009E73"/>
+  <text x="262" y="226" font-size="12" fill="#1f2328">向量：按意思找</text>
+  <rect x="252" y="248" width="172" height="36" rx="5" fill="#ffffff" stroke="#D55E00"/>
+  <text x="262" y="270" font-size="12" fill="#1f2328">PageIndex：翻目录找</text>
+  <text x="252" y="306" font-size="10" fill="#57606a">检索类最多 5 段、共 2000 字</text>
+
+  <line x1="438" y1="200" x2="476" y2="200" stroke="#1f2328" stroke-width="2"/>
+  <polygon points="470,194 482,200 470,206" fill="#1f2328"/>
+
+  <rect x="482" y="120" width="180" height="160" rx="8" fill="#009E73" fill-opacity="0.1" stroke="#009E73"/>
+  <text x="494" y="142" font-size="14" font-weight="bold" fill="#007a59">③ 回答模型</text>
+  <text x="494" y="164" font-size="11" fill="#1f2328">严格规则：只能根据</text>
+  <text x="494" y="180" font-size="11" fill="#1f2328">给出的资料回答，口语化、</text>
+  <text x="494" y="196" font-size="11" fill="#1f2328">不超过 150 字；找不到</text>
+  <text x="494" y="212" font-size="11" fill="#1f2328">就说“资料中没有相关内容”</text>
+  <text x="494" y="236" font-size="10" fill="#57606a">→ 资料没找对，就会直接答错，</text>
+  <text x="494" y="252" font-size="10" fill="#57606a">  不会被模型常识掩盖</text>
+
+  <line x1="662" y1="200" x2="700" y2="200" stroke="#1f2328" stroke-width="2"/>
+  <polygon points="694,194 706,200 694,206" fill="#1f2328"/>
+
+  <rect x="706" y="80" width="170" height="240" rx="8" fill="#56B4E9" fill-opacity="0.12" stroke="#56B4E9"/>
+  <text x="718" y="102" font-size="14" font-weight="bold" fill="#1f6f99">④ 评分模型</text>
+  <text x="718" y="124" font-size="11" fill="#1f2328">对照答案要点打分：</text>
+  <text x="718" y="148" font-size="12" font-weight="bold" fill="#007a59">2 分</text>
+  <text x="752" y="148" font-size="11" fill="#1f2328">覆盖主要要点、</text>
+  <text x="752" y="164" font-size="11" fill="#1f2328">没有错误</text>
+  <text x="718" y="190" font-size="12" font-weight="bold" fill="#b06d00">1 分</text>
+  <text x="752" y="190" font-size="11" fill="#1f2328">只覆盖部分，</text>
+  <text x="752" y="206" font-size="11" fill="#1f2328">或有小错</text>
+  <text x="718" y="232" font-size="12" font-weight="bold" fill="#D55E00">0 分</text>
+  <text x="752" y="232" font-size="11" fill="#1f2328">答错、没答，或说</text>
+  <text x="752" y="248" font-size="11" fill="#1f2328">“资料中没有”</text>
+  <text x="718" y="280" font-size="10" fill="#57606a">“完全正确率”= 得 2 分</text>
+  <text x="718" y="296" font-size="10" fill="#57606a">的比例</text>
+
+  <line x1="791" y1="320" x2="791" y2="350" stroke="#1f2328" stroke-width="2"/>
+  <polygon points="785,344 791,356 797,344" fill="#1f2328"/>
+  <rect x="24" y="356" width="852" height="60" rx="8" fill="#f6f8fa" stroke="#8c959f"/>
+  <text x="36" y="378" font-size="14" font-weight="bold" fill="#1f2328">⑤ 统计</text>
+  <text x="96" y="378" font-size="12" fill="#1f2328">同一题答两次先取平均 → 失败算答错 → 按题重抽样 2000 次得到 95% 区间 → 两种方案按题配对相减</text>
+  <text x="96" y="400" font-size="12" fill="#1f2328">同时记录：首个回答字的等待时间、总耗时、调用次数、token 用量和费用</text>
+</svg>

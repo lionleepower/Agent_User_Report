@@ -1,6 +1,6 @@
 # Don't reach for RAG too early: measured advice on retrieval, models and frameworks for personal knowledge bases
 
-[简体中文](REPORT.zh-CN.md) · [Experiments](../README.md) · [Beginner handbook](HANDBOOK.en.md)
+[简体中文](REPORT.zh-CN.md) · [Experiments](../README.md) · [Walkthrough: example questions, real answers, one card per experiment](WALKTHROUGH.en.md) · [Beginner handbook](HANDBOOK.en.md)
 
 > A not-too-serious engineering test report. Every number comes from `experiments/*/results/summary.json` in this repository. The figures are drawn by [`make_figures.py`](make_figures.py), [`continuation_figures.py`](continuation_figures.py) and [`pageindex_figures.py`](pageindex_figures.py), with the plotted data in [`data/`](data/).
 >
@@ -61,6 +61,10 @@ Many personal and small-team knowledge bases share these constraints, so the con
 | Corpus | Public [CS-Notes](https://github.com/CyC2018/CS-Notes) (CC BY-NC-SA 4.0, pinned commit); text not committed |
 
 **Method**
+
+![The journey of one question](figures/eval-pipeline.en.svg)
+
+Real questions and each method's answers are in the [walkthrough](WALKTHROUGH.en.md).
 
 - **Questions**: a model writes questions from passages, half with the original terms and half paraphrased (synonyms, Chinese/English swaps), each with 2–4 answer points. Speech-noise questions are rewritten by a model to look like recognition output. Round 2 adds 12 cross-section composite questions, checked by the assistant against public text; they are not independent human annotation.
 - **Strict answer rule**: the prompt simulates "someone just asked me a technical question out loud". The answer must be conversational and use only the given material; if nothing is found, the model must say "not in the material". A retrieval miss therefore becomes a wrong answer instead of being quietly patched by the model's general knowledge.

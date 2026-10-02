@@ -2,7 +2,7 @@
 
 [Back to the report](REPORT.en.md) · [中文报告](REPORT.zh-CN.md) · [中文手册](HANDBOOK.zh-CN.md)
 
-> For people who can code but haven't built an LLM application yet. Reading it takes about two hours. The first eleven chapters explain concepts with analogies, figures and real code from my own project. Chapters 2 and 3 add computing basics (networking, processes, encoding, audio), chapter 9 adds hardware (CPU, GPU, VRAM), and chapter 12 ties everything together through a system-design interview question. A glossary at the end helps you review the vocabulary of agent-development and AI-infrastructure roles. Every number comes from the [report](REPORT.en.md); no new experiments were run for this handbook.
+> For people who can code but haven't built an LLM application yet. Reading it takes about two hours. The first eleven chapters explain concepts with analogies, figures and real code from my own project. Chapters 2 and 3 add computing basics (networking, processes, encoding, audio), chapter 9 adds hardware (CPU, GPU, VRAM), and chapter 12 ties everything together through a system-design interview question. A glossary at the end helps you review the vocabulary of agent-development and AI-infrastructure roles. Every number comes from the [report](REPORT.en.md); no new experiments were run for this handbook. For concrete questions and answers, see the [walkthrough](WALKTHROUGH.en.md).
 
 > About code paths: files starting with `experiments/` are in this repository. Paths starting with `shared/`, `electron/` or `src/` belong to the original project (a real-time spoken Q&A desktop app), which is not public; they only show where something is implemented.
 
@@ -359,6 +359,10 @@ But what if there isn't much material? For a thin booklet, you just lay the whol
 In my project, the whole-pack limit is a single constant: `FULL_CONTEXT_MAX_CHARS = 60_000` in `electron/ipc/knowledgeIpc.ts`. Material up to 60k characters is sent whole; only larger material goes through retrieval.
 
 ![Pack size experiment](figures/01-accuracy-vs-size.svg)
+
+The four ways to "fetch material" side by side: how each searches, what it's like, and what we measured:
+
+![Four ways to fetch material](figures/methods-compare.en.svg)
 
 **Why the whole pack wins on small material**: retrieval can pick the wrong passage, and then even the smartest model can't answer correctly, just as flipping to the wrong page in an open-book exam gives a wrong answer however well you write. The whole pack can't "flip to the wrong page". Its cost is more input tokens, but the **prefix cache** makes resending the same material almost free (chapter 10).
 
@@ -763,6 +767,17 @@ Think of a highway: latency is how long **one car** takes to drive the whole rou
 For budgeting VRAM, see section 9.6. Note that the report measured the KV **startup allocation**; how many bytes are actually occupied at runtime isn't exposed by llama.cpp, so the report records it as null instead of substituting total GPU memory.
 
 ## 11. Evaluation and cost: how to know you're not fooling yourself
+
+First, the full path of one question from writing to grading. Every approach answers the same questions and only the "fetch material" step changes, so any difference really comes from that step:
+
+![The journey of one question](figures/eval-pipeline.en.svg)
+
+Two real examples show why the evaluation is designed this way (questions adapted from CS-Notes, CC BY-NC-SA 4.0):
+
+- **Finding it isn't answering it**. The question: "In a 2-D array increasing along rows and columns, how do you find a number efficiently?" Dense retrieval did put the gold passage into the evidence, but the model saw only the problem and an example, not the solution, so it answered "no solution in the material" and scored 0. That's why the report checks the final answer, not just whether the gold passage was found.
+- **Half an answer scores 1**. For a question combining the "reflection" and "PermGen" sections, the whole pack explained only the PermGen half and scored 1; approaches covering both scored 2. The headline "fully correct" rate counts only 2s, so "half right" isn't counted as right.
+
+More real questions, answers and a card per experiment are in the [walkthrough](WALKTHROUGH.en.md).
 
 ### 11.1 Test sets and metrics
 
